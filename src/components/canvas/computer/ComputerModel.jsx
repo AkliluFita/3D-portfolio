@@ -1,11 +1,13 @@
 import { useGLTF } from "@react-three/drei";
 
 const ComputerModel = () => {
-  const computer = useGLTF("./computerGLTF/scene.gltf"); // to load the model
+  const computer = useGLTF("./computerDraco-transformed.glb"); // to load the model
 
   return (
+    // mesh is one element of canvas
     <mesh>
-      <hemisphereLight intensity={0.15} groundColor="black" />
+      <hemisphereLight intensity={0.15} groundColor="black" />{" "}
+      {/* to give light*/}
       <spotLight
         position={[-20, 50, 10]}
         angle={0.12}

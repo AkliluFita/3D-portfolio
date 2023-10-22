@@ -10,12 +10,8 @@ import Works from "./components/Works";
 export default function App() {
   return (
     <div className="bg-[#201E26]">
-      <div>
-        <Navbar />
-      </div>
-      <div>
-        <ShowCase />
-      </div>
+      <Navbar />
+      <ShowCase />
       <div>
         <About />
         <Experience />

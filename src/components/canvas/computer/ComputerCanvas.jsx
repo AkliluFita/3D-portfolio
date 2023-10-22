@@ -22,6 +22,7 @@ const ComputersCanvas = ({ children }) => {
           maxPolarAngle={Math.PI / 2} // user can only rotate the camera vertically.
           minPolarAngle={Math.PI / 2}
           dampingFactor={0.3} // camera will have a damping factor of 0.3. It will smooth out the camera movement.
+          // autoRotate // if we need to rotate aut
         />
         {/* is used to create the 3D scene itself */}
         <Stage contactShadow={{ resolution: 1024, scale: 1000 }}>

@@ -6,7 +6,7 @@ import CanvasLoader from "../CanvasLoader";
 // eslint-disable-next-line react/prop-types
 const BallCanvas = ({ children }) => {
   return (
-    <Canvas
+    <Canvas // this can be used as a frame
       frameloop="demand" // canvas  only render when the user interacts with the canvas
       dpr={[1, 2]} // resolution value 1 2
       gl={{ preserveDrawingBuffer: true }} // canvas will preserve the drawing buffer

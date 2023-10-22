@@ -1,21 +1,17 @@
-import ComputersCanvas from "./canvas/computer/ComputerCanvas";
-import ComputerModel from "./canvas/computer/ComputerModel";
+import { showCaseData } from "../data/showCaseData";
+// import ComputersCanvas from "./canvas/computer/ComputerCanvas";
+// import ComputerDraco from "./canvas/computer/ComputerDraco";
+// import Model from "./canvas/computer/ComputerDraco";
+// import ComputerModel from "./canvas/computer/ComputerModel";
 
 const ShowCase = () => {
   return (
-    <div className="flex flex-row items-center justify-between w-full h-screen gap-4 p-4 bg-no-repeat bg-fill bg-back-portfolio ">
-      <div className=" flex-[1] h-full text-white flex flex-col items-center justify-center p-8">
-        <div className="flex flex-col gap-8 p-4 h-1/2 w-[90%]">
-          <h1 className="text-[4rem]">
-            Hello, I am{" "}
-            <strong className="text-purple-600">Aklilu Jemal</strong>
-          </h1>
-          <h1 className="text-[2rem]">Hello, I am </h1>
-          <p className="text-[1rem]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-            deleniti consectetur quisquam deserunt tempora, quae aspernatur
-            praesentium earum labore molestiae et
-          </p>
+    <div className="flex flex-row items-center justify-between w-full h-screen gap-4 p-4 bg-no-repeat bg-fill bg-[#00062B] ">
+      <div className=" flex-[1] h-full text-white flex flex-col items-center justify-center p-4  border border-white">
+        <div className="flex flex-col gap-8 p-4 h-1/2 w-[90%]  border border-white">
+          <h1 className="text-[4rem]">{showCaseData.title}</h1>
+          <h2 className="text-4xl text-purple-600"> {showCaseData.name}</h2>
+          <p className="text-3xl">{showCaseData.description}</p>
           <div className="flex flex-row justify-center gap-4 p-2 mt-4">
             <button
               type="button"
@@ -32,11 +28,12 @@ const ShowCase = () => {
           </div>
         </div>
       </div>
-      <div className=" flex-[1] h-full">
-        <ComputersCanvas>
-          <ComputerModel />
-        </ComputersCanvas>
-      </div>
+      {/* <div className=" flex-[1] h-full border border-white"> */}
+      {/* <ComputersCanvas> */}
+      {/* <ComputerDraco /> */}
+      {/* <ComputerModel /> */}
+      {/* </ComputersCanvas> */}
+      {/* </div> */}
     </div>
   );
 };
