@@ -10,13 +10,23 @@ import Works from "./components/Works";
 export default function App() {
   return (
     <div className="bg-[#201E26]">
-      <Navbar />
-      <ShowCase />
+      <section id="home">
+        <Navbar />
+        <ShowCase />
+      </section>
       <div>
-        <About />
-        <Experience />
-        <Skill />
-        <Works />
+        <section id="about">
+          <About />
+        </section>
+        <section id="experience">
+          <Experience />
+        </section>
+        <section id="skill">
+          <Skill />
+        </section>
+        <section id="work">
+          <Works />
+        </section>
       </div>
       <div>
         <Contact />

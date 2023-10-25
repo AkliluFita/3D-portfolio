@@ -1,5 +1,5 @@
-// import BallCanvas from "./canvas/ball/BallCanvas";
-// import BallModel from "./canvas/ball/BallModel";
+import BallCanvas from "./canvas/ball/BallCanvas";
+import BallModel from "./canvas/ball/BallModel";
 
 const Skill = () => {
   const balls = Array.from({ length: 18 }, (_, i) => i + 1);
@@ -12,9 +12,9 @@ const Skill = () => {
             key={index}
             className="flex-[1] bg-[#00062B] rounded-lg border border-[#1D2452]"
           >
-            {/* <BallCanvas> */}
-            {/* <BallModel /> */}
-            {/* </BallCanvas> */}
+            {/* <BallCanvas>
+              <BallModel />
+            </BallCanvas> */}
           </div>
         ))}
       </div>

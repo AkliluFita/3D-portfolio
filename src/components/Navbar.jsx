@@ -1,46 +1,77 @@
 import logoImg from "../assets/aklilu-logo.png";
-import { motion, useCycle } from "framer-motion";
+import { motion } from "framer-motion";
 import facebookImg from "../assets/facebook-64.png";
 import whatsAppImg from "../assets/whatsapp-64.png";
 import telegramImg from "../assets/telegram-64.png";
 import twitterImg from "../assets/twitter-64.png";
-import { MenuToggle } from "../assets/elements/MenuToggle";
+import { MenuToggle } from "./elements/MenuToggle";
+import { useState } from "react";
+import Sidebar from "./sidebar/Sidebar";
+import Links from "./Links";
 const Navbar = () => {
-  const [isOpen, toggleOpen] = useCycle(false, true);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const variants = {
+    open: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        y: { stiffness: 1000, velocity: -100 },
+      },
+    },
+    closed: {
+      y: 50,
+      opacity: 0,
+      transition: {
+        y: { stiffness: 1000 },
+      },
+    },
+  };
+
+  const images = [facebookImg, whatsAppImg, telegramImg, twitterImg];
 
   return (
-    <div className="h-20 p-1 text-white bg-[#000836] ]">
-      <div className="flex flex-row items-center justify-between h-full ">
-        <motion.div className=" basis-1/4 w-[5rem] h-[7rem] border border-white shrink-0">
+    <div className="h-14 lg:h-20 p-1 text-white bg-[#000836]">
+      <div className="flex flex-row items-center h-full lg:justify-between">
+        <motion.div className=" flex-[1]  h-[7rem] w-[4rem]  shrink-0">
           <motion.img
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
             src={logoImg}
-            className="flex flex-shrink-0 object-contain w-24 h-full border border-white"
+            className="flex flex-shrink-0 object-contain  h-full  w-[6rem]  cursor-pointer"
           />
         </motion.div>
-        <div className="flex flex-row items-center justify-between border border-red-500 basis-1/2 sm:hidden">
-          <span>home</span>
-          <span>Showcase</span>
-          <span>about</span>
-          <span>Experience</span>
-          <span>Contact</span>
-        </div>
-        <div className="flex flex-row justify-between h-10 mx-4 border border-white basis-1/4">
-          <img src={facebookImg} alt="facebook" />
-          <img src={whatsAppImg} alt="whatsApp" />
-          <img src={telegramImg} alt="telegram" />
-          <img src={twitterImg} alt="twitter" />
+        <motion.div
+          variants={variants}
+          className="flex-row justify-around hidden  lg:flex md:items-center lg:flex-[2] w-[20rem] gap-2  "
+        >
+          <Links />
+        </motion.div>
+        <div className="flex flex-row justify-around flex-1 h-6 sm:h-8">
+          {images.map((img) => (
+            <motion.img
+              key={img}
+              src={img}
+              whileHover={{ scale: 1.1 }}
+              alt={img}
+              className="cursor-pointer"
+            />
+          ))}
         </div>
         <motion.div
           initial={false}
           animate={isOpen ? "open" : "closed"}
           custom="100%"
-          className="flex border border-yellow-400 basis-1/4 shrink-0 lg:hidden md:hidden"
+          className="flex items-center justify-end flex-[1] pr-2  shrink-0 lg:hidden p-1"
         >
-          <MenuToggle toggle={() => toggleOpen()} />
+          <MenuToggle setIsOpen={setIsOpen} />
         </motion.div>
+        {isOpen && (
+          <div className="absolute top-[3.3rem] right-[1.2rem] lg:hidden border border-br_primary p-4 bg-[#000836] rounded-lg z-10">
+            <Sidebar />
+          </div>
+        )}
       </div>
     </div>
   );

@@ -55,3 +55,7 @@ https://www.videezy.com/free-video/animated-background
 https://www.videvo.net/video/purple-data-globe-concept/4815/
 
 https://www.videezy.com/abstract/52633-cyber-world-digital-and-energy-barrier-protection
+
+
+<!-- menu framer motion animation -->
+https://codesandbox.io/s/hamburger-menu-framer-motion-3cji8?file=/src/Nav.js:109-287
