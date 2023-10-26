@@ -3,7 +3,14 @@ import backend from "../assets/backend-100.png";
 import fullstack from "../assets/full-stack-100.png";
 import machineLearning from "../assets/machine-learning-100.png";
 
-export const aboutMeData = [
+export const aboutMeProfileData = ` Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit fugit
+tempora eum fuga odio et earum porro veritatis. Non corrupti pariatur,
+minus fuga fugit distinctio iure vitae fugiat cum? Possimus! Lorem
+ipsum, dolor sit amet consectetur adipisicing elit. Odit fugit tempora
+eum fuga odio et earum porro veritatis. Non corrupti pariatur, minus
+fuga fugit distinctio iure vitae fugiat cum? Possimus!`;
+
+export const aboutMeCardData = [
   {
     id: 1,
     icon: frontend,

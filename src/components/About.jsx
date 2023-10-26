@@ -3,17 +3,20 @@ import icon from "../assets/full-stack-icon.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import { aboutMeData } from "../data/aboutMeData";
+import { aboutMeCardData, aboutMeProfileData } from "../data/aboutMeData";
 import React from "react";
 import Button from "./elements/Button";
 
 const About = () => {
   return (
-    <div className="lg:h-[80vh] bg-[#000836] p-4 flex flex-col gap-4 text-center">
-      <h1 className="text-[3rem] text-white flex-[3]">About me</h1>
-
-      <div className="flex flex-row flex-wrap gap-8 p-8 flex-[9] ">
-        {aboutMeData.map((item) => (
+    <div className="lg:h-[100vh] bg-[#000836] p-4 flex flex-col gap-4 text-center">
+      <h1 className="text-[3rem] text-white flex-[1] uppercase">About me</h1>
+      <div className="flex-[2]  w-1/2 text-white flex flex-col gap-2">
+        <h3 className="text-[2rem] uppercase">Overview Profile</h3>
+        <p className=" text-[1.3rem] ">{aboutMeProfileData}</p>
+      </div>
+      <div className="flex flex-row flex-wrap gap-8 p-8 flex-[3] ">
+        {aboutMeCardData.map((item) => (
           <Cards key={item.id} item={item} />
         ))}
       </div>
@@ -37,7 +40,7 @@ const Cards = ({ item }) => {
       className="flex-[1] "
     >
       <div
-        className="flex flex-col items-center justify-between h-full p-4 border-br_primary border rounded-lg bg-[#3F3D56] g-3 "
+        className="flex flex-col items-center justify-between h-full p-4 border-br_primary border rounded-lg bg-[#00062B] g-3 "
         data-aos="flip-left"
       >
         <div className="flex items-center w-1/2 h-[3rem] text-center justify-center p-2">
