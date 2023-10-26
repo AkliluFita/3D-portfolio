@@ -31,7 +31,7 @@ const Navbar = () => {
   const images = [facebookImg, whatsAppImg, telegramImg, twitterImg];
 
   return (
-    <div className="h-14 lg:h-20 p-1 text-white bg-[#000836]">
+    <div className="h-14 lg:h-20 p-1 text-white bg-[#3F3D56]">
       <div className="flex flex-row items-center h-full lg:justify-between">
         <motion.div className=" flex-[1]  h-[7rem] w-[4rem]  shrink-0">
           <motion.img

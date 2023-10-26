@@ -37,7 +37,7 @@ const Cards = ({ item }) => {
       className="flex-[1] "
     >
       <div
-        className="flex flex-col items-center justify-between h-full p-4 border-br_primary border rounded-lg bg-[#00062B] g-3 "
+        className="flex flex-col items-center justify-between h-full p-4 border-br_primary border rounded-lg bg-[#3F3D56] g-3 "
         data-aos="flip-left"
       >
         <div className="flex items-center w-1/2 h-[3rem] text-center justify-center p-2">
