@@ -3,14 +3,13 @@ import BallCanvas from "./canvas/ball/BallCanvas";
 
 const Skill = () => {
   return (
-    <div className=" bg-[#000836] flex flex-col p-8 h-[100vh]">
-      <h1 className=" text-[3rem] text-center text-white">My Skills</h1>
-      <div className="flex flex-row flex-wrap items-center gap-4 p-4 ">
+    <div className=" bg-[#000836] flex flex-col p-8 h-[100vh] items-center border border-white gap-4">
+      <h1 className=" text-[3rem] text-center text-white flex-[2] ">
+        My Skills
+      </h1>
+      <div className="flex flex-row flex-wrap items-center justify-between w-[80%] gap-2 p-4 border border-white  flex-[10]">
         {skillData.map((item, index) => (
-          <div
-            key={index}
-            className="flex-[1] bg-[#00062B] rounded-lg border border-[#1D2452]"
-          >
+          <div key={index} className="  rounded-lg  w-[20rem] h-[10rem]  p-4">
             <BallCanvas icon={item.icon} />
           </div>
         ))}

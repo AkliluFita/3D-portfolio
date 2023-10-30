@@ -33,7 +33,7 @@ const SlideText = ({ sideType }) => {
     <>
       {sideType === "left" ? (
         <motion.div
-          className="absolute top-0 text-blue-600  text-[3rem] font-bold opacity-10 whitespace-nowrap uppercase hidden lg:block"
+          className="absolute top-0 text-blue-600  text-[3rem] font-bold opacity-10 whitespace-nowrap uppercase hidden lg:block border border-black w-1/2"
           variants={leftSlideText}
           initial="initial"
           animate="animate"
@@ -43,7 +43,7 @@ const SlideText = ({ sideType }) => {
         </motion.div>
       ) : (
         <motion.div
-          className="absolute bottom-0 text-blue-600  text-[3rem] font-bold opacity-10 whitespace-nowrap uppercase  hidden lg:block"
+          className="absolute bottom-0 text-blue-600  text-[3rem] font-bold opacity-10 whitespace-nowrap uppercase  hidden lg:block border border-black w-1/2"
           variants={rightSlideText}
           initial="initial"
           animate="animate"

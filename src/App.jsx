@@ -1,11 +1,11 @@
 import "./App.css";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Education from "./components/Education";
 import Experience from "./components/Experience";
 import Navbar from "./components/Navbar";
 import ShowCase from "./components/ShowCase";
 import Skill from "./components/Skill";
-import Works from "./components/Works";
 
 export default function App() {
   return (
@@ -24,13 +24,13 @@ export default function App() {
         <section id="skill">
           <Skill />
         </section>
-        <section id="work">
-          <Works />
+        <section id="education">
+          <Education />
         </section>
       </div>
-      <div>
+      <section id="contact">
         <Contact />
-      </div>
+      </section>
     </div>
   );
 }

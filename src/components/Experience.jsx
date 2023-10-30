@@ -11,9 +11,9 @@ import githubImg from "../assets/experienceIcon/github-80.png";
 
 const Experience = () => {
   return (
-    <div className="flex flex-col item-center  bg-[#000836] gap-8">
+    <div className="flex flex-col item-center  bg-[#000836] gap-8 lg:h-[100vh] overflow-y-scroll">
       <div className=" text-[3rem] text-center text-white">
-        <h1>MY Experience</h1>
+        <h1 className="lg:text-[3rem] text-[2rem]">MY Experience</h1>
       </div>
       <div className="mt-8">
         <VerticalTimeline>

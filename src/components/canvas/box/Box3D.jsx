@@ -1,10 +1,13 @@
 import {
+  Decal,
   OrbitControls,
   PerspectiveCamera,
   RenderTexture,
   Text,
+  useTexture,
 } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
+
 
 const Box3D = () => {
   return (

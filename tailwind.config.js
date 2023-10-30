@@ -5,6 +5,7 @@ export default {
     extend: {
       backgroundImage: {
         "back-portfolio": "url('./src/assets/portfolio_Back.jpg')",
+        "contact-glob": "url('./src/assets/contact/earth.png')",
       },
       fontFamily: {
         primary: ["Neucha"],

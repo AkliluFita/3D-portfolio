@@ -8,6 +8,7 @@ import sampleImg from "../assets/showCaseImg.svg";
 import Box3D from "./canvas/box/Box3D";
 import { motion } from "framer-motion";
 import SlideText from "./SlideText";
+import animateImg from "../assets/showCase/web_animation.gif";
 
 const textVariants = {
   initial: {
@@ -26,7 +27,7 @@ const textVariants = {
 
 const ShowCase = () => {
   return (
-    <div className="flex lg:flex-row items-center  w-full h-screen gap-4 p-4 bg-no-repeat bg-fill bg-[#00062B]  flex-col relative z-[1]">
+    <div className="flex lg:flex-row items-center w-full h-screen gap-4 p-4 bg-no-repeat bg-fill bg-[#00062B]  flex-col relative z-[1]">
       <SlideText sideType="left" />
       <div className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
         <Box3D />
@@ -51,19 +52,27 @@ const ShowCase = () => {
             {" "}
             {showCaseData.name}
           </motion.h2>
-          <p className="text-2xl md:text-3xl">{showCaseData.description}</p>
+          <p className="text-2xl text-gray-400 md:text-3xl">
+            {showCaseData.description}
+          </p>
           <div className="flex flex-row justify-center gap-4 p-2 mt-4">
             <Button text={"see detail"} />
             <Button text={"see demo"} />
           </div>
         </motion.div>
       </motion.div>
-      <div className=" flex-[1] h-full  w-full flex flex-col justify-center z-[1] ">
+      <div className=" flex-[1] h-full  w-full flex flex-col justify-center z-[1] relative">
         {/* <ComputersCanvas> */}
         {/* <ComputerDraco /> */}
         {/* <ComputerModel /> */}
         {/* </ComputersCanvas> */}
-        <img src={sampleImg} alt="ggs" className="" />
+        <img src={sampleImg} alt="ggs" />
+        <img
+          src={animateImg}
+          alt=""
+          className="absolute left-[21%] "
+          width="200px"
+        />
       </div>
       <SlideText sideType="right" />
     </div>
