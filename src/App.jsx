@@ -14,20 +14,26 @@ export default function App() {
         <Navbar />
         <ShowCase />
       </section>
+      <hr className="h-[10px] bg-[aqua]" />
       <div>
         <section id="about">
           <About />
         </section>
+        <hr className="h-[10px] bg-[aqua]" />
         <section id="experience">
           <Experience />
         </section>
-        <section id="skill">
-          <Skill />
-        </section>
+        <hr className="h-[10px] bg-[aqua]" />
         <section id="education">
           <Education />
         </section>
+
+        <hr className="h-[10px] bg-[aqua]" />
+        <section id="skill">
+          <Skill />
+        </section>
       </div>
+      <hr className="h-[10px] bg-[aqua]" />
       <section id="contact">
         <Contact />
       </section>

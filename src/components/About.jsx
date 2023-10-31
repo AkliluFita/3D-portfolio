@@ -4,13 +4,27 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { aboutMeCardData, aboutMeProfileData } from "../data/aboutMeData";
 
+
+
 const About = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 600,
+    });
+  }, []);
+
   return (
-    <div className=" h-auto lg:h-[100vh] bg-cover bg-center bg-no-repeat bg-aboutBack p-4 flex flex-col gap-4 text-center  overflow-y-scroll">
-      <h1 className=" text-[2rem] lg:text-[3rem] text-white flex-[1] uppercase  ">
+    <div className=" h-auto lg:h-[100vh] bg-[#018673] p-4 flex flex-col gap-4 text-center  overflow-y-scroll">
+      <h1
+        className=" text-[2rem] lg:text-[3rem] text-white flex-[1] uppercase  "
+        data-aos="fade-right"
+      >
         About me
       </h1>
-      <div className="flex-[2]  text-white flex flex-col gap-2 items-center  ">
+      <div
+        className="flex-[2]  text-white flex flex-col gap-2 items-center  "
+        data-aos="fade-right"
+      >
         <h3 className="text-[2rem] uppercase">Overview Profile</h3>
         <p className=" lg:text-[1.3rem] text-[1rem] lg:w-1/2  w-full text-white  ">
           {aboutMeProfileData}
@@ -41,7 +55,7 @@ const Cards = ({ item }) => {
       className="flex-[1] "
     >
       <div
-        className="flex flex-col items-center justify-between h-full p-4 bg-[aqua] bg-opacity-30  border-b-4 border-white rounded-lg g-3  "
+        className="flex flex-col items-center justify-between h-full p-4 bg-[aqua] bg-opacity-50  border-b-4 border-white rounded-lg g-3  "
         data-aos="flip-left"
       >
         <div className="flex items-center w-1/2 h-[3rem] text-center justify-center p-2">
@@ -52,7 +66,7 @@ const Cards = ({ item }) => {
           />
         </div>
         <h1 className="p-2 text-2xl text-white rounded-lg">{item.title}</h1>
-        <p className="text-white ">{item.desc}</p>
+        <p className="text-gray-600">{item.desc}</p>
         <div className=" flex flex-row items-center justify-center text-[1.5rem] text-white  w-full p-1 gap-2">
           <div className="flex flex-row text-sm  flex-[3]">
             <ul className="flex flex-row flex-wrap items-center gap-2 ">
@@ -68,7 +82,7 @@ const Cards = ({ item }) => {
               <h1>Experience</h1>
               <h3>3 years</h3>
             </div>
-            <button className="p-2 border border-br_primary rounded-2xl focus:outline-none hover:bg-blue-700">
+            <button className="p-2  rounded-2xl focus:outline-none bg-[#018673]">
               Detail
             </button>
           </div>

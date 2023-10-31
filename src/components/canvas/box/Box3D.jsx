@@ -17,8 +17,8 @@ const Box3D = () => {
         <ambientLight intensity={1} />
         <directionalLight position={[3, 2, 1]} />
         <mesh>
-          <boxGeometry args={[4, 4, 4]} />
-          <meshStandardMaterial color={"#000836"}>
+          <boxGeometry args={[1, 1, 1]} />
+          <meshStandardMaterial color={"aqua"}>
             {/* <RenderTexture attach="map"> */}
             {/* <PerspectiveCamera makeDefault position={[1, 1, 2]} /> */}
             {/* <color attach="background" args={["green"]} /> */}
