@@ -1,4 +1,4 @@
-import logoImg from "../assets/aklilu-logo.png";
+import logoImg from "../assets/navbar/my_new_logo.png";
 import { motion } from "framer-motion";
 import facebookImg from "../assets/facebook-64.png";
 import whatsAppImg from "../assets/whatsapp-64.png";
@@ -31,15 +31,15 @@ const Navbar = () => {
   const images = [facebookImg, whatsAppImg, telegramImg, twitterImg];
 
   return (
-    <div className="h-14 lg:h-20 p-1 text-white bg-[#3F3D56]">
+    <div className="p-1 text-white bg-[aqua] h-14 lg:h-20">
       <div className="flex flex-row items-center h-full lg:justify-between">
-        <motion.div className=" flex-[1]  h-[7rem] w-[4rem]  shrink-0">
+        <motion.div className=" flex-[1]  h-full   shrink-0 ml-2">
           <motion.img
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
             src={logoImg}
-            className="flex flex-shrink-0 object-contain  h-full  w-[6rem]  cursor-pointer"
+            className="flex flex-shrink-0 object-cover w-[4rem] cursor-pointer"
           />
         </motion.div>
         <motion.div
@@ -68,7 +68,7 @@ const Navbar = () => {
           <MenuToggle setIsOpen={setIsOpen} />
         </motion.div>
         {isOpen && (
-          <div className="absolute top-[3.3rem] right-[1.2rem] lg:hidden border border-br_primary p-4 bg-[#000836] rounded-lg z-10">
+          <div className="absolute top-[3.3rem] right-[1.2rem] lg:hidden border border-br_primary p-4 bg-[aqua] rounded-lg z-10">
             <Sidebar />
           </div>
         )}

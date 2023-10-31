@@ -63,3 +63,6 @@ https://codesandbox.io/s/hamburger-menu-framer-motion-3cji8?file=/src/Nav.js:109
 <!-- text typing keybowrd animation -->
 https://dev.to/chetanvermaa/how-to-create-awesome-text-animation-with-framer-motion-1cki
 https://brad-carter.medium.com/how-to-animate-a-text-reveal-effect-in-react-with-framer-motion-ae8ddd296f0d
+
+<!-- new framer motion -->
+https://www.framer.com/motion/animation/

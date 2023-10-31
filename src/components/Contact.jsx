@@ -1,7 +1,7 @@
 import contactAnimateImg from "../assets/contact/contact_animate.gif";
 const Contact = () => {
   return (
-    <div className="bg-[#000836] h-[100vh] flex flex-col">
+    <div className="bg-[#000836] h-auto lg:h-[100vh] flex flex-col ">
       <h1 className=" text-[3rem] text-center text-white flex-[2] ">Contact</h1>
       <div className="flex-[10]  flex flex-col lg:flex-row  lg:p-6 gap-10">
         <div className="flex-[1]  bg-[#00062B] rounded-md flex flex-col items-center ">

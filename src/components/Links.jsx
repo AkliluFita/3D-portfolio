@@ -30,7 +30,7 @@ const Links = () => {
           whileHover={{ scale: 1.1, color: "rgb(182, 204, 227)" }}
           whileTap={{ scale: 0.95 }}
           key={item.id}
-          className="text-[1.2rem] cursor-pointer border border-white w-full text-center rounded-md p-1 hover:bg-blue-600"
+          className="text-[1.2rem] cursor-pointer  w-full text-center rounded-md p-1  text-white bg-[#018673]"
         >
           {item.text}
         </motion.a>
