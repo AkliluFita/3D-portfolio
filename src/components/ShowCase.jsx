@@ -29,7 +29,7 @@ const ShowCase = () => {
     });
   }, []);
   return (
-    <div className="flex lg:flex-row items-center w-full h-screen gap-4 p-4  bg-fill bg-cover bg-center bg-no-repeat bg-showcaseBack flex-col relative z-[1]">
+    <div className="flex lg:flex-row items-center w-full h-screen gap-4 p-4  bg-fill bg-cover bg-center bg-no-repeat bg-aboutBack flex-col relative z-[1]">
       <SlideText sideType="left" />
       <div className="absolute  top-[0] right-[0]">
         <Box3D />
@@ -39,20 +39,20 @@ const ShowCase = () => {
         data-aos="fade-right"
       >
         <motion.div
-          className="flex flex-col lg:w-[80%] gap-8  md:p-4 bg-[aqua] bg-opacity-30 rounded-lg p-2"
+          className="flex flex-col lg:w-[75%] gap-8  md:p-4 rounded-lg p-2"
           variants={textVariants}
         >
           <motion.h1
-            className=" text-[2rem] md:text-[3rem] lg:text-[4rem] font-bold"
+            className=" text-[2rem] md:text-[3rem] lg:text-[4rem] font-bold text-white"
             variants={textVariants}
           >
             {showCaseData.title}
           </motion.h1>
-          <motion.h2 className="text-3xl font-bold text-black uppercase md:text-4xl">
+          <motion.h2 className="text-3xl font-bold text-white uppercase md:text-4xl">
             {" "}
             {showCaseData.name}
           </motion.h2>
-          <p className="text-2xl font-bold text-white md:text-3xl">
+          <p className="text-2xl font-bold text-[aqua] md:text-3xl">
             {showCaseData.description}
           </p>
           <div className="flex flex-row justify-center gap-4 p-2 mt-4">

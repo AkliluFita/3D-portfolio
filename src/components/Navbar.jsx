@@ -39,7 +39,7 @@ const Navbar = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
             src={logoImg}
-            className="flex flex-shrink-0 object-cover w-[4rem] cursor-pointer"
+            className="flex flex-shrink-0 object-cover w-[2.5rem] lg:w-[4rem] cursor-pointer"
           />
         </motion.div>
         <motion.div

@@ -38,8 +38,8 @@ const SlideText = ({ sideType }) => {
           initial="initial"
           animate="animate"
         >
-          hello this is aklilu jemal fita hello this is aklilu jemal fita hello
-          this is aklilu jemal fita hello this is aklilu jemal fita
+          Computer Engineer, Front-end Developer, Back-end Developer, Full-stack
+          Developer, UI designer, Machine Learning(AI) Practitioner
         </motion.div>
       ) : (
         <motion.div
@@ -48,8 +48,9 @@ const SlideText = ({ sideType }) => {
           initial="initial"
           animate="animate"
         >
-          hello this is aklilu jemal fita hello this is aklilu jemal fita hello
-          this is aklilu jemal fita hello this is aklilu jemal fita
+          HTML, CSS, Saas, Tailwind, Material UI, Javascript, Typescript,
+          Golang, Python, Node.js, Express.js, MySQL, Postgres Figma, React,
+          Next.js,
         </motion.div>
       )}
     </>
