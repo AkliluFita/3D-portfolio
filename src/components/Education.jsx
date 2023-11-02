@@ -15,12 +15,12 @@ const SingleEducation = ({ item, index }) => {
       initial="hidden"
       animate="show"
       variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-      className="flex-[1]  border-b-4 border-white h-[80%] flex flex-col gap-4 p-4 bg-[aqua] bg-opacity-50 rounded-lg"
+      className="flex-[1]  border-b-4 border-white h-[80%] flex flex-col gap-4 p-4 bg-[#018673]  rounded-lg"
     >
       <div className="flex flex-row flex-[2] justify-between">
         <div>
           <h1 className="text-[2rem] text-white">{item.title}</h1>
-          <h5 className="text-gray-600">{item.subTitle}</h5>
+          <h5 className="">{item.subTitle}</h5>
         </div>
         <div className="rounded-[50%] w-[6rem] h-[6rem]">
           <img
@@ -32,22 +32,24 @@ const SingleEducation = ({ item, index }) => {
       </div>
       <div className="flex flex-col flex-[2]">
         <h2 className="text-[1.2rem] text-white">{item.subTitleTwo}</h2>
-        <motion.p
+        {/* <motion.p
           initial={false}
           animate="show"
           variants={textVariant(0.5 * index)}
-          className="mt-6 text-gray-600"
+          className="mt-6"
         >
           {item.desc}
-        </motion.p>
+        </motion.p> */}
       </div>
-      <div className="flex flex-col flex-[8] items-end gap-4 ">
-        <h1 className="text-[1.3rem] flex-[1] text-white">some of the list</h1>
+      <div className="flex flex-col flex-[8] items-center gap-4 ">
+        <h1 className="text-[1.3rem] flex-[1] text-white">
+          Some of relevant course tha I took
+        </h1>
         <motion.ul
           initial={false}
           animate="show"
           variants={listItemVariant()}
-          className=" flex-[11] flex gap-4 flex-col p-4 text-white"
+          className=" flex-[11] flex gap-4 flex-col p-4 text-white border border-white w-full"
         >
           {item.courseLists.map((course) => (
             <motion.li
@@ -61,6 +63,7 @@ const SingleEducation = ({ item, index }) => {
           ))}
         </motion.ul>
       </div>
+      <h2 className="p-4 bg-bg_primary">{item.educationPeriod}</h2>
     </motion.div>
   );
 };
@@ -72,7 +75,7 @@ const Education = () => {
     });
   }, []);
   return (
-    <div className="bg-[#018673] h-auto lg:h-[100vh] flex flex-col gap-10 items-center">
+    <div className="bg-bg_primary h-auto lg:h-[100vh] flex flex-col gap-10 items-center">
       <h1 className=" text-[2rem] lg:text-[3rem] text-white flex-[1] uppercase  ">
         My Education Background
       </h1>

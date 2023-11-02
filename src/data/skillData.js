@@ -70,4 +70,24 @@ export const skillData = [
     name: "docker",
     icon: docker,
   },
+  {
+    name: "graphql_1",
+    icon: graphql,
+  },
+  {
+    name: "postgresql_1",
+    icon: postgresql,
+  },
+  {
+    name: "git_1",
+    icon: git,
+  },
+  {
+    name: "figma_1",
+    icon: figma,
+  },
+  {
+    name: "docker_1",
+    icon: docker,
+  },
 ];

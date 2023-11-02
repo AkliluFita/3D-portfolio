@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import About from "./components/About";
 import Contact from "./components/Contact";
@@ -6,40 +7,54 @@ import Experience from "./components/Experience";
 import Navbar from "./components/Navbar";
 import ShowCase from "./components/ShowCase";
 import Skill from "./components/Skill";
+import MyLogoLoading from "./components/MyLogoLoadng";
 
 export default function App() {
+  const [isLoadingPage, setIsLoadingPage] = useState(true);
+
+  setTimeout(() => {
+    setIsLoadingPage(false);
+  }, 5000);
+
+  if (isLoadingPage) {
+    return <MyLogoLoading />;
+  }
   return (
     <div className="bg-[#201E26]">
-      <section id="home">
+      <section id="Home">
         <Navbar />
         <ShowCase />
       </section>
-      <hr className="h-[10px] bg-[aqua]" />
+      <BorderLine />
       <div>
-        <section id="about">
+        <section id="About">
           <About />
         </section>
-        <hr className="h-[10px] bg-[aqua]" />
-        <section id="experience">
+        <BorderLine />
+        <section id="Experience">
           <Experience />
         </section>
-        <hr className="h-[10px] bg-[aqua]" />
-        <section id="education">
+        <BorderLine />
+        <section id="Education">
           <Education />
         </section>
 
-        <hr className="h-[10px] bg-[aqua]" />
-        <section id="skill">
+        <BorderLine />
+        <section id="Skill">
           <Skill />
         </section>
       </div>
-      <hr className="h-[10px] bg-[aqua]" />
-      <section id="contact">
+      <BorderLine />
+      <section id="Contact">
         <Contact />
       </section>
     </div>
   );
 }
+
+const BorderLine = () => {
+  return <hr className="h-[10px] bg-bg_secondary" />;
+};
 
 // #2B2C39
 // #201E26

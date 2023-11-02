@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 
 const Links = () => {
   const menuItems = [
-    { id: "0", text: "home", icon: "🏠" },
-    { id: "1", text: "about", icon: "ℹ️" },
-    { id: "2", text: "experience", icon: "💻" },
-    { id: "3", text: "skill", icon: "✍️" },
-    { id: "4", text: "education", icon: "📧" },
-    { id: "5", text: "contact", icon: "📧" },
+    { id: "0", text: "Home", icon: "🏠" },
+    { id: "1", text: "About", icon: "ℹ️" },
+    { id: "2", text: "Experience", icon: "💻" },
+    { id: "3", text: "Skill", icon: "✍️" },
+    { id: "4", text: "Education", icon: "📧" },
+    { id: "5", text: "Contact", icon: "📧" },
   ];
 
   const itemVariants = {

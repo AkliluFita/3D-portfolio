@@ -15,8 +15,8 @@ export default {
       },
       colors: {
         // background
-        bg_primary: "#071330",
-        bg_secondary: "#008080",
+        bg_primary: "#021945",
+        bg_secondary: "#00FFFF", // aqua
         bg_tertiary: "#FFFFFF80", // rgba(255,255,255,0.5);
         bg_additional: "#219653",
         bg_light_mode: "#f2f2f2",

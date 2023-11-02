@@ -1,14 +1,49 @@
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 import contactAnimateImg from "../assets/contact/contact_animate.gif";
+import emailjs from "@emailjs/browser";
 import AOS from "aos";
 const Contact = () => {
+  const form = useRef();
+  const [isLoading, setIsLoading] = useState(false);
+  const [message, setMessage] = useState("");
+
+  console.log(message);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+
+    emailjs
+      .sendForm(
+        "service_e8v9dm5",
+        "template_m0loqjr",
+        form.current,
+        "user_piSXcqx2Zf6tWbXHR4EFF"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setMessage("successfully submitted");
+        },
+        (error) => {
+          console.log(error.text);
+          setMessage(error.text);
+        }
+      );
+    setIsLoading(false);
+    setTimeout(() => {
+      setMessage("");
+    }, 4000);
+  };
+
   useEffect(() => {
     AOS.init({
       duration: 600,
     });
   }, []);
+
   return (
-    <div className="bg-[#018673] h-auto lg:h-[100vh] flex flex-col  ">
+    <div className="bg-bg_primary h-auto lg:h-[100vh] flex flex-col  ">
       <h1 className=" text-[3rem] text-center text-white flex-[2] ">Contact</h1>
       <div
         className="flex-[10]  flex   lg:p-6 gap-10 items-center justify-center"
@@ -16,7 +51,7 @@ const Contact = () => {
         data-aos-easing="linear"
         data-aos-duration="1500"
       >
-        <div className="  rounded-md flex flex-col items-center w-[40rem] bg-[aqua] bg-opacity-50 ">
+        <div className="  rounded-md flex flex-col items-center w-[40rem] bg-[#018673] ">
           <img
             src={contactAnimateImg}
             alt=""
@@ -25,6 +60,8 @@ const Contact = () => {
             height="150px"
           />
           <form
+            ref={form}
+            onSubmit={sendEmail}
             action=""
             className="flex flex-col items-center justify-center h-full w-full flex-[11] pl-10 pr-10"
           >
@@ -36,7 +73,7 @@ const Contact = () => {
                 type="text"
                 required
                 placeholder="put your name here"
-                name="name"
+                name="user_name"
                 className="p-4 text-black bg-white rounded-md"
               />
             </div>
@@ -48,7 +85,7 @@ const Contact = () => {
                 type="email"
                 required
                 placeholder="put your email here"
-                name="email"
+                name="user_email"
                 className="p-4 text-black bg-white rounded-md"
               />
             </div>
@@ -65,10 +102,12 @@ const Contact = () => {
             </div>
             <button
               type="submit"
+              value="Send"
               className="w-[10rem] p-4 mb-2 mr-2 text-lg font-medium border border-br_primary rounded-2xl focus:outline-none hover:bg-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 bg-[#018673]"
             >
-              Send
+              {isLoading ? "Sending" : "Send"}
             </button>
+            <h3 className="text-red-600">{message}</h3>
           </form>
         </div>
       </div>

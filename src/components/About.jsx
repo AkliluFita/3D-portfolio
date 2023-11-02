@@ -14,9 +14,9 @@ const About = () => {
   }, []);
 
   return (
-    <div className=" h-auto lg:h-[100vh] bg-[#018673] p-4 flex flex-col gap-4 text-center  overflow-y-scroll">
+    <div className=" h-auto lg:h-[100vh] bg-bg_primary p-4 flex flex-col gap-4 items-center  overflow-y-scroll">
       <h1
-        className=" text-[2rem] lg:text-[3rem] text-white flex-[1] uppercase  "
+        className=" text-[2rem] lg:text-[3rem] text-white uppercase  "
         data-aos="fade-right"
       >
         About me
@@ -55,18 +55,14 @@ const Cards = ({ item }) => {
       className="flex-[1] "
     >
       <div
-        className="flex flex-col items-center justify-between h-full p-4 bg-[aqua] bg-opacity-50  border-b-4 border-white rounded-lg g-3  "
+        className="flex flex-col items-center justify-between h-full p-4 bg-[#018673]   border-b-4 border-white rounded-lg g-3  "
         data-aos="flip-left"
       >
         <div className="flex items-center w-1/2 h-[3rem] text-center justify-center p-2">
-          <img
-            src={item.icon}
-            alt="icon"
-            className="h-full scale-150 bg-[#000836] "
-          />
+          <img src={item.icon} alt="icon" className="h-[5rem] w-[5rem] " />
         </div>
         <h1 className="p-2 text-2xl text-white rounded-lg">{item.title}</h1>
-        <p className="text-gray-600">{item.desc}</p>
+        <p className="text-white ">{item.desc}</p>
         <div className=" flex flex-row items-center justify-center text-[1.5rem] text-white  w-full p-1 gap-2">
           <div className="flex flex-row text-sm  flex-[3]">
             <ul className="flex flex-row flex-wrap items-center gap-2 ">
@@ -80,11 +76,9 @@ const Cards = ({ item }) => {
           <div className="flex-[1] text-sm h-full flex flex-col justify-around gap-2 ">
             <div>
               <h1>Experience</h1>
-              <h3>3 years</h3>
+              <h3>{item.experiencePeriod}:years</h3>
             </div>
-            <button className="p-2  rounded-2xl focus:outline-none bg-[#018673]">
-              Detail
-            </button>
+            <button className="p-2 bg-bg_primary rounded-2xl ">Detail</button>
           </div>
         </div>
       </div>
