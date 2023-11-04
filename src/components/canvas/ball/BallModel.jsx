@@ -1,5 +1,4 @@
 import { Decal, Float, useTexture } from "@react-three/drei";
-import html_icon from "../../../assets/html-icon.png";
 
 const BallModel = ({ imgUrl }) => {
   const [decal] = useTexture([imgUrl]);

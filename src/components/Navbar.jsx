@@ -48,14 +48,14 @@ const Navbar = () => {
         >
           <Links />
         </motion.div>
-        <div className="flex flex-row flex-[1] h-6 sm:h-8  gap-8 justify-end">
+        <div className="flex flex-row flex-[1] h-6 sm:h-8  gap-8 justify-center lg:justify-end  px-2">
           {images.map((img) => (
             <motion.img
               key={img}
               src={img}
               whileHover={{ scale: 1.1 }}
               alt={img}
-              className="cursor-pointer"
+              className=" cursor-pointer w-[2rem] mr-2"
             />
           ))}
         </div>

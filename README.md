@@ -66,3 +66,6 @@ https://brad-carter.medium.com/how-to-animate-a-text-reveal-effect-in-react-with
 
 <!-- new framer motion -->
 https://www.framer.com/motion/animation/
+
+<!-- facing issue with image deploying -->
+https://answers.netlify.com/t/react-app-created-with-vite-works-fine-locally-but-when-deployed-on-netfliy-images-not-showing-up-heres-the-solution/81679

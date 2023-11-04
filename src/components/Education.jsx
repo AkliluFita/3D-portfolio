@@ -19,8 +19,10 @@ const SingleEducation = ({ item, index }) => {
     >
       <div className="flex flex-row flex-[2] justify-between">
         <div>
-          <h1 className="text-[2rem] text-white">{item.title}</h1>
-          <h5 className="">{item.subTitle}</h5>
+          <h1 className="text-[1.4rem] lg:text-[2rem] text-white">
+            {item.title}
+          </h1>
+          <h5 className="text-[0.7rem] lg:text-[1rem]">{item.subTitle}</h5>
         </div>
         <div className="rounded-[50%] w-[6rem] h-[6rem]">
           <img
@@ -30,8 +32,10 @@ const SingleEducation = ({ item, index }) => {
           />
         </div>
       </div>
-      <div className="flex flex-col flex-[2]">
-        <h2 className="text-[1.2rem] text-white">{item.subTitleTwo}</h2>
+      <div className=" flex flex-col flex-[2]">
+        <h2 className=" text-white text-[0.9rem] lg:text-[1.2rem]">
+          {item.subTitleTwo}
+        </h2>
         {/* <motion.p
           initial={false}
           animate="show"
@@ -42,7 +46,7 @@ const SingleEducation = ({ item, index }) => {
         </motion.p> */}
       </div>
       <div className="flex flex-col flex-[8] items-center gap-4 ">
-        <h1 className="text-[1.3rem] flex-[1] text-white">
+        <h1 className="text-[1rem] lg:text-[1.3rem] flex-[1] text-white">
           Some of relevant course tha I took
         </h1>
         <motion.ul
@@ -57,13 +61,14 @@ const SingleEducation = ({ item, index }) => {
               animate="show"
               variants={itemVariant()}
               key={course}
+              className="lg:text-[1rem] text-[0.9rem]"
             >
               {course}
             </motion.li>
           ))}
         </motion.ul>
       </div>
-      <h2 className="p-4 bg-bg_primary">{item.educationPeriod}</h2>
+      <h2 className="p-2 lg:p-4 bg-bg_primary">{item.educationPeriod}</h2>
     </motion.div>
   );
 };
@@ -75,9 +80,12 @@ const Education = () => {
     });
   }, []);
   return (
-    <div className="bg-bg_primary h-auto lg:h-[100vh] flex flex-col gap-10 items-center">
-      <h1 className=" text-[2rem] lg:text-[3rem] text-white flex-[1] uppercase  ">
-        My Education Background
+    <div className="bg-bg_primary h-auto lg:h-[100vh] flex flex-col gap-4 items-center border border-white">
+      <h1
+        className=" text-[2rem] lg:text-[3rem] text-white flex-[1] uppercase  "
+        data-aos="fade-right"
+      >
+        My Education
       </h1>
       <div className="flex-[11]  w-[80%] h-full">
         <div

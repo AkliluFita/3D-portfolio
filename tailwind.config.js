@@ -6,7 +6,7 @@ export default {
       backgroundImage: {
         showcaseBack: "url('./src/assets/showCase/showcaseImg.jpg')",
         skillBack: "url('./src/assets/skillIcon/skillImg.jpg')",
-        aboutBack: "url('./src/assets/about/aboutBackImg.jpg')",
+        aboutBack: "url('/assets/aboutBackImg.jpg')",
         "back-portfolio": "url('./src/assets/portfolio_Back.jpg')",
         "contact-glob": "url('./src/assets/contact/earth.png')",
       },

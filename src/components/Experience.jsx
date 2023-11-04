@@ -24,7 +24,7 @@ const Experience = () => {
         className="text-[2rem] lg:text-[3rem] text-white  uppercase "
         data-aos="fade-right"
       >
-        MY Experience
+        My Experience
       </h1>
       <div className="w-full mt-8">
         <VerticalTimeline>
@@ -67,12 +67,17 @@ const Experience = () => {
                 <p className=" text-white text-[0.8rem] ">{item.des}</p>
                 <div className="flex flex-row items-center justify-end gap-4">
                   {item.demo_link !== null && (
-                    <a rel="noreferrer" href={item.demo_link} target="_blank">
+                    <a
+                      rel="noreferrer"
+                      href={item.demo_link}
+                      target="_blank"
+                      className="px-2 rounded-lg bg-bg_primary"
+                    >
                       <img
                         src={demoImg}
                         alt=""
                         width="35px"
-                        className="cursor-pointer"
+                        className="cursor-pointer "
                       />
                     </a>
                   )}
@@ -83,7 +88,12 @@ const Experience = () => {
                     className="cursor-pointer"
                   /> */}
                   {item.github_link !== null && (
-                    <a rel="noreferrer" href={item.github_link} target="_blank">
+                    <a
+                      rel="noreferrer"
+                      href={item.github_link}
+                      target="_blank"
+                      className="px-2 rounded-lg bg-bg_primary"
+                    >
                       <img
                         src={githubImg}
                         alt=""

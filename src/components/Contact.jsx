@@ -43,15 +43,17 @@ const Contact = () => {
   }, []);
 
   return (
-    <div className="bg-bg_primary h-auto lg:h-[100vh] flex flex-col  ">
-      <h1 className=" text-[3rem] text-center text-white flex-[2] ">Contact</h1>
+    <div className="bg-bg_primary h-auto lg:h-[100vh] flex flex-col items-center  ">
+      <h1 className=" text-[2rem] lg:text-[3rem] text-white uppercase ">
+        Contact
+      </h1>
       <div
         className="flex-[10]  flex   lg:p-6 gap-10 items-center justify-center"
         data-aos="fade-down"
         data-aos-easing="linear"
         data-aos-duration="1500"
       >
-        <div className="  rounded-md flex flex-col items-center w-[40rem] bg-[#018673] ">
+        <div className="  rounded-md flex flex-col items-center w-full lg:w-[40rem] bg-[#018673] ">
           <img
             src={contactAnimateImg}
             alt=""
@@ -74,7 +76,7 @@ const Contact = () => {
                 required
                 placeholder="put your name here"
                 name="user_name"
-                className="p-4 text-black bg-white rounded-md"
+                className="w-full p-4 text-black bg-white rounded-md"
               />
             </div>
             <div className="flex flex-col w-full gap-4 p-4 ">
