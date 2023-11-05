@@ -5,11 +5,27 @@ import whatsAppImg from "../assets/whatsapp-64.png";
 import telegramImg from "../assets/telegram-64.png";
 import twitterImg from "../assets/twitter-64.png";
 import { MenuToggle } from "./elements/MenuToggle";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Sidebar from "./sidebar/Sidebar";
 import Links from "./Links";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 100) {
+      setIsSticky(true);
+    } else {
+      setIsSticky(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const variants = {
     open: {
@@ -31,7 +47,13 @@ const Navbar = () => {
   const images = [facebookImg, whatsAppImg, telegramImg, twitterImg];
 
   return (
-    <div className="p-1 text-white common_background h-14 lg:h-24">
+    <div
+      className={` ${
+        isSticky
+          ? "shadow-md  h-14 lg:h-24 common_background "
+          : "  h-[4rem] lg:h-[5.5rem] showcase_background shadow-lg"
+      } w-full  fixed top-0 left-0   p-1 text-white  z-[22]      duration-300 ease-in-out`}
+    >
       <div className="flex flex-row items-center h-full gap-4 lg:justify-between">
         <motion.div className=" flex-[1]  h-full   shrink-0 ml-2">
           <motion.img

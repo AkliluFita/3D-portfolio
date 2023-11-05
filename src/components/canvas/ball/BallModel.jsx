@@ -10,7 +10,7 @@ const BallModel = ({ imgUrl }) => {
       <mesh castShadow receiveShadow scale={3.0}>
         <icosahedronGeometry args={[1, 2]} />
         <meshStandardMaterial
-          color="#018673"
+          color="#7F2F92"
           polygonOffset
           polygonOffsetFactor={-5}
           flatShading

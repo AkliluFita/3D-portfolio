@@ -15,11 +15,11 @@ const SingleEducation = ({ item, index }) => {
       initial="hidden"
       animate="show"
       variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-      className="flex-[1]  border border-[#E1D5D5] h-[80%] flex flex-col gap-4 p-4 bg-white  rounded-lg"
+      className="flex-[1]  border border-[#7F2F92] h-[80%] flex flex-col gap-4 p-4 bg-[#dadfe4]  rounded-lg"
     >
       <div className="flex flex-row flex-[2] justify-between">
         <div>
-          <h1 className="text-[1.4rem] lg:text-[2rem] text-black">
+          <h1 className="text-[1.4rem] lg:text-[2rem] text-[#7F2F92] font-bold">
             {item.title}
           </h1>
           <h5 className="text-[0.7rem] lg:text-[1rem]">{item.subTitle}</h5>
@@ -53,7 +53,7 @@ const SingleEducation = ({ item, index }) => {
           initial={false}
           animate="show"
           variants={listItemVariant()}
-          className=" flex-[11] flex gap-4 flex-col p-4 text-black border border-white w-full"
+          className=" flex-[11] flex gap-4 flex-col p-4 text-black border border-[#7F2F92] w-full"
         >
           {item.courseLists.map((course) => (
             <motion.li
@@ -61,14 +61,14 @@ const SingleEducation = ({ item, index }) => {
               animate="show"
               variants={itemVariant()}
               key={course}
-              className="lg:text-[1rem] text-[0.9rem]"
+              className="lg:text-[1.2rem] text-[0.9rem] text-gray-600"
             >
               {course}
             </motion.li>
           ))}
         </motion.ul>
       </div>
-      <h2 className="p-2 lg:p-4 bg-bg_primary">{item.educationPeriod}</h2>
+      <h2 className="p-2 lg:p-4 bg-[#7F2F92]">{item.educationPeriod}</h2>
     </motion.div>
   );
 };
@@ -80,9 +80,9 @@ const Education = () => {
     });
   }, []);
   return (
-    <div className="bg-white h-auto lg:h-[100vh] flex flex-col gap-4 items-center border border-white">
+    <div className="common_background h-auto lg:h-[100vh] flex flex-col gap-4 items-center border border-white">
       <h1
-        className=" text-[2rem] lg:text-[3rem] text-white flex-[1] uppercase  "
+        className=" text-[2rem] lg:text-[3rem] text-[#7F2F92] uppercase font-bold  mt-[95px] "
         data-aos="fade-right"
       >
         My Education

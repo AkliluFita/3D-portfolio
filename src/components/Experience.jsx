@@ -19,9 +19,9 @@ const Experience = () => {
     });
   }, []);
   return (
-    <div className="flex flex-col items-center  bg-white  gap-4 lg:h-[100vh] overflow-y-scroll">
+    <div className="flex flex-col items-center  common_background  gap-4 lg:h-[100vh] overflow-y-scroll">
       <h1
-        className="text-[2rem] lg:text-[3rem] text-white  uppercase "
+        className=" text-[2rem] lg:text-[3rem] text-[#7F2F92] uppercase font-bold  mt-[95px] "
         data-aos="fade-right"
       >
         My Experience
@@ -65,14 +65,14 @@ const Experience = () => {
                     </a>
                   )}
                 </h4>
-                <p className=" text-[#7F2F92] text-[0.8rem] ">{item.des}</p>
+                <p className=" text-gray-600 text-[0.8rem] ">{item.des}</p>
                 <div className="flex flex-row items-center justify-end gap-4">
                   {item.demo_link !== null && (
                     <a
                       rel="noreferrer"
                       href={item.demo_link}
                       target="_blank"
-                      className="px-2 rounded-lg bg-bg_primary"
+                      className="px-2 rounded-lg bg-[#7F2F92]"
                     >
                       <img
                         src={demoImg}
@@ -93,7 +93,7 @@ const Experience = () => {
                       rel="noreferrer"
                       href={item.github_link}
                       target="_blank"
-                      className="px-2 rounded-lg bg-bg_primary"
+                      className="px-2 rounded-lg bg-[#7F2F92]"
                     >
                       <img
                         src={githubImg}

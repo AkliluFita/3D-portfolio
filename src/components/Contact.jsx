@@ -43,8 +43,11 @@ const Contact = () => {
   }, []);
 
   return (
-    <div className="bg-bg_primary h-auto lg:h-[100vh] flex flex-col items-center  ">
-      <h1 className=" text-[2rem] lg:text-[3rem] text-white uppercase ">
+    <div className="common_background h-auto lg:h-[100vh] flex flex-col items-center  ">
+      <h1
+        className=" text-[2rem] lg:text-[3rem] text-[#7F2F92] uppercase font-bold  mt-[95px] "
+        data-aos="fade-right"
+      >
         Contact
       </h1>
       <div
@@ -53,7 +56,7 @@ const Contact = () => {
         data-aos-easing="linear"
         data-aos-duration="1500"
       >
-        <div className="  rounded-md flex flex-col items-center w-full lg:w-[40rem] bg-[#018673] ">
+        <div className="  rounded-md flex flex-col items-center w-full lg:w-[40rem] bg-[#dadfe4] border border-[#7F2F92] ">
           <img
             src={contactAnimateImg}
             alt=""
@@ -68,7 +71,7 @@ const Contact = () => {
             className="flex flex-col items-center justify-center h-full w-full flex-[11] pl-10 pr-10"
           >
             <div className="flex flex-col w-full gap-4 p-4 ">
-              <label htmlFor="" className="text-[1.5rem] text-white">
+              <label htmlFor="" className="text-[1.5rem] text-[#7F2F92]">
                 Your Name
               </label>
               <input
@@ -76,11 +79,11 @@ const Contact = () => {
                 required
                 placeholder="put your name here"
                 name="user_name"
-                className="w-full p-4 text-black bg-white rounded-md"
+                className="w-full p-4 text-black rounded-md common_background border border-[#7F2F92]"
               />
             </div>
             <div className="flex flex-col w-full gap-4 p-4 ">
-              <label htmlFor="" className="text-[1.5rem] text-white">
+              <label htmlFor="" className="text-[1.5rem] text-[#7F2F92]">
                 Your Email
               </label>
               <input
@@ -88,24 +91,24 @@ const Contact = () => {
                 required
                 placeholder="put your email here"
                 name="user_email"
-                className="p-4 text-black bg-white rounded-md"
+                className="w-full p-4 text-black rounded-md common_background border border-[#7F2F92]"
               />
             </div>
             <div className="flex flex-col w-full gap-4 p-4 ">
-              <label htmlFor="" className="text-[1.5rem] text-white">
+              <label htmlFor="" className="text-[1.5rem] text-[#7F2F92]">
                 Your Message
               </label>
               <textarea
                 rows={8}
                 placeholder="put your message here"
                 name="message"
-                className="p-4 text-black bg-white rounded-md"
+                className="w-full p-4 text-black rounded-md common_background border border-[#7F2F92]"
               />
             </div>
             <button
               type="submit"
               value="Send"
-              className="w-[10rem] p-4 mb-2 mr-2 text-lg font-medium border border-br_primary rounded-2xl focus:outline-none hover:bg-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 bg-[#018673]"
+              className="w-[10rem] p-4 mb-2 mr-2 text-lg font-medium border border-br_primary rounded-2xl focus:outline-none hover:bg-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 common_background text-black"
             >
               {isLoading ? "Sending" : "Send"}
             </button>

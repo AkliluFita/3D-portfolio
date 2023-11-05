@@ -14,9 +14,9 @@ const About = () => {
   }, []);
 
   return (
-    <div className="  lg:h-[100vh] bg-white p-4 flex flex-col gap-4 items-center  overflow-y-scroll">
+    <div className="  lg:h-[100vh] common_background p-4 flex flex-col gap-4 items-center  overflow-y-scroll ">
       <h1
-        className=" text-[2rem] lg:text-[3rem] text-[#7F2F92] uppercase font-bold   "
+        className=" text-[2rem] lg:text-[3rem] text-[#7F2F92] uppercase font-bold  mt-[95px] "
         data-aos="fade-right"
       >
         About me
@@ -57,7 +57,7 @@ const Cards = ({ item }) => {
       className="flex-[1] "
     >
       <div
-        className="flex flex-col items-center justify-between h-full p-4 bg-white border border-[#E1D5D5] rounded-lg shadow-xl g-3 "
+        className="flex flex-col items-center justify-between h-full p-4 bg-[#dadfe4] border border-[#7F2F92] rounded-lg shadow-xl g-3 "
         data-aos="flip-left"
       >
         <div className="flex items-center w-1/2 h-[3rem] text-center justify-center p-2">
@@ -66,7 +66,7 @@ const Cards = ({ item }) => {
         <h1 className="p-2 text-lg text-[#7F2F92] rounded-lg lg:text-2xl">
           {item.title}
         </h1>
-        <p className="text-[#7F2F92]  text-[0.8rem] lg:text-[1rem] text-center">
+        <p className="text-gray-600 text-[0.8rem] lg:text-[1rem] text-center">
           {item.desc}
         </p>
         <div className=" flex flex-row items-center justify-center text-[1.5rem] text-[#7F2F92]  w-full p-1 gap-2">
@@ -75,7 +75,7 @@ const Cards = ({ item }) => {
               {item.tool.map((i) => (
                 <li
                   key={i}
-                  className="p-1 text-black text-[0.8rem] lg:text-[1rem] rounded-md bg-slate-400"
+                  className="p-1 text-black text-[0.8rem] lg:text-[1rem] rounded-md common_background"
                 >
                   {i}
                 </li>
@@ -87,7 +87,7 @@ const Cards = ({ item }) => {
               <h1>Experience</h1>
               <h3>{item.experiencePeriod}:years</h3>
             </div>
-            <button className="p-2 text-white bg-bg_primary rounded-2xl ">
+            <button className="p-2 text-white bg-[#7F2F92]  rounded-2xl ">
               Detail
             </button>
           </div>

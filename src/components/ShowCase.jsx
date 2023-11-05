@@ -29,7 +29,7 @@ const ShowCase = () => {
     });
   }, []);
   return (
-    <div className="flex lg:flex-row items-center w-full h-auto lg:h-screen gap-4 p-4  bg-fill showcase_background flex-col relative z-[1]">
+    <div className="flex lg:flex-row items-center w-full h-auto lg:h-screen gap-4 p-4  bg-fill showcase_background flex-col relative z-[1] mt-[95px]  ">
       <SlideText sideType="left" />
       {/* <div className="absolute  top-[0] right-[0]">
         <Box3D />
@@ -43,16 +43,16 @@ const ShowCase = () => {
           variants={textVariants}
         >
           <motion.h1
-            className=" text-[2rem] md:text-[3rem] lg:text-[4rem] font-bold text-white"
+            className=" text-[2rem] md:text-[3rem] lg:text-[4rem] font-bold text-black"
             variants={textVariants}
           >
             {showCaseData.title}
           </motion.h1>
-          <motion.h2 className="text-3xl font-bold text-white uppercase md:text-4xl">
+          <motion.h2 className="text-3xl font-bold text-black uppercase md:text-4xl">
             {" "}
             {showCaseData.name}
           </motion.h2>
-          <p className="text-lg font-bold text-center text-white md:text-3xl">
+          <p className="text-lg font-bold text-center text-black md:text-3xl">
             {showCaseData.description}
           </p>
           <div className="flex flex-row justify-center gap-4 p-2 mt-4">
