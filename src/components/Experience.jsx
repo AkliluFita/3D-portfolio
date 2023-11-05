@@ -19,7 +19,7 @@ const Experience = () => {
     });
   }, []);
   return (
-    <div className="flex flex-col items-center  bg-cover bg-center bg-no-repeat bg-aboutBack  gap-4 lg:h-[100vh] overflow-y-scroll">
+    <div className="flex flex-col items-center  bg-white  gap-4 lg:h-[100vh] overflow-y-scroll">
       <h1
         className="text-[2rem] lg:text-[3rem] text-white  uppercase "
         data-aos="fade-right"
@@ -33,21 +33,22 @@ const Experience = () => {
               key={item.id}
               className=" vertical-timeline-element--work"
               contentStyle={{
-                background: "#018673",
-                color: "#fff",
+                background: "#dadfe4",
+                color: "#7F2F92",
+                border: "1px solid #7F2F92",
               }}
               contentArrowStyle={{
-                borderRight: "7px solid  rgb(33, 150, 243)",
+                borderRight: "7px solid  #7F2F92",
               }}
               date={item.date}
               iconStyle={{
-                background: "aqua",
-                color: "#fff",
+                background: "#7F2F92",
+                color: "#7F2F92",
               }}
               icon={<img src={work_icon} />}
             >
               <div className="">
-                <h3 className="vertical-timeline-element-title text-[1.2rem] uppercase text-white">
+                <h3 className="vertical-timeline-element-title text-[1.2rem] uppercase text-[#7F2F92]">
                   {item.title}
                 </h3>
                 <h4 className="flex items-center gap-2 vertical-timeline-element-subtitle fle-row">
@@ -64,7 +65,7 @@ const Experience = () => {
                     </a>
                   )}
                 </h4>
-                <p className=" text-white text-[0.8rem] ">{item.des}</p>
+                <p className=" text-[#7F2F92] text-[0.8rem] ">{item.des}</p>
                 <div className="flex flex-row items-center justify-end gap-4">
                   {item.demo_link !== null && (
                     <a

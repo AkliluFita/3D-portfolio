@@ -15,11 +15,11 @@ const SingleEducation = ({ item, index }) => {
       initial="hidden"
       animate="show"
       variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-      className="flex-[1]  border-b-4 border-white h-[80%] flex flex-col gap-4 p-4 bg-[#018673]  rounded-lg"
+      className="flex-[1]  border border-[#E1D5D5] h-[80%] flex flex-col gap-4 p-4 bg-white  rounded-lg"
     >
       <div className="flex flex-row flex-[2] justify-between">
         <div>
-          <h1 className="text-[1.4rem] lg:text-[2rem] text-white">
+          <h1 className="text-[1.4rem] lg:text-[2rem] text-black">
             {item.title}
           </h1>
           <h5 className="text-[0.7rem] lg:text-[1rem]">{item.subTitle}</h5>
@@ -33,7 +33,7 @@ const SingleEducation = ({ item, index }) => {
         </div>
       </div>
       <div className=" flex flex-col flex-[2]">
-        <h2 className=" text-white text-[0.9rem] lg:text-[1.2rem]">
+        <h2 className=" text-black text-[0.9rem] lg:text-[1.2rem]">
           {item.subTitleTwo}
         </h2>
         {/* <motion.p
@@ -46,14 +46,14 @@ const SingleEducation = ({ item, index }) => {
         </motion.p> */}
       </div>
       <div className="flex flex-col flex-[8] items-center gap-4 ">
-        <h1 className="text-[1rem] lg:text-[1.3rem] flex-[1] text-white">
+        <h1 className="text-[1rem] lg:text-[1.3rem] flex-[1] text-black">
           Some of relevant course tha I took
         </h1>
         <motion.ul
           initial={false}
           animate="show"
           variants={listItemVariant()}
-          className=" flex-[11] flex gap-4 flex-col p-4 text-white border border-white w-full"
+          className=" flex-[11] flex gap-4 flex-col p-4 text-black border border-white w-full"
         >
           {item.courseLists.map((course) => (
             <motion.li
@@ -80,7 +80,7 @@ const Education = () => {
     });
   }, []);
   return (
-    <div className="bg-bg_primary h-auto lg:h-[100vh] flex flex-col gap-4 items-center border border-white">
+    <div className="bg-white h-auto lg:h-[100vh] flex flex-col gap-4 items-center border border-white">
       <h1
         className=" text-[2rem] lg:text-[3rem] text-white flex-[1] uppercase  "
         data-aos="fade-right"

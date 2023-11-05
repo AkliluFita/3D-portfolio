@@ -1,6 +1,6 @@
 import Button from "./elements/Button";
 import { showCaseData } from "../data/showCaseData";
-import sampleImg from "../assets/showCase/showcaseImg.png";
+import sampleImg from "../assets/showCaseImg.svg";
 // import Box3D from "./canvas/box/Box3D";
 import { motion } from "framer-motion";
 import SlideText from "./SlideText";
@@ -29,17 +29,17 @@ const ShowCase = () => {
     });
   }, []);
   return (
-    <div className="flex lg:flex-row items-center w-full h-auto lg:h-screen gap-4 p-4  bg-fill bg-cover bg-center bg-no-repeat bg-aboutBack flex-col relative z-[1]">
+    <div className="flex lg:flex-row items-center w-full h-auto lg:h-screen gap-4 p-4  bg-fill showcase_background flex-col relative z-[1]">
       <SlideText sideType="left" />
       {/* <div className="absolute  top-[0] right-[0]">
         <Box3D />
       </div> */}
       <motion.div
-        className=" flex-[1] h-full  flex flex-col items-center justify-center p-2 z-[1] border border-white"
+        className=" flex-[1] h-full  flex flex-col items-center justify-center p-2 z-[1] "
         data-aos="fade-right"
       >
         <motion.div
-          className="flex flex-col lg:w-[75%] gap-8  md:p-4 rounded-lg p-2 border border-white"
+          className="flex flex-col lg:w-[75%] gap-8  md:p-4 rounded-lg p-2 items-center "
           variants={textVariants}
         >
           <motion.h1
@@ -52,7 +52,7 @@ const ShowCase = () => {
             {" "}
             {showCaseData.name}
           </motion.h2>
-          <p className="text-lg font-bold text-center md:text-3xl">
+          <p className="text-lg font-bold text-center text-white md:text-3xl">
             {showCaseData.description}
           </p>
           <div className="flex flex-row justify-center gap-4 p-2 mt-4">
@@ -62,7 +62,7 @@ const ShowCase = () => {
         </motion.div>
       </motion.div>
       <div
-        className=" flex-[1] h-full  w-full flex flex-col justify-center z-[1] relative object-cover items-center border border-white"
+        className=" flex-[1] h-full  w-full flex flex-col justify-center z-[1] relative object-cover items-center"
         data-aos="fade-left"
       >
         <img src={sampleImg} alt="ggs" className="w-[70%]" />

@@ -6,7 +6,7 @@ export default {
       backgroundImage: {
         showcaseBack: "url('./src/assets/showCase/showcaseImg.jpg')",
         skillBack: "url('./src/assets/skillIcon/skillImg.jpg')",
-        aboutBack: "url('/assets/aboutBackImg.jpg')",
+        aboutBack: "url('/assets/aqua_radient.jpg')",
         "back-portfolio": "url('./src/assets/portfolio_Back.jpg')",
         "contact-glob": "url('./src/assets/contact/earth.png')",
       },
@@ -17,7 +17,8 @@ export default {
         // background
         bg_primary: "#021945",
         bg_secondary: "#00FFFF", // aqua
-        bg_tertiary: "#FFFFFF80", // rgba(255,255,255,0.5);
+        bg_tertiary:
+          "radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%)", // rgba(255,255,255,0.5);
         bg_additional: "#219653",
         bg_light_mode: "#f2f2f2",
         bg_dark_mode: "#121212",

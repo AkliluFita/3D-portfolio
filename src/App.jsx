@@ -53,7 +53,7 @@ export default function App() {
 }
 
 const BorderLine = () => {
-  return <hr className="h-[10px] bg-bg_secondary" />;
+  return <hr className="h-[10px] bg-black" />;
 };
 
 // #2B2C39
