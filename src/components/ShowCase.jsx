@@ -43,21 +43,21 @@ const ShowCase = () => {
           variants={textVariants}
         >
           <motion.h1
-            className=" text-[2rem] md:text-[3rem] lg:text-[4rem] font-bold text-black"
+            className=" text-[1rem] md:text-[3rem] lg:text-[2rem] font-bold text-tx_primary"
             variants={textVariants}
           >
             {showCaseData.title}
           </motion.h1>
-          <motion.h2 className="text-3xl font-bold text-black uppercase md:text-4xl">
+          <motion.h2 className="text-[2rem] font-bold text-tx_primary uppercase md:text-[4rem]">
             {" "}
             {showCaseData.name}
           </motion.h2>
-          <p className="text-lg font-bold text-center text-black md:text-3xl">
+          <p className="text-lg font-bold text-center text-tx_primary md:text-3xl">
             {showCaseData.description}
           </p>
           <div className="flex flex-row justify-center gap-4 p-2 mt-4">
-            <Button text={"see detail"} />
-            <Button text={"see demo"} />
+            <Button text={"Hire Me"} className="text-black common_background" />
+            <Button text={"Download CV"} className="text-white bg-bt_primary" />
           </div>
         </motion.div>
       </motion.div>

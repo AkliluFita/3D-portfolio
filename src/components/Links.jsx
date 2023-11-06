@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const Links = () => {
+const Links = ({ className }) => {
   const menuItems = [
     { id: "0", text: "Home", icon: "🏠" },
     { id: "1", text: "About", icon: "ℹ️" },
@@ -30,7 +30,7 @@ const Links = () => {
           whileHover={{ scale: 1.1, color: "rgb(182, 204, 227)" }}
           whileTap={{ scale: 0.95 }}
           key={item.id}
-          className="text-[1.2rem] cursor-pointer  w-full text-center rounded-md p-1  text-black  "
+          className={`text-[1.3rem] cursor-pointer  w-full text-center rounded-md p-1  text-[#7F2F92] font-bold ${className}`}
         >
           {item.text}
         </motion.a>

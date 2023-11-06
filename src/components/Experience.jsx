@@ -48,7 +48,7 @@ const Experience = () => {
               icon={<img src={work_icon} />}
             >
               <div className="">
-                <h3 className="vertical-timeline-element-title text-[1.2rem] uppercase text-[#7F2F92]">
+                <h3 className="vertical-timeline-element-title text-[1.2rem] uppercase text-tx_secondary font-bold">
                   {item.title}
                 </h3>
                 <h4 className="flex items-center gap-2 vertical-timeline-element-subtitle fle-row">

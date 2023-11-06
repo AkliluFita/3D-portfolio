@@ -90,7 +90,7 @@ const Navbar = () => {
           <MenuToggle setIsOpen={setIsOpen} />
         </motion.div>
         {isOpen && (
-          <div className="absolute top-[3.3rem] right-[1.2rem] lg:hidden border border-br_primary p-4 bg-[aqua] rounded-lg z-10">
+          <div className="absolute top-[3.3rem] right-[1.2rem] lg:hidden shadow-lg p-4 bg-[#dadfe4] border-br_primary rounded-lg z-10">
             <Sidebar />
           </div>
         )}

@@ -15,8 +15,8 @@ export default {
       },
       colors: {
         // background
-        bg_primary: "#021945",
-        bg_secondary: "#00FFFF", // aqua
+        bg_primary: "#dadfe4",
+        bg_secondary: "#7F2F92", // aqua
         bg_tertiary:
           "radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%)", // rgba(255,255,255,0.5);
         bg_additional: "#219653",
@@ -25,9 +25,9 @@ export default {
         bg_transparent: "#ffffff00",
 
         // text
-        tx_primary: "#c8f7c5",
-        tx_secondary: "#f2f2f2",
-        tx_additional: "#121212",
+        tx_primary: "#0D152D", // Midnight Blue
+        tx_secondary: "#7F2F92", // Purple
+        tx_additional: "#4B5563", // gray
         tx_link: "#42A5F5",
 
         // border
@@ -36,7 +36,7 @@ export default {
         br_error: "#ff0000",
 
         // button
-        bt_primary: "#071330",
+        bt_primary: "#7F2F92",
         bt_secondary: "#219653",
         bt_additional: "#3e91f7",
       },

@@ -22,7 +22,14 @@ const SingleEducation = ({ item, index }) => {
           <h1 className="text-[1.4rem] lg:text-[2rem] text-[#7F2F92] font-bold">
             {item.title}
           </h1>
-          <h5 className="text-[0.7rem] lg:text-[1rem]">{item.subTitle}</h5>
+          <div className="flex flex-col gap-4">
+            <h5 className="text-[0.7rem] lg:text-[1rem] text-tx_additional">
+              {item.subTitle}
+            </h5>
+            <h3 className="p-2 bg-bg_secondary max-w-[15rem] text-center">
+              {item.educationPeriod}
+            </h3>
+          </div>
         </div>
         <div className="rounded-[50%] w-[6rem] h-[6rem]">
           <img
@@ -45,6 +52,7 @@ const SingleEducation = ({ item, index }) => {
           {item.desc}
         </motion.p> */}
       </div>
+      <hr className="h-[4px] bg-bg_secondary" />;
       <div className="flex flex-col flex-[8] items-center gap-4 ">
         <h1 className="text-[1rem] lg:text-[1.3rem] flex-[1] text-black">
           Some of relevant course tha I took
@@ -53,7 +61,7 @@ const SingleEducation = ({ item, index }) => {
           initial={false}
           animate="show"
           variants={listItemVariant()}
-          className=" flex-[11] flex gap-4 flex-col p-4 text-black border border-[#7F2F92] w-full"
+          className=" flex-[11] flex gap-4 flex-col p-6 text-black  w-full"
         >
           {item.courseLists.map((course) => (
             <motion.li
@@ -61,14 +69,14 @@ const SingleEducation = ({ item, index }) => {
               animate="show"
               variants={itemVariant()}
               key={course}
-              className="lg:text-[1.2rem] text-[0.9rem] text-gray-600"
+              className="lg:text-[1.2rem] text-[0.9rem] text-tx_additional list-disc list-outside"
             >
               {course}
             </motion.li>
           ))}
         </motion.ul>
       </div>
-      <h2 className="p-2 lg:p-4 bg-[#7F2F92]">{item.educationPeriod}</h2>
+      {/* <h2 className="p-2 lg:p-4 bg-[#7F2F92]">{item.educationPeriod}</h2> */}
     </motion.div>
   );
 };
