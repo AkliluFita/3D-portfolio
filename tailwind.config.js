@@ -4,10 +4,10 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        showcaseBack: "url('./src/assets/showCase/showcaseImg.jpg')",
+        showcaseBack: "url('./src/assets/showCase/showCaseImg5.jpg')",
         skillBack: "url('./src/assets/skillIcon/skillImg.jpg')",
-        aboutBack: "url('/assets/aqua_radient.jpg')",
-        "back-portfolio": "url('./src/assets/portfolio_Back.jpg')",
+        aboutBack: "url('/assets/showCaseImg5.jpg)",
+        "back-portfolio": "url('/assets/showCaseImg5.jpg",
         "contact-glob": "url('./src/assets/contact/earth.png')",
       },
       fontFamily: {
@@ -16,7 +16,7 @@ export default {
       colors: {
         // background
         bg_primary: "#dadfe4",
-        bg_secondary: "#7F2F92", // aqua
+        bg_secondary: "#dadfe4", //
         bg_tertiary:
           "radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%)", // rgba(255,255,255,0.5);
         bg_additional: "#219653",
@@ -31,7 +31,7 @@ export default {
         tx_link: "#42A5F5",
 
         // border
-        br_primary: "#262f65",
+        br_primary: "#7F2F92", // Purple
         br_secondary: "#f2f2f2",
         br_error: "#ff0000",
 

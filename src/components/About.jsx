@@ -3,8 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { aboutMeCardData, aboutMeProfileData } from "../data/aboutMeData";
-
-
+import aboutMeImg from "../assets/about/about_me.png";
 
 const About = () => {
   useEffect(() => {
@@ -15,18 +14,21 @@ const About = () => {
 
   return (
     <div className="  lg:h-[100vh] common_background p-4 flex flex-col gap-4 items-center  overflow-y-scroll ">
-      <h1
-        className=" text-[2rem] lg:text-[3rem] text-tx_secondary uppercase font-bold  mt-[95px] "
-        data-aos="fade-right"
-      >
-        About me
-      </h1>
+      <div className="mt-[95px] flex flex-row items-center gap-4">
+        <img src={aboutMeImg} alt="" className="w-[4rem] h-[3rem]" />
+        <h1
+          className=" text-[2rem] lg:text-[3rem] text-tx_secondary uppercase font-bold   "
+          data-aos="fade-right"
+        >
+          About me
+        </h1>
+      </div>
       <div
         className="flex-[2]  text-tx_secondary flex flex-col gap-2 items-center  "
         data-aos="fade-right"
       >
         <h3 className="text-[1.2rem] lg:text-[2rem] uppercase font-bold">
-          Computer Engineer || Web Developer
+          Full-Stack Web Developer
         </h3>
         <p className=" lg:text-[1.3rem] text-[.8rem] lg:w-1/2  w-full text-tx_additional text-center">
           {aboutMeProfileData}

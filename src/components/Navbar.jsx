@@ -1,13 +1,10 @@
 import logoImg from "../assets/navbar/my_new_logo.png";
 import { motion } from "framer-motion";
-import facebookImg from "../assets/facebook-64.png";
-import whatsAppImg from "../assets/whatsapp-64.png";
-import telegramImg from "../assets/telegram-64.png";
-import twitterImg from "../assets/twitter-64.png";
 import { MenuToggle } from "./elements/MenuToggle";
 import { useEffect, useState } from "react";
 import Sidebar from "./sidebar/Sidebar";
 import Links from "./Links";
+import SocialIcons from "./elements/SocialIcons";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
@@ -44,8 +41,6 @@ const Navbar = () => {
     },
   };
 
-  const images = [facebookImg, whatsAppImg, telegramImg, twitterImg];
-
   return (
     <div
       className={` ${
@@ -70,17 +65,7 @@ const Navbar = () => {
         >
           <Links />
         </motion.div>
-        <div className="flex flex-row flex-[1] h-6 sm:h-8  gap-8 justify-center lg:justify-end  px-2">
-          {images.map((img) => (
-            <motion.img
-              key={img}
-              src={img}
-              whileHover={{ scale: 1.1 }}
-              alt={img}
-              className=" cursor-pointer w-[2rem] mr-2"
-            />
-          ))}
-        </div>
+        {/* <SocialIcons /> */}
         <motion.div
           initial={false}
           animate={isOpen ? "open" : "closed"}

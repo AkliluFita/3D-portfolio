@@ -27,7 +27,7 @@ const Links = ({ className }) => {
         <motion.a
           href={`#${item.text}`}
           variants={itemVariants}
-          whileHover={{ scale: 1.1, color: "rgb(182, 204, 227)" }}
+          whileHover={{ scale: 1.1, color: "white" }}
           whileTap={{ scale: 0.95 }}
           key={item.id}
           className={`text-[1.3rem] cursor-pointer  w-full text-center rounded-md p-1  text-[#7F2F92] font-bold ${className}`}

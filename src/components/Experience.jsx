@@ -11,6 +11,7 @@ import githubImg from "../assets/experienceIcon/github-80.png";
 import AOS from "aos";
 import { useEffect } from "react";
 import linkImg from "../assets/experienceIcon/link_animate_icon.gif";
+import experienceImg from "../assets/experienceIcon/experience.png";
 
 const Experience = () => {
   useEffect(() => {
@@ -20,12 +21,15 @@ const Experience = () => {
   }, []);
   return (
     <div className="flex flex-col items-center  common_background  gap-4 lg:h-[100vh] overflow-y-scroll">
-      <h1
-        className=" text-[2rem] lg:text-[3rem] text-[#7F2F92] uppercase font-bold  mt-[95px] "
-        data-aos="fade-right"
-      >
-        My Experience
-      </h1>
+      <div className="mt-[95px] flex flex-row items-center gap-4">
+        <img src={experienceImg} alt="" className="w-[4rem] h-[3rem]" />
+        <h1
+          className=" text-[2rem] lg:text-[3rem] text-tx_secondary uppercase font-bold   "
+          data-aos="fade-right"
+        >
+          My Experience
+        </h1>
+      </div>
       <div className="w-full mt-8">
         <VerticalTimeline>
           {experienceData.map((item) => (
