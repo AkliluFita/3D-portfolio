@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        showcaseBack: "url('./src/assets/showCase/showCaseImg5.jpg')",
+        showcaseBack: "url('assets/showCase/showCaseImg5.jpg')",
         skillBack: "url('./src/assets/skillIcon/skillImg.jpg')",
         aboutBack: "url('/assets/showCaseImg5.jpg)",
         "back-portfolio": "url('/assets/showCaseImg5.jpg",

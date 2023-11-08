@@ -30,9 +30,10 @@ const Links = ({ className }) => {
           whileHover={{ scale: 1.1, color: "white" }}
           whileTap={{ scale: 0.95 }}
           key={item.id}
-          className={`text-[1.3rem] cursor-pointer  w-full text-center rounded-md p-1  text-[#7F2F92] font-bold ${className}`}
+          className={`cursor-pointer  w-full text-center p-1  font-bold flex flex-row gap-2 justify-between common_background uppercase ${className} `}
         >
-          {item.text}
+          <h1>{item.text}</h1>
+          <span>{item.icon}</span>
         </motion.a>
       ))}
     </>

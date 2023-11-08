@@ -49,11 +49,11 @@ const ShowCase = () => {
           >
             {showCaseData.title}
           </motion.h1>
-          <motion.h2 className="text-[2rem] font-bold text-tx_primary uppercase md:text-[3.8rem]">
+          <motion.h2 className="text-[2rem] font-bold text-white uppercase md:text-[3.8rem]">
             {" "}
             {showCaseData.name}
           </motion.h2>
-          <p className="text-lg font-bold text-center text-tx_primary md:text-3xl">
+          <p className="text-lg font-bold text-center text-white md:text-3xl">
             {showCaseData.description}
           </p>
           <SocialIcons />

@@ -69,3 +69,6 @@ https://www.framer.com/motion/animation/
 
 <!-- facing issue with image deploying -->
 https://answers.netlify.com/t/react-app-created-with-vite-works-fine-locally-but-when-deployed-on-netfliy-images-not-showing-up-heres-the-solution/81679
+
+<!--  best react alert lib -->
+https://fkhadra.github.io/react-toastify/introduction
