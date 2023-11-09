@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import ShowCase from "./components/ShowCase";
 import Skill from "./components/Skill";
 import MyLogoLoading from "./components/MyLogoLoadng";
+import Footer from "./components/Footer";
 
 export default function App() {
   const [isLoadingPage, setIsLoadingPage] = useState(true);
@@ -47,6 +48,9 @@ export default function App() {
       <BorderLine />
       <section id="Contact">
         <Contact />
+      </section>
+      <section>
+        <Footer />
       </section>
     </div>
   );

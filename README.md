@@ -72,3 +72,6 @@ https://answers.netlify.com/t/react-app-created-with-vite-works-fine-locally-but
 
 <!--  best react alert lib -->
 https://fkhadra.github.io/react-toastify/introduction
+
+<!-- radix -->
+https://www.radix-ui.com/primitives/docs/components/tooltip
