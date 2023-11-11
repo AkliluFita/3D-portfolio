@@ -48,13 +48,19 @@
   }
 
 .showcase_background{
-  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgb(177, 185, 193) 100%);
+  /* background: linear-gradient(63deg, rgb(242, 168, 168) 2.9%, rgb(94, 46, 165) 102.1%); */
+  background: radial-gradient(237px at 50% 2.1%, rgb(78, 157, 184) 0.3%,  rgb(171, 181, 187) 100%);
 }
 .footer_background{
   background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgb(0, 5, 10) 100%);
+  color: #222637;
 }
 .common_background{
-  background: radial-gradient(circle, rgba(226,212,218,1) 0%, rgba(240,229,234,1) 40%);}
+  background: radial-gradient(circle, rgba(226,212,218,1) 0%, rgba(240,229,234,1) 40%);
+}
+.footer_background{
+  background: radial-gradient(circle, rgb(176, 153, 163) 0%, rgba(192, 176, 183)40%);
+}
 
 
 

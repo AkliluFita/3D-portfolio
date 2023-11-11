@@ -19,9 +19,9 @@ const Sidebar = () => {
   return (
     <motion.div
       variants={variants}
-      className=" h-[20rem] w-[15rem] flex flex-col justify-between items-start z-40   "
+      className=" h-[20rem] w-[15rem] flex flex-col justify-between items-start z-40 dark:bg-gray-800 bg-white  "
     >
-      <Links className=" border-b border-[0.5px]  common_background text-black text-[]" />
+      <Links className="text-black bg-white  dark:bg-gray-800 dark:text-white" />
     </motion.div>
   );
 };

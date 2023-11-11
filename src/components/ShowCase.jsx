@@ -30,11 +30,9 @@ const ShowCase = () => {
     });
   }, []);
   return (
-    <div className="flex lg:flex-row items-center w-full h-auto lg:h-screen gap-4 p-4 bg-showcaseBack  flex-col relative z-[1] mt-[95px] bg-cover bg-center ">
+    <div className="flex lg:flex-row items-center w-full h-auto lg:h-screen gap-4 p-4 bg-lightModeImage dark:bg-darkModeImage  flex-col relative z-[1] mt-[95px] bg-cover  bg-center ">
       <SlideText sideType="left" />
-      {/* <div className="absolute  top-[0] right-[0]">
-        <Box3D />
-      </div> */}
+      {/* <div className="absolute  top-[0] right-[40%] bg-purple-700 w-[30rem] h-[30rem] blur-[250px]"></div> */}
       <motion.div
         className=" flex-[1] h-full  flex flex-col items-center justify-center p-2 z-[1] "
         data-aos="fade-right"
@@ -44,16 +42,16 @@ const ShowCase = () => {
           variants={textVariants}
         >
           <motion.h1
-            className=" text-[1.5rem] md:text-[3rem] lg:text-[2.8rem] font-bold text-tx_primary"
+            className=" text-[1.5rem] md:text-[3rem] lg:text-[2.8rem] font-bold text-gray-800 dark:text-white font-mono"
             variants={textVariants}
           >
             {showCaseData.title}
           </motion.h1>
-          <motion.h2 className="text-[2rem] font-bold text-white uppercase md:text-[3.8rem]">
+          <motion.h2 className="text-[2rem] font-bold text-gray-800 dark:text-white uppercase md:text-[3.8rem] font-mono">
             {" "}
             {showCaseData.name}
           </motion.h2>
-          <p className="text-lg font-bold text-center text-white md:text-3xl">
+          <p className="font-mono text-lg font-bold text-center text-gray-800 dark:text-white md:text-3xl">
             {showCaseData.description}
           </p>
           <SocialIcons />

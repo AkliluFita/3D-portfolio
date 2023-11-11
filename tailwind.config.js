@@ -1,10 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: "class", // Enables dark mode based on the class applied to the HTML tag
   theme: {
     extend: {
       backgroundImage: {
-        showcaseBack: "url('assets/showCase/showCaseImg5.jpg')",
+        // showcaseBack: "url('assets/showCase/showCaseImg5.jpg')",
+        lightModeImage:
+          "radial-gradient(237px at 50% 2.1%, rgb(78, 157, 184) 0.3%,  rgb(171, 181, 187) 100%)",
+        darkModeImage:
+          "radial-gradient(337px at 50% 2.1%, rgb(78, 157, 184) 0.3%,  rgb(17, 24, 28) 100%)",
         skillBack: "url('./src/assets/skillIcon/skillImg.jpg')",
         aboutBack: "url('/assets/showCaseImg5.jpg)",
         "back-portfolio": "url('/assets/showCaseImg5.jpg",
@@ -15,6 +20,10 @@ export default {
       },
       colors: {
         // background
+        bg_light:
+          "radial-gradient(237px at 50% 2.1%, rgb(78, 157, 184) 0.3%,  rgb(171, 181, 187) 100%)",
+        bg_dark:
+          "radial-gradient(237px at 50% 2.1%, rgb(78, 157, 184) 0.3%,  rgb(17, 24, 28) 100%)",
         bg_primary: "#dadfe4",
         bg_secondary: "#dadfe4", //
         bg_tertiary:

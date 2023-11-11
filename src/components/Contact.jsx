@@ -14,22 +14,17 @@ const Contact = () => {
   }, []);
 
   return (
-    <div className="common_background h-auto lg:h-[100vh] flex flex-col items-center w-full ">
+    <div className="common_background dark:bg-darkModeImage h-auto lg:h-[100vh] flex flex-col items-center w-full ">
       <div className="mt-[95px] flex flex-row items-center gap-4">
         <img src={contactImg} alt="" className="w-[4rem] h-[3rem]" />
         <h1
-          className=" text-[2rem] lg:text-[3rem] text-tx_secondary uppercase font-bold   "
+          className=" text-[2rem] lg:text-[3rem] bg-gradient-to-r from-indigo-500  to-pink-500 bg-clip-text text-transparent  uppercase font-bold font-mono   "
           data-aos="fade-right"
         >
           contact
         </h1>
       </div>
-      <div
-        className="flex flex-col-reverse items-center justify-center w-full gap-8 px-4 py-6 lg:flex-row "
-        // data-aos="fade-down"
-        // data-aos-easing="linear"
-        // data-aos-duration="1500"
-      >
+      <div className="flex flex-col-reverse items-center justify-center w-full gap-8 px-4 py-6 lg:flex-row ">
         <ContactForm />
         <div className="h-full  lg:w-[40rem]">
           <ContactBox />
@@ -48,17 +43,16 @@ const ContactBox = () => {
       {lists.map((item, index) => (
         <div
           key={index}
-          className="flex flex-col items-center gap-2 lg:gap-4  border border-br_primary rounded-lg  bg-[#dadfe4] shadow-lg  lg:p-0 p-2"
+          className="flex flex-col items-center gap-2 lg:gap-4  border border-br_primary rounded-lg  bg-[#dadfe4] dark:bg-gray-800 shadow-lg  lg:p-0 p-2"
           data-aos="fade-left"
         >
           <img src={aboutMeImg} alt="" className="w-[4rem] h-[3rem]" />
-          <h1 className="text-lg font-bold lg:text-2xl">Phone</h1>
-          <p className="text-center text-tx_additional text-sm lg:text-[1rem]">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. pariatur
-            distinctio vero consequatur rem blanditiis dignissimos possimus
-            quod? Labore.
+          <h1 className="font-mono text-lg font-bold lg:text-2xl">Phone</h1>
+          <p className="text-center text-tx_additional text-sm lg:text-[0.9rem] font-mono">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem,
+            ipsum dolor sit amet consectetur adipisicing elit.
           </p>
-          <h2 className="p-1 text-base font-bold text-black lg:text-lg common_background">
+          <h2 className="p-1 font-mono text-base font-bold text-black lg:text-lg common_background">
             5632897412-8856662
           </h2>
         </div>
@@ -103,14 +97,14 @@ const ContactForm = () => {
   };
   return (
     <div
-      className="  rounded-md flex flex-col items-center w-full lg:w-[40rem] bg-[#dadfe4] border border-[#7F2F92] h-full "
+      className="  rounded-md flex flex-col items-center w-full lg:w-[40rem] bg-[#dadfe4] border border-[#7F2F92] dark:bg-gray-800 h-full "
       data-aos="fade-right"
     >
       <div className="p-2 ">
-        <h1 className="text-2xl font-bold uppercase lg:text-3xl text-tx_secondary">
+        <h1 className="font-mono text-2xl font-bold uppercase lg:text-3xl text-tx_secondary">
           get touch me
         </h1>
-        <p className="mt-4 text-sm text-tx_additional lg:text-base">
+        <p className="mt-2 font-mono text-sm text-tx_additional lg:text-base">
           For your car we will do everything advice design in us repairs and
           maintenance We are the some preferred.
         </p>
@@ -121,10 +115,10 @@ const ContactForm = () => {
         action=""
         className="flex flex-col items-center justify-center h-full w-full flex-[11] px-2  "
       >
-        <div className="flex flex-col w-full gap-2 p-2 ">
+        <div className="flex flex-col w-full gap-2 p-1 ">
           <label
             htmlFor=""
-            className=" text-base lg:text-[1.5rem]  font-bold text-tx_secondary"
+            className=" text-base lg:text-[1.5rem]  font-bold text-tx_secondary font-mono"
           >
             Your Name
           </label>
@@ -133,13 +127,13 @@ const ContactForm = () => {
             required
             placeholder="put your name here"
             name="user_name"
-            className="w-full p-2 text-black border rounded-md lg:p-4 common_background border-br_primary"
+            className="w-full p-2 text-black border rounded-md lg:p-4 common_background dark:bg-gray-800 border-br_primary"
           />
         </div>
         <div className="flex flex-col w-full gap-2 p-2 ">
           <label
             htmlFor=""
-            className=" text-base lg:text-[1.5rem]  font-bold text-tx_secondary"
+            className=" text-base lg:text-[1.5rem]  font-bold text-tx_secondary font-mono"
           >
             Your Email
           </label>
@@ -148,13 +142,13 @@ const ContactForm = () => {
             required
             placeholder="put your email here"
             name="user_email"
-            className="w-full p-2 text-black border rounded-md lg:p-4 common_background border-br_primary"
+            className="w-full p-2 text-black border rounded-md lg:p-4 common_background dark:bg-gray-800 border-br_primary"
           />
         </div>
         <div className="flex flex-col w-full gap-2 p-2 ">
           <label
             htmlFor=""
-            className=" text-base lg:text-[1.5rem]  font-bold text-tx_secondary"
+            className=" text-base lg:text-[1.5rem]  font-bold text-tx_secondary font-mono"
           >
             Your Message
           </label>
@@ -169,7 +163,7 @@ const ContactForm = () => {
           <button
             type="submit"
             value="Send"
-            className="w-[10rem] p-2 mb-2 mr-2 text-lg font-medium border border-br_primary rounded-2xl focus:outline-none hover:bg-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 common_background text-black"
+            className="w-[10rem] p-2 mb-2 mr-2 text-lg font-medium border border-br_primary rounded-2xl focus:outline-none hover:bg-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 common_background text-black font-mono"
           >
             {isLoading ? "Sending" : "Send"}
           </button>

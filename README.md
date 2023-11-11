@@ -75,3 +75,8 @@ https://fkhadra.github.io/react-toastify/introduction
 
 <!-- radix -->
 https://www.radix-ui.com/primitives/docs/components/tooltip
+
+<!-- best color gradient background link -->
+https://gradients.shecodes.io/gradients/202
+
+https://tailwindcomponents.com/gradient-generator/
