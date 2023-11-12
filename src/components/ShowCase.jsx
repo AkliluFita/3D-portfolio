@@ -47,7 +47,7 @@ const ShowCase = () => {
           >
             {showCaseData.title}
           </motion.h1>
-          <motion.h2 className="text-[2rem] font-bold text-gray-800 dark:text-white uppercase md:text-[3.8rem] font-mono">
+          <motion.h2 className="text-[1.8rem] font-bold bg-gradient-to-r from-indigo-500  to-pink-500 bg-clip-text text-transparent uppercase md:text-[3.8rem] font-mono">
             {" "}
             {showCaseData.name}
           </motion.h2>

@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import contactAnimateImg from "../assets/contact/contact_animate.gif";
 import emailjs from "@emailjs/browser";
 import AOS from "aos";
 import { ToastContainer, toast } from "react-toastify";
@@ -48,7 +47,7 @@ const ContactBox = () => {
         >
           <img src={aboutMeImg} alt="" className="w-[4rem] h-[3rem]" />
           <h1 className="font-mono text-lg font-bold lg:text-2xl">Phone</h1>
-          <p className="text-center text-tx_additional text-sm lg:text-[0.9rem] font-mono">
+          <p className="text-center text-tx_additional text-sm lg:text-[0.9rem] font-mono dark:text-gray-400">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem,
             ipsum dolor sit amet consectetur adipisicing elit.
           </p>
@@ -64,36 +63,31 @@ const ContactBox = () => {
 const ContactForm = () => {
   const form = useRef();
   const [isLoading, setIsLoading] = useState(false);
-  const [message, setMessage] = useState("");
-
-  console.log(message);
+  const [isSended, setIsSended] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
     setIsLoading(true);
-    toast("Wow so easy !");
 
-    // emailjs
-    //   .sendForm(
-    //     "service_e8v9dm5",
-    //     "template_m0loqjr",
-    //     form.current,
-    //     "user_piSXcqx2Zf6tWbXHR4EFF"
-    //   )
-    //   .then(
-    //     (result) => {
-    //       console.log(result.text);
-    //       setMessage("successfully submitted");
-    //     },
-    //     (error) => {
-    //       console.log(error.text);
-    //       setMessage(error.text);
-    //     }
-    //   );
-    // setIsLoading(false);
-    // setTimeout(() => {
-    //   setMessage("");
-    // }, 4000);
+    emailjs
+      .sendForm(
+        "service_e8v9dm5",
+        "template_m0loqjr",
+        form.current,
+        "user_piSXcqx2Zf6tWbXHR4EFF"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          toast("you successfully submitted");
+          setIsSended(true);
+        },
+        (error) => {
+          console.log(error.text);
+          toast(error.text);
+        }
+      );
+    setIsLoading(false);
   };
   return (
     <div
@@ -104,7 +98,7 @@ const ContactForm = () => {
         <h1 className="font-mono text-2xl font-bold uppercase lg:text-3xl text-tx_secondary">
           get touch me
         </h1>
-        <p className="mt-2 font-mono text-sm text-tx_additional lg:text-base">
+        <p className="mt-2 font-mono text-sm text-tx_additional lg:text-base dark:text-gray-400">
           For your car we will do everything advice design in us repairs and
           maintenance We are the some preferred.
         </p>
@@ -163,13 +157,15 @@ const ContactForm = () => {
           <button
             type="submit"
             value="Send"
-            className="w-[10rem] p-2 mb-2 mr-2 text-lg font-medium border border-br_primary rounded-2xl focus:outline-none hover:bg-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 common_background text-black font-mono"
+            disabled={isSended}
+            className={`w-[10rem] p-2 mb-2 mr-2 text-lg font-medium bg-bt_primary rounded-2xl focus:outline-none hover:bg-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 common_background text-black font-mono ${
+              isSended ? "cursor-not-allowed" : ""
+            }`}
           >
-            {isLoading ? "Sending" : "Send"}
+            {isSended ? "Sended" : "Send"}
           </button>
           <ToastContainer />
         </div>
-        <h3 className="text-red-600">{message}</h3>
       </form>
     </div>
   );

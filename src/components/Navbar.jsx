@@ -75,12 +75,12 @@ const Navbar = () => {
     <div
       className={` ${
         isSticky
-          ? "shadow-md  h-14 lg:h-24 common_background "
-          : "  h-[4rem] lg:h-[5.5rem] footer_background shadow-lg"
-      } w-full  fixed top-0 left-0   p-1 text-white  z-[22]      duration-300 ease-in-out`}
+          ? "shadow-md h-14 lg:h-24 dark:bg-gray-600/30 backdrop-blur-sm bg-gray-200 dark:backdrop-blur-sm"
+          : "h-[4rem] lg:h-[5.5rem] dark:bg-gray-800/30  bg-gray-200  shadow-lg"
+      } w-full  fixed top-0 left-0 p-1 text-white z-[22] duration-300 ease-in-out`}
     >
       <div className="flex flex-row items-center h-full gap-4 lg:justify-between">
-        <motion.div className=" flex-[1]  h-full   shrink-0 ml-2 flex flex-row items-center gap-2  justify-center">
+        <motion.div className=" flex-[1] h-full shrink-0 ml-2 flex flex-row items-center gap-2 justify-center">
           <motion.img
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -88,31 +88,40 @@ const Navbar = () => {
             src={logoImg}
             className="flex flex-shrink-0 object-cover w-[2.5rem] lg:w-[4rem] cursor-pointer"
           />{" "}
-          <h1 className="text-sm font-bold text-white lg:text-lg dark:text-tx_primary">
+          <h1 className="text-sm font-bold dark:text-white lg:text-lg text-tx_primary">
             Aklilu_Dev
           </h1>
         </motion.div>
         <motion.div
           variants={variants}
-          className="flex-row justify-around hidden  lg:flex md:items-center lg:flex-[2] w-[20rem] gap-2 "
+          className="flex-row justify-around hidden lg:flex md:items-center lg:flex-[2] w-[20rem] gap-2"
         >
-          <Links className="text-black text-[1.1rem] " />
+          <Links className=" text-[1.1rem]" />
         </motion.div>
-        <div className="flex flex-row items-center h-full  flex-[1] justify-center gap-4 lg:gap-8">
-          <img
-            src={darkMode ? moonImg : sunImg}
-            alt=""
-            className="w-[2rem] h-[2rem] lg:w-[3rem] lg:h-[3rem] cursor-pointer"
-            onClick={toggleDarkMode}
-          />
-
-          <TooltipRadix text="Github links">
+        <div className="flex flex-row items-center h-full flex-[1] justify-center gap-4 lg:gap-8">
+          <TooltipRadix text={!darkMode ? "Dark Mode" : "Light Mode"}>
             <img
-              src={githubImg}
+              src={!darkMode ? moonImg : sunImg}
               alt=""
               className="w-[2rem] h-[2rem] lg:w-[3rem] lg:h-[3rem] cursor-pointer"
+              onClick={toggleDarkMode}
             />
           </TooltipRadix>
+
+          <a
+            rel="noreferrer"
+            href="https://github.com/AkliluFita"
+            target="_blank"
+            className="px-2 rounded-lg "
+          >
+            <TooltipRadix text="Github">
+              <img
+                src={githubImg}
+                alt=""
+                className="w-[2rem] h-[2rem] lg:w-[3rem] lg:h-[3rem] cursor-pointer"
+              />
+            </TooltipRadix>
+          </a>
         </div>
         <motion.div
           initial={false}

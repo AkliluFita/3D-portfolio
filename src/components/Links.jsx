@@ -32,7 +32,9 @@ const Links = ({ className }) => {
           key={item.id}
           className={`cursor-pointer  w-full text-center font-bold   uppercase  ${className} `}
         >
-          <h1 className="font-mono">{item.text}</h1>
+          <h1 className="font-mono text-gray-800 dark:text-gray-200 ">
+            {item.text}
+          </h1>
         </motion.a>
       ))}
     </>
