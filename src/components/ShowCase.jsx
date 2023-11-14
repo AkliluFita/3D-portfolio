@@ -30,9 +30,8 @@ const ShowCase = () => {
     });
   }, []);
   return (
-    <div className="flex lg:flex-row items-center w-full h-auto lg:h-screen gap-4 p-4 bg-lightModeImage dark:bg-darkModeImage  flex-col relative z-[1] mt-[95px] bg-cover  bg-center ">
+    <div className="flex lg:flex-row items-center w-full h-auto lg:h-screen gap-4 p-4 bg-lightModeImage dark:bg-darkModeImage  flex-col relative z-[1] mt-[50px] lg:mt-[95px] bg-cover  bg-center">
       <SlideText sideType="left" />
-      {/* <div className="absolute  top-[0] right-[40%] bg-purple-700 w-[30rem] h-[30rem] blur-[250px]"></div> */}
       <motion.div
         className=" flex-[1] h-full  flex flex-col items-center justify-center p-2 z-[1] "
         data-aos="fade-right"
@@ -47,9 +46,12 @@ const ShowCase = () => {
           >
             {showCaseData.title}
           </motion.h1>
-          <motion.h2 className="text-[1.8rem] font-bold bg-gradient-to-r from-indigo-500  to-pink-500 bg-clip-text text-transparent uppercase md:text-[3.8rem] font-mono">
+          <motion.h2 className="text-[1.8rem] font-bold bg-gradient-to-r from-indigo-500  to-pink-500 bg-clip-text text-transparent uppercase md:text-[3.8rem] font-mono  flex flex-col">
             {" "}
-            {showCaseData.name}
+            {showCaseData.name}{" "}
+            <span className=" text-[0.7rem] lg:text-[1.2rem]">
+              {showCaseData.position}
+            </span>
           </motion.h2>
           <p className="font-mono text-lg font-bold text-center text-gray-800 dark:text-white md:text-3xl">
             {showCaseData.description}

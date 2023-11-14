@@ -14,7 +14,7 @@ const TooltipRadix = ({ children, text }) => {
         <Tooltip.Root>
           <Tooltip.Trigger>{children}</Tooltip.Trigger>
           <Tooltip.Portal>
-            <Tooltip.Content className="z-40 p-2 border rounded-lg text-tx_additional common_background shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px]">
+            <Tooltip.Content className=" text-sm z-40 p-2 border rounded-lg text-tx_additional common_background shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px]">
               {text}
               <Tooltip.Arrow className=" fill-white  shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px]" />
             </Tooltip.Content>

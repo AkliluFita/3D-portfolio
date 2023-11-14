@@ -10,6 +10,7 @@ import {
 import { useEffect } from "react";
 import wellDoneImg from "../assets/education/well_done.png";
 import educationImg from "../assets/education/education.png";
+import ModalRadix from "./elements/Modal";
 
 const SingleEducation = ({ item, index }) => {
   return (
@@ -59,13 +60,13 @@ const SingleEducation = ({ item, index }) => {
       <hr className="h-[2px] w-full bg-br_primary border border-br_primary" />
       <div className="flex flex-col flex-[8] items-center lg:gap-4 gap-4 ">
         <h1 className="text-[1rem] lg:text-[1.5rem] flex-[1] text-tx_secondary font-bold font-mono">
-          Some of relevant course tha I took
+          Some of relevant courses that I took
         </h1>
         <motion.ul
           initial={false}
           animate="show"
           variants={listItemVariant()}
-          className=" flex-[11] flex gap-2 lg:gap-4 flex-col p-6 text-black  w-full"
+          className=" flex-[11] flex gap-2 lg:gap-2 flex-col p-6 text-black  w-full"
         >
           {item.courseLists.map((course) => (
             <motion.li
@@ -80,7 +81,43 @@ const SingleEducation = ({ item, index }) => {
           ))}
         </motion.ul>
       </div>
-      {/* <h2 className="p-2 lg:p-4 bg-[#7F2F92]">{item.educationPeriod}</h2> */}
+      {item.id === 2 && (
+        <h2 className="p-2 lg:p-4 bg-[#7F2F92] flex items-center justify-between gap-2 font-mono font-bold">
+          <ModalRadix
+            content={{
+              title: "Certificate Paper",
+              desc: item.certificateDesc,
+              image: item.certificatePaper,
+            }}
+          >
+            <button className="p-1 border border-white  text-[0.8rem]  lg:text-base">
+              Certificate Paper
+            </button>
+          </ModalRadix>
+          <ModalRadix
+            content={{
+              title: "Thesis Title",
+              desc: item.thesisTitle,
+              image: item.thesisPaper1,
+            }}
+          >
+            <button className="p-1 border border-white  text-[0.8rem] lg:text-base">
+              Thesis Title
+            </button>
+          </ModalRadix>
+          <ModalRadix
+            content={{
+              title: "Thesis Book View",
+              desc: "Thesis Approval Certificate with Jury members Signatures",
+              image: item.thesisPaper2,
+            }}
+          >
+            <button className="p-1 border border-white text-[0.8rem] lg:text-base">
+              Thesis Book View
+            </button>
+          </ModalRadix>
+        </h2>
+      )}
     </motion.div>
   );
 };

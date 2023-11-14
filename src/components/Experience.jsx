@@ -17,7 +17,7 @@ import { darkModeAtom } from "../recoil/darkMode";
 
 const Experience = () => {
   const [darkMode] = useRecoilState(darkModeAtom);
-  const background = darkMode ? "#2D3748" : "#dadfe4";
+  const background = darkMode ? "#1F2937" : "#dadfe4";
   useEffect(() => {
     AOS.init({
       duration: 600,
@@ -51,6 +51,7 @@ const Experience = () => {
               date={item.date}
               iconStyle={{
                 background: "#7F2F92",
+                fontWeight: "bold",
                 color: "#7F2F92",
               }}
               icon={<img src={work_icon} />}
@@ -59,7 +60,7 @@ const Experience = () => {
                 <h3 className="vertical-timeline-element-title text-[1.2rem] uppercase text-tx_secondary font-bold font-mono">
                   {item.title}
                 </h3>
-                <h4 className="flex items-center gap-2 font-mono vertical-timeline-element-subtitle fle-row">
+                <h4 className="flex flex-row items-center gap-2 font-mono text-sm text-gray-800 dark:text-gray-200 vertical-timeline-element-subtitle">
                   Company:- {item.subTitle}{" "}
                   {item.web_link !== null && (
                     <a rel="noreferrer" href={item.web_link} target="_blank">
@@ -76,13 +77,13 @@ const Experience = () => {
                 <p className=" text-gray-600 text-[0.7rem] lg:text-[0.9rem] font-mono dark:text-gray-400  ">
                   {item.des}
                 </p>
-                <div className="flex flex-row items-center justify-end gap-4">
+                <div className="flex flex-row items-center justify-end gap-4 mt-2">
                   {item.demo_link !== null && (
                     <a
                       rel="noreferrer"
                       href={item.demo_link}
                       target="_blank"
-                      className="px-2 rounded-lg bg-[#7F2F92]"
+                      className="px-2 bg-gray-800 rounded-lg"
                     >
                       <img
                         src={demoImg}
@@ -103,7 +104,7 @@ const Experience = () => {
                       rel="noreferrer"
                       href={item.github_link}
                       target="_blank"
-                      className="px-2 rounded-lg bg-[#7F2F92]"
+                      className="px-2 bg-gray-800 rounded-lg "
                     >
                       <img
                         src={githubImg}

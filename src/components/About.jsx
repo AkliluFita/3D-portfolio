@@ -24,7 +24,7 @@ const About = () => {
         </h1>
       </div>
       <div
-        className="flex-[2]  text-tx_secondary flex flex-col gap-2 items-center  "
+        className="flex-[2]  text-tx_secondary flex flex-col gap-4 items-center  "
         data-aos="fade-right"
       >
         <h3 className="text-[1.2rem] lg:text-[2rem] uppercase font-bold font-mono">
@@ -71,7 +71,7 @@ const Cards = ({ item }) => {
         <p className="text-tx_additional text-[0.7rem] lg:text-[0.9rem] text-center font-mono dark:text-gray-400 ">
           {item.desc}
         </p>
-        <div className=" flex flex-row items-center justify-center text-[1.5rem] text-[#7F2F92]  w-full p-1 gap-2">
+        <div className=" flex flex-row items-center justify-center text-[1.5rem] text-[]  w-full p-1 gap-2">
           <div className="flex flex-row text-sm  flex-[3]">
             <ul className="flex flex-row flex-wrap items-center gap-2 ">
               {item.tool.map((i) => (
@@ -86,10 +86,14 @@ const Cards = ({ item }) => {
           </div>
           <div className="flex-[1] text-sm h-full flex flex-col justify-around gap-2 ">
             <div>
-              <h1 className="font-mono">Experience</h1>
-              <h3 className="font-mono">{item.experiencePeriod}:years</h3>
+              <h1 className="font-mono font-bold text-tx_secondary">
+                Experience
+              </h1>
+              <h3 className="font-mono font-bold text-black dark:text-white">
+                {item.experiencePeriod}:years
+              </h3>
             </div>
-            <button className="p-2 text-white bg-bt_primary rounded-2xl ">
+            <button className="p-2 font-mono text-white bg-bt_primary rounded-2xl ">
               Detail
             </button>
           </div>

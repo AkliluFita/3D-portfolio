@@ -75,8 +75,8 @@ const Navbar = () => {
     <div
       className={` ${
         isSticky
-          ? "shadow-md h-14 lg:h-24 dark:bg-gray-600/30 backdrop-blur-sm bg-gray-200 dark:backdrop-blur-sm"
-          : "h-[4rem] lg:h-[5.5rem] dark:bg-gray-800/30  bg-gray-200  shadow-lg"
+          ? "shadow-md h-12 lg:h-[5.5rem] dark:bg-gray-600/30 backdrop-blur-sm bg-gray-200 dark:backdrop-blur-sm"
+          : "h-14 lg:h-[6rem] dark:bg-gray-800  bg-gray-200  shadow-lg"
       } w-full  fixed top-0 left-0 p-1 text-white z-[22] duration-300 ease-in-out`}
     >
       <div className="flex flex-row items-center h-full gap-4 lg:justify-between">
@@ -96,7 +96,7 @@ const Navbar = () => {
           variants={variants}
           className="flex-row justify-around hidden lg:flex md:items-center lg:flex-[2] w-[20rem] gap-2"
         >
-          <Links className=" text-[1.1rem]" />
+          <Links className=" text-[0.9rem]" />
         </motion.div>
         <div className="flex flex-row items-center h-full flex-[1] justify-center gap-4 lg:gap-8">
           <TooltipRadix text={!darkMode ? "Dark Mode" : "Light Mode"}>
@@ -133,7 +133,7 @@ const Navbar = () => {
         </motion.div>
         {isOpen && (
           <div
-            className="absolute top-[4rem] right-0 lg:hidden shadow-lg p-4 bg-gray-200 dark:bg-gray-800 rounded-lg z-10"
+            className="absolute top-[3rem] right-[0.1rem] lg:hidden shadow-lg p-4 bg-gray-200 dark:bg-gray-800 rounded-lg z-10"
             data-aos="fade-left"
           >
             <Sidebar />

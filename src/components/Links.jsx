@@ -7,7 +7,8 @@ const Links = ({ className }) => {
     { id: "2", text: "Experience", icon: "💻" },
     { id: "3", text: "Education", icon: "📧" },
     { id: "4", text: "Skill", icon: "✍️" },
-    { id: "5", text: "Contact", icon: "📧" },
+    { id: "5", text: "Testimonial", icon: "📧" },
+    { id: "6", text: "Contact", icon: "📧" },
   ];
 
   const itemVariants = {

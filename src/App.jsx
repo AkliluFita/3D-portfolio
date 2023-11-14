@@ -9,6 +9,7 @@ import ShowCase from "./components/ShowCase";
 import Skill from "./components/Skill";
 import MyLogoLoading from "./components/MyLogoLoadng";
 import Footer from "./components/Footer";
+import Testimonial from "./components/Testimonial";
 
 export default function App() {
   const [isLoadingPage, setIsLoadingPage] = useState(true);
@@ -21,7 +22,7 @@ export default function App() {
     return <MyLogoLoading />;
   }
   return (
-    <div className="bg-[#201E26]">
+    <div className="bg-white">
       <section id="Home">
         <Navbar />
         <ShowCase />
@@ -44,6 +45,10 @@ export default function App() {
         <section id="Skill">
           <Skill />
         </section>
+        <BorderLine />
+        <section id="Testimonial">
+          <Testimonial />
+        </section>
       </div>
       <BorderLine />
       <section id="Contact">
@@ -57,7 +62,7 @@ export default function App() {
 }
 
 const BorderLine = () => {
-  return <hr className="h-[10px] bg-black" />;
+  return <hr className="h-[5px] bg-[#7F2F92]" />;
 };
 
 // #2B2C39

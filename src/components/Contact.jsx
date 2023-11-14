@@ -99,8 +99,7 @@ const ContactForm = () => {
           get touch me
         </h1>
         <p className="mt-2 font-mono text-sm text-tx_additional lg:text-base dark:text-gray-400">
-          For your car we will do everything advice design in us repairs and
-          maintenance We are the some preferred.
+          Let as discus about the proper that you may need to accomplish with me
         </p>
       </div>
       <form

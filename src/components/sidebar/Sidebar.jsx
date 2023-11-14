@@ -19,9 +19,11 @@ const Sidebar = () => {
   return (
     <motion.div
       variants={variants}
-      className=" h-[20rem] w-[15rem] flex flex-col justify-between items-start z-40 dark:bg-gray-800   "
+      className=" h-[100vh] w-full  z-40 dark:bg-gray-800 p-4  "
     >
-      <Links className="" />
+      <div className="  h-[25rem] flex flex-col justify-between items-start">
+        <Links className="text-start" />
+      </div>
     </motion.div>
   );
 };

@@ -7,7 +7,7 @@ export default {
       backgroundImage: {
         // showcaseBack: "url('assets/showCase/showCaseImg5.jpg')",
         lightModeImage:
-          "radial-gradient(237px at 00% 2.1%, rgb(78, 157, 184) 0.3%,  rgb(171, 181, 187) 100%)",
+          "radial-gradient(237px at 0% 2.1%, rgb(78, 157, 184) 0.3%,  rgb(171, 181, 187) 100%)",
         darkModeImage:
           "radial-gradient(237px at 0% 2.1%, rgb(78, 157, 184) 0.3%,  rgb(17, 24, 28) 100%)",
         skillBack: "url('./src/assets/skillIcon/skillImg.jpg')",
@@ -48,6 +48,20 @@ export default {
         bt_primary: "#7F2F92",
         bt_secondary: "#219653",
         bt_additional: "#3e91f7",
+      },
+      keyframes: {
+        overlayShow: {
+          from: { opacity: 0 },
+          to: { opacity: 1 },
+        },
+        contentShow: {
+          from: { opacity: 0, transform: "translate(-50%, -48%) scale(0.96)" },
+          to: { opacity: 1, transform: "translate(-50%, -50%) scale(1)" },
+        },
+      },
+      animation: {
+        overlayShow: "overlayShow 150ms cubic-bezier(0.16, 1, 0.3, 1)",
+        contentShow: "contentShow 150ms cubic-bezier(0.16, 1, 0.3, 1)",
       },
     },
   },

@@ -1,5 +1,8 @@
 import cyprusImg from "../assets/education/cyprusLogo.png";
 import haramayaLogo from "../assets/education/haramayaLogo.png";
+import certificate from "../assets/education/Diploma1.jpg";
+import thesis1 from "../assets/education/Thesis_paper1.jpg";
+import thesis2 from "../assets/education/Thesis_paper2.jpg";
 
 export const educationData = [
   {
@@ -8,7 +11,6 @@ export const educationData = [
     subTitle: "Bachelor of Electrical and Computer Engineering",
     img: haramayaLogo,
     subTitleTwo: "One of the well-known Hights Ranked University",
-    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem a, dignissimos architecto ipsam illo expedita, error quisquam reiciendis nemo ut inventore recusandae aut minus cumque exercitationem natus aliquam, illum dolorum?",
     courseLists: [
       "The basics Computer engineering",
       "The basics Electrical engineering",
@@ -16,6 +18,11 @@ export const educationData = [
       "Programming languages (C++, Java)",
     ],
     educationPeriod: "09/2014 - 07/2017",
+    certificatePaper: null,
+    certificateDesc: null,
+    thesisTitle: null,
+    thesisPaper1: null,
+    thesisPaper2: null,
   },
 
   {
@@ -25,14 +32,19 @@ export const educationData = [
     subTitle: "Master of Computer Engineering,",
     subTitleTwo:
       "One of the well-known International University in Northern Cyprus",
-    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem a, dignissimos architecto ipsam illo expedita, error quisquam reiciendis nemo ut inventore recusandae aut minus cumque exercitationem natus aliquam, illum dolorum?",
     courseLists: [
       "Advanced Database (Oracle, SQL Server)",
       "Advanced Programming language (Java)",
       "Advanced Network Programming (Socket Program, HTTP, and so on, with C Program)",
-      "Worked on real world projects using React.js",
       "Network and Communication System",
+      "Machine Learning and Deep Learning",
     ],
     educationPeriod: "10/2019 - 10/2021",
+    certificatePaper: certificate,
+    certificateDesc: "This is my Msc Certificate Paper",
+    thesisTitle:
+      "Text Classification for binary sentiment using Machine Learning and Deep Learning Algorithms",
+    thesisPaper1: thesis1,
+    thesisPaper2: thesis2,
   },
 ];
