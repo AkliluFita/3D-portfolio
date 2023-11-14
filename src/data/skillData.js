@@ -13,7 +13,7 @@ import git from "../assets/skillIcon/git.png";
 import docker from "../assets/skillIcon/docker.png";
 import figma from "../assets/skillIcon/figma.png";
 
-export const skillData = [
+export const skillIconData = [
   {
     name: "HTML 5",
     icon: html,
@@ -70,24 +70,47 @@ export const skillData = [
     name: "docker",
     icon: docker,
   },
+];
+
+export const skillTextData = [
   {
-    name: "graphql_1",
-    icon: graphql,
+    id: 1,
+    title: "Web Design",
+    subTitle: "(Figma, Canva, Adobe Photoshop)",
   },
   {
-    name: "postgresql_1",
-    icon: postgresql,
+    id: 2,
+    title: "CSS and its frameworks ",
+    subTitle: "(Bootstrap, Tailwind, MUI)",
   },
   {
-    name: "git_1",
-    icon: git,
+    id: 3,
+    title: "Programming Language",
+    subTitle: "(Python, JavaScript, Typescript, Java, Golang)",
   },
   {
-    name: "figma_1",
-    icon: figma,
+    id: 4,
+    title: "DBMS ",
+    subTitle: "(MySQL, Postgres, Mongos)",
   },
   {
-    name: "docker_1",
-    icon: docker,
+    id: 5,
+    title: "Web Frameworks and Library",
+    subTitle: "(React, Next.js, Express and Django)",
+  },
+  {
+    id: 6,
+    title: "Version Control System ",
+    subTitle: "(Git, GitHub, Gitlab)",
+  },
+  {
+    id: 7,
+    title: "State Management System ",
+    subTitle: "(Redux, Recoil, Context API)",
+  },
+  {
+    id: 8,
+    title: "Artificial Intelligent ",
+    subTitle: "(Machine Learning and Deep Learning)",
   },
 ];

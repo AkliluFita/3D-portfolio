@@ -80,3 +80,6 @@ https://www.radix-ui.com/primitives/docs/components/tooltip
 https://gradients.shecodes.io/gradients/202
 
 https://tailwindcomponents.com/gradient-generator/
+
+<!-- for image zoom library -->
+https://www.npmjs.com/package/react-medium-image-zoom

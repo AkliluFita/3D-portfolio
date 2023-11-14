@@ -5,6 +5,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import aboutMeImg from "../assets/about/about_me.png";
 import contactImg from "../assets/contact/contact-icon.png";
+import { contactData } from "../data/contactData";
 const Contact = () => {
   useEffect(() => {
     AOS.init({
@@ -36,23 +37,23 @@ const Contact = () => {
 export default Contact;
 
 const ContactBox = () => {
-  const lists = [1, 2, 3];
   return (
-    <div className="flex flex-col justify-between h-full lg:h-[80%] gap-4 text-tx_secondary lg:gap-4 ">
-      {lists.map((item, index) => (
+    <div className="flex flex-col justify-between h-full lg:h-[80%] gap-4 text-tx_secondary lg:gap-6  ">
+      {contactData.map((item) => (
         <div
-          key={index}
-          className="flex flex-col items-center gap-2 lg:gap-4  border border-br_primary rounded-lg  bg-[#dadfe4] dark:bg-gray-800 shadow-lg  lg:p-0 p-2"
+          key={item.id}
+          className="flex flex-col items-center gap-2 lg:gap-6  border border-br_primary rounded-lg  bg-[#dadfe4] dark:bg-gray-800 shadow-lg  lg:p-4 p-2"
           data-aos="fade-left"
         >
-          <img src={aboutMeImg} alt="" className="w-[4rem] h-[3rem]" />
-          <h1 className="font-mono text-lg font-bold lg:text-2xl">Phone</h1>
-          <p className="text-center text-tx_additional text-sm lg:text-[0.9rem] font-mono dark:text-gray-400">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem,
-            ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
+          <img src={item.contact_icon} alt="" className="w-[4rem] h-[3rem]" />
+          <h1 className="font-mono text-lg font-bold text-black dark:text-white lg:text-2xl">
+            {item.title}
+          </h1>
+          {/* <p className="text-center text-tx_additional text-sm lg:text-[0.9rem] font-mono dark:text-gray-400">
+            {item.desc}
+          </p> */}
           <h2 className="p-1 font-mono text-base font-bold text-black lg:text-lg common_background">
-            5632897412-8856662
+            {item.contact_info}
           </h2>
         </div>
       ))}
@@ -79,13 +80,13 @@ const ContactForm = () => {
       .then(
         (result) => {
           console.log(result.text);
-          toast("you successfully submitted");
+          toast.success("you successfully submitted");
           setIsSended(true);
         },
         (error) => {
           console.log(error.text);
-          toast(error.text);
-        }
+          toast.error(error.text);
+        } //
       );
     setIsLoading(false);
   };
@@ -99,7 +100,8 @@ const ContactForm = () => {
           get touch me
         </h1>
         <p className="mt-2 font-mono text-sm text-tx_additional lg:text-base dark:text-gray-400">
-          Let as discus about the proper that you may need to accomplish with me
+          Let us discus about the project that you may need to accomplish with
+          me
         </p>
       </div>
       <form
@@ -157,7 +159,7 @@ const ContactForm = () => {
             type="submit"
             value="Send"
             disabled={isSended}
-            className={`w-[10rem] p-2 mb-2 mr-2 text-lg font-medium bg-bt_primary rounded-2xl focus:outline-none hover:bg-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 common_background text-black font-mono ${
+            className={`w-[10rem]  p-2 mb-2 mr-2 text-lg font-bold bg-bt_primary rounded-2xl  text-white  font-mono ${
               isSended ? "cursor-not-allowed" : ""
             }`}
           >

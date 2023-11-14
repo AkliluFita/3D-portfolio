@@ -59,7 +59,17 @@ const ShowCase = () => {
           <SocialIcons />
           <div className="flex flex-row justify-center gap-4 p-2 mt-4">
             <Button text={"Hire Me"} className="text-black common_background" />
-            <Button text={"Download CV"} className="text-white bg-bt_primary" />
+            <a
+              rel="noreferrer"
+              href="https://flowcv.com/resume/b400qk1wvq"
+              target="_blank"
+              className="px-2 rounded-lg "
+            >
+              <Button
+                text={"Download CV"}
+                className="text-white bg-bt_primary"
+              />
+            </a>
           </div>
         </motion.div>
       </motion.div>

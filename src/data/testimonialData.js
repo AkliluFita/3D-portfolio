@@ -10,6 +10,8 @@ export const testimonialData = [
     id: 1,
     name: "Prof. Dr. Erbug CELEBI",
     personImg: erbugImg,
+    person_info:
+      "this was my supervise recommendation paper as cyprus international university",
     title: `Director of the Artificial Intelligence Application and Research Center at Cyprus International University`,
     desc: `I have known him as a thesis supervisor for around 9 month while he was student
     at department of Computer Engineering(Msc). During his period he showed that he is a successful, hardworking and talented student `,
@@ -22,6 +24,8 @@ export const testimonialData = [
     id: 2,
     name: "Prof. Dr. Sukhbir Singh",
     personImg: AvatarImg,
+    person_info:
+      "this was my teacher and adviser recommendation paper @ haramaya university",
     title: "Electrical and Computer Engineering Department",
     desc: ` I have known him for more than 3 years as a student of Electrical and Computer Engineering. 
     I found him to be an intelligent.mature and technically sound with analytical bent fo mind`,
@@ -33,6 +37,8 @@ export const testimonialData = [
     id: 3,
     name: "Mr. Yared Tadese",
     personImg: yaredImg,
+    person_info:
+      "this was my project manager recommendation paper @ mereb technology company",
     title: "Project Manager in Mere Technology Software Company(CEO)",
     desc: `He Worked as a full-stack developer at Mereb Tehnology from 17, 2022 until August 02, 2023. During this time. 
     I am thoroughly impressed with his skill and dedication`,

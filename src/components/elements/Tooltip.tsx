@@ -9,7 +9,7 @@ const TooltipRadix = ({ children, text }) => {
     });
   }, []);
   return (
-    <div data-aos="fade-left">
+    <div>
       <Tooltip.Provider>
         <Tooltip.Root>
           <Tooltip.Trigger>{children}</Tooltip.Trigger>

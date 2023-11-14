@@ -2,6 +2,8 @@ import * as Dialog from "@radix-ui/react-dialog";
 import { Cross2Icon } from "@radix-ui/react-icons";
 import { useEffect } from "react";
 import AOS from "aos";
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
 
 const ModalRadix = ({ children, content }) => {
   useEffect(() => {
@@ -23,15 +25,19 @@ const ModalRadix = ({ children, content }) => {
             <Dialog.Description className="font-mono text-mauve11 mt-[10px] mb-5 text-[0.7rem] lg:text-[0.9rem] leading-normal text-gray-800">
               {content?.desc}
             </Dialog.Description>
-            <div className="w-full h-[35rem]">
-              {content?.image && (
-                <img
-                  className="object-cover w-full h-full "
-                  src={content?.image}
-                  alt="modal"
-                />
-              )}
-            </div>
+
+            {content?.image && (
+              <Zoom>
+                <div className="w-full lg:h-[35rem] h-[30rem]">
+                  <img
+                    className="object-contain w-full h-full border border-gray-500 rounded-md"
+                    src={content?.image}
+                    alt="modal"
+                  />
+                </div>
+              </Zoom>
+            )}
+
             <Dialog.Close asChild>
               <button
                 className="text-black hover:bg-violet4 focus:shadow-violet7 absolute top-[10px] right-[10px] inline-flex h-[25px] w-[25px] appearance-none items-center justify-center rounded-full focus:shadow-[0_0_0_2px] focus:outline-none"

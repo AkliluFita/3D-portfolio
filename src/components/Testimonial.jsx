@@ -44,7 +44,7 @@ const Card = ({ item }) => {
       </div>
       <div className="flex-[2]   w-full p-2">
         <div className="flex items-center justify-between gap-2">
-          <h1 className="text-transparent text-tx_secondary  font-mono text-[1.5rem] font-bold  ">
+          <h1 className="text-transparent text-tx_secondary  font-mono lg:text-[1.5rem] text-[1rem] font-bold  ">
             {item.name}
           </h1>
           <div className="flex items-center gap-4 ">
@@ -57,14 +57,22 @@ const Card = ({ item }) => {
               >
                 <TooltipRadix text={item.linkedin_link}>
                   {" "}
-                  <img src={linkedinIcon} alt="" width="30rem" />
+                  <img
+                    src={linkedinIcon}
+                    alt=""
+                    className="lg:w-[2rem] w-[1.5rem]"
+                  />
                 </TooltipRadix>
               </a>
             )}
 
             <div>
               <TooltipRadix text={item.email}>
-                <img src={emailIcon} alt="" width="30rem" />
+                <img
+                  src={emailIcon}
+                  alt=""
+                  className="lg:w-[2rem] w-[1.5rem]"
+                />
               </TooltipRadix>
             </div>
           </div>
@@ -81,7 +89,7 @@ const Card = ({ item }) => {
           <ModalRadix
             content={{
               title: "Recommendation letter",
-              desc: "this is my supervise recommendation paper",
+              desc: item.person_info,
               image: item.recommendationPaper,
             }}
           >

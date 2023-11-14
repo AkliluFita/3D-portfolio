@@ -66,7 +66,7 @@ const SingleEducation = ({ item, index }) => {
           initial={false}
           animate="show"
           variants={listItemVariant()}
-          className=" flex-[11] flex gap-2 lg:gap-2 flex-col p-6 text-black  w-full"
+          className=" flex-[11] flex gap-2 lg:gap-2 flex-col p-4 lg:p-6 text-black  w-full"
         >
           {item.courseLists.map((course) => (
             <motion.li
@@ -74,7 +74,7 @@ const SingleEducation = ({ item, index }) => {
               animate="show"
               variants={itemVariant()}
               key={course}
-              className="lg:text-[1.2rem] text-[0.9rem] text-tx_additional list-disc list-outside font-mono dark:text-gray-400 "
+              className="lg:text-[1.2rem] text-[0.8rem] text-tx_additional list-disc list-outside font-mono dark:text-gray-400 "
             >
               {course}
             </motion.li>
@@ -82,7 +82,7 @@ const SingleEducation = ({ item, index }) => {
         </motion.ul>
       </div>
       {item.id === 2 && (
-        <h2 className="p-2 lg:p-4 bg-[#7F2F92] flex items-center justify-between gap-2 font-mono font-bold">
+        <h2 className="flex items-center justify-between gap-2 p-2 font-mono font-bold lg:p-4">
           <ModalRadix
             content={{
               title: "Certificate Paper",
@@ -90,7 +90,7 @@ const SingleEducation = ({ item, index }) => {
               image: item.certificatePaper,
             }}
           >
-            <button className="p-1 border border-white  text-[0.8rem]  lg:text-base">
+            <button className="p-1 border border-white  text-[0.8rem]  lg:text-base bg-[#7F2F92]">
               Certificate Paper
             </button>
           </ModalRadix>
@@ -101,7 +101,7 @@ const SingleEducation = ({ item, index }) => {
               image: item.thesisPaper1,
             }}
           >
-            <button className="p-1 border border-white  text-[0.8rem] lg:text-base">
+            <button className="p-1 border border-white  text-[0.8rem] lg:text-base bg-[#7F2F92]">
               Thesis Title
             </button>
           </ModalRadix>
@@ -112,7 +112,7 @@ const SingleEducation = ({ item, index }) => {
               image: item.thesisPaper2,
             }}
           >
-            <button className="p-1 border border-white text-[0.8rem] lg:text-base">
+            <button className="p-1 border border-white text-[0.8rem] lg:text-base bg-[#7F2F92]">
               Thesis Book View
             </button>
           </ModalRadix>
