@@ -1,16 +1,19 @@
 import logoImg from "../assets/navbar/my_new_logo.png";
 import { motion } from "framer-motion";
-import { MenuToggle } from "./elements/MenuToggle";
 import { useEffect, useState } from "react";
 import Sidebar from "./sidebar/Sidebar";
 import Links from "./Links";
-import githubImg from "../assets/navbar/github.png";
-import moonImg from "../assets/navbar/moon.png";
-import sunImg from "../assets/navbar/sun.png";
+import MenuToggle from "../components/elements/MenuToggle";
 import AOS from "aos";
 import TooltipRadix from "./elements/Tooltip";
 import { useRecoilState } from "recoil";
 import { darkModeAtom } from "../recoil/darkMode";
+import {
+  MoonIcon,
+  SunIcon,
+  LinkedInLogoIcon,
+  GitHubLogoIcon,
+} from "@radix-ui/react-icons";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -88,7 +91,7 @@ const Navbar = () => {
             src={logoImg}
             className="flex flex-shrink-0 object-cover w-[2.5rem] lg:w-[4rem] cursor-pointer"
           />{" "}
-          <h1 className="text-sm font-bold dark:text-white lg:text-lg text-tx_primary">
+          <h1 className="hidden font-bold lg:block dark:text-white lg:text-lg text-tx_primary">
             Aklilu_Dev
           </h1>
         </motion.div>
@@ -100,12 +103,17 @@ const Navbar = () => {
         </motion.div>
         <div className="flex flex-row items-center h-full flex-[1] justify-center gap-4 lg:gap-8">
           <TooltipRadix text={!darkMode ? "Dark Mode" : "Light Mode"}>
-            <img
-              src={!darkMode ? moonImg : sunImg}
-              alt=""
-              className="w-[2rem] h-[2rem] lg:w-[3rem] lg:h-[3rem] cursor-pointer"
-              onClick={toggleDarkMode}
-            />
+            {!darkMode ? (
+              <MoonIcon
+                className="w-[1.3rem] h-[1.3rem] lg:h-[1.3rem] cursor-pointer dark:text-white text-black"
+                onClick={toggleDarkMode}
+              />
+            ) : (
+              <SunIcon
+                className="w-[1.3rem] h-[1.3rem] lg:h-[1.3rem] cursor-pointer dark:text-white text-black"
+                onClick={toggleDarkMode}
+              />
+            )}
           </TooltipRadix>
 
           <a
@@ -115,11 +123,17 @@ const Navbar = () => {
             className="px-2 rounded-lg "
           >
             <TooltipRadix text="Github">
-              <img
-                src={githubImg}
-                alt=""
-                className="w-[2rem] h-[2rem] lg:w-[3rem] lg:h-[3rem] cursor-pointer"
-              />
+              <GitHubLogoIcon className="w-[1.3rem] h-[1.3rem] lg:w-[1.5rem] lg:h-[1.5rem] cursor-pointer dark:text-white text-black" />
+            </TooltipRadix>
+          </a>
+          <a
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/aklilu-fita-493679204/"
+            target="_blank"
+            className="px-2 rounded-lg "
+          >
+            <TooltipRadix text="Linkedin">
+              <LinkedInLogoIcon className="w-[1.3rem] h-[1.3rem]  lg:w-[1.5rem] lg:h-[1.5rem] cursor-pointer dark:text-white text-black" />
             </TooltipRadix>
           </a>
         </div>

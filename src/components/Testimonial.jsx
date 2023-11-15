@@ -5,7 +5,14 @@ import ModalRadix from "./elements/Modal";
 import emailIcon from "../assets/testimonial/email.png";
 import linkedinIcon from "../assets/testimonial/linkedin.png";
 import TooltipRadix from "./elements/Tooltip";
+import { useEffect } from "react";
+import AOS from "aos";
 const Testimonial = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 600,
+    });
+  }, []);
   return (
     <div className="lg:h-[100vh] common_background dark:bg-darkModeImage p-2 lg:p-4 flex flex-col gap-4 items-center  overflow-y-scroll">
       <div className="mt-[95px] flex flex-row items-center gap-4">
@@ -30,7 +37,10 @@ export default Testimonial;
 
 const Card = ({ item }) => {
   return (
-    <div className="flex flex-col items-center w-full h-full gap-4 lg:p-4 p-2 text-black border border-[#7F2F92] rounded-lg shadow-xl bg-bg_primary dark:bg-gray-800">
+    <div
+      className="flex flex-col items-center w-full h-full gap-4 lg:p-4 p-2 text-black border border-[#7F2F92] rounded-lg shadow-xl bg-bg_primary dark:bg-gray-800"
+      data-aos="zoom-in"
+    >
       <div className="flex-[4]h-full w-full text-center flex items-center justify-center">
         <div className="flex items-center h-full gap-4 ">
           <span className="w-10 h-2 bg-white"></span>

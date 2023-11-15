@@ -16,14 +16,14 @@ const Skill = () => {
     <div className=" bg-cover bg-center bg-no-repeat common_background dark:bg-darkModeImage flex flex-col lg:p-8 p-2 lg:h-[100vh] items-center  gap-4">
       <div className="mt-[95px] flex flex-row items-center gap-4">
         <img src={skillImg} alt="" className="w-[4rem] h-[3rem]" />
-        <h1
-          className=" text-[2rem] lg:text-[3rem] bg-gradient-to-r from-indigo-500  to-pink-500 bg-clip-text text-transparent  uppercase font-bold font-mono   "
-          data-aos="fade-right"
-        >
+        <h1 className=" text-[2rem] lg:text-[3rem] bg-gradient-to-r from-indigo-500  to-pink-500 bg-clip-text text-transparent  uppercase font-bold font-mono   ">
           My Skills
         </h1>
       </div>
-      <div className="flex gap-4 flex-[10] lg:flex-row flex-col p-2  ">
+      <div
+        className="flex gap-4 flex-[10] lg:flex-row flex-col p-2  "
+        data-aos="fade-right"
+      >
         <div className="flex-[1]  lg:p-4 p-1 dark:bg-gray-800 bg-bg_secondary rounded-lg border border-br_primary">
           <div className="flex flex-col w-full gap-4 lg:p-4">
             <h1 className="text-center text-[1.5rem] lg:text-[2rem] dark:text-white text-black font-mono font-bold ">

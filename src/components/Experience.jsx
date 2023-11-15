@@ -6,7 +6,6 @@ import "react-vertical-timeline-component/style.min.css";
 import work_icon from "../assets/work-icon.png";
 import { experienceData } from "../data/experienceData";
 import demoImg from "../assets/experienceIcon/demo-80.png";
-import detailImg from "../assets/experienceIcon/detail-80.png";
 import githubImg from "../assets/experienceIcon/github-80.png";
 import AOS from "aos";
 import { useEffect } from "react";
