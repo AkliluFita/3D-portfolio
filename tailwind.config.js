@@ -16,7 +16,8 @@ export default {
         "contact-glob": "url('./src/assets/contact/earth.png')",
       },
       fontFamily: {
-        primary: ["Neucha"],
+        primary: ["Fenix", "ans-serif"],
+        secondary: ["Roboto", "ans-serif"],
       },
       colors: {
         // background

@@ -27,30 +27,30 @@ export default function App() {
         <Navbar />
         <ShowCase />
       </section>
-      <BorderLine />
+      {/* <BorderLine /> */}
       <div>
         <section id="About">
           <About />
         </section>
-        <BorderLine />
+        {/* <BorderLine /> */}
         <section id="Experience">
           <Experience />
         </section>
-        <BorderLine />
+        {/* <BorderLine /> */}
         <section id="Education">
           <Education />
         </section>
 
-        <BorderLine />
+        {/* <BorderLine /> */}
         <section id="Skill">
           <Skill />
         </section>
-        <BorderLine />
+        {/* <BorderLine /> */}
         <section id="Testimonial">
           <Testimonial />
         </section>
       </div>
-      <BorderLine />
+      {/* <BorderLine /> */}
       <section id="Contact">
         <Contact />
       </section>

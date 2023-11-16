@@ -18,18 +18,18 @@ const SingleEducation = ({ item, index }) => {
       initial="hidden"
       animate="show"
       variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-      className="flex-[1] flex flex-col gap-2 lg:gap-4 p-4 bg-bg_secondary dark:bg-gray-800 rounded-lg shadow-inner shadow-purple-500"
+      className="flex-[1] flex flex-col gap-2 lg:gap-4 p-4 bg-bg_secondary dark:bg-gray-800 rounded-lg border border-purple-500"
     >
       <div className="flex flex-row flex-[2] justify-between">
         <div>
-          <h1 className="text-[1.2rem] lg:text-[2rem] text-[#7F2F92] font-bold font-mono">
+          <h1 className="text-[1.2rem] lg:text-[2rem] text-[#7F2F92] font-bold font-primary">
             {item.title}
           </h1>
           <div className="flex flex-col gap-4">
-            <h5 className="text-[0.7rem] lg:text-[1rem] text-tx_additional font-mono">
+            <h5 className="text-[0.7rem] lg:text-[1rem] text-tx_additional font-primary">
               {item.subTitle}
             </h5>
-            <h3 className=" p-1 lg:p-2 common_background max-w-[15rem] text-center text-tx_secondary font-mono">
+            <h3 className=" p-1 lg:p-2 common_background max-w-[15rem] text-center text-tx_secondary font-primary">
               {item.educationPeriod}
             </h3>
           </div>
@@ -44,7 +44,7 @@ const SingleEducation = ({ item, index }) => {
       </div>
       <div className=" flex flex-row flex-[2] items-center gap-4">
         <img src={wellDoneImg} alt="" className="w-[3rem]" />
-        <h2 className=" text-black text-[0.8rem] lg:text-[1.2rem] font-mono dark:text-gray-400 ">
+        <h2 className=" text-black text-[0.8rem] lg:text-[1.2rem] font-primary dark:text-gray-400 ">
           {item.subTitleTwo}
         </h2>
 
@@ -59,7 +59,7 @@ const SingleEducation = ({ item, index }) => {
       </div>
       <hr className="h-[2px] w-full bg-br_primary border border-br_primary" />
       <div className="flex flex-col flex-[8] items-center lg:gap-4 gap-4 ">
-        <h1 className="text-[1rem] lg:text-[1.5rem] flex-[1] text-tx_secondary font-bold font-mono">
+        <h1 className="text-[1rem] lg:text-[1.5rem] flex-[1] text-tx_secondary font-bold font-primary">
           Some of relevant courses that I took
         </h1>
         <motion.ul
@@ -74,7 +74,7 @@ const SingleEducation = ({ item, index }) => {
               animate="show"
               variants={itemVariant()}
               key={course}
-              className="lg:text-[1.2rem] text-[0.8rem] text-tx_additional list-disc list-outside font-mono dark:text-gray-400 "
+              className="lg:text-[1.2rem] text-[0.8rem] text-tx_additional list-disc list-outside font-primary dark:text-gray-400 "
             >
               {course}
             </motion.li>
@@ -82,7 +82,7 @@ const SingleEducation = ({ item, index }) => {
         </motion.ul>
       </div>
       {item.id === 2 && (
-        <h2 className="flex items-center justify-between gap-2 p-2 font-mono font-bold lg:p-4">
+        <h2 className="flex items-center justify-between gap-2 p-2 font-bold font-primary lg:p-4">
           <ModalRadix
             content={{
               title: "Certificate Paper",
@@ -90,7 +90,7 @@ const SingleEducation = ({ item, index }) => {
               image: item.certificatePaper,
             }}
           >
-            <button className="lg:p-4 p-2 mb-2 mr-2 font-mono text-[0.6rem]  font-bold  uppercase text-black  dark:text-white lg:w-auto lg:text-lg rounded-3xl underline ">
+            <button className="lg:p-4 p-2 mb-2 mr-2 font-primary text-[0.6rem]  font-bold  uppercase text-black  dark:text-white lg:w-auto lg:text-lg rounded-3xl underline ">
               Certificate Paper
             </button>
           </ModalRadix>
@@ -101,7 +101,7 @@ const SingleEducation = ({ item, index }) => {
               image: item.thesisPaper1,
             }}
           >
-            <button className="lg:p-4 p-2 mb-2 mr-2 font-mono text-[0.6rem]  font-bold  uppercase text-black  dark:text-white lg:w-auto lg:text-lg rounded-3xl underline ">
+            <button className="lg:p-4 p-2 mb-2 mr-2 font-primary text-[0.6rem]  font-bold  uppercase text-black  dark:text-white lg:w-auto lg:text-lg rounded-3xl underline ">
               Thesis Title
             </button>
           </ModalRadix>
@@ -112,7 +112,7 @@ const SingleEducation = ({ item, index }) => {
               image: item.thesisPaper2,
             }}
           >
-            <button className="lg:p-4 p-2 mb-2 mr-2 font-mono text-[0.6rem]  font-bold  uppercase text-black  dark:text-white lg:w-auto lg:text-lg rounded-3xl underline ">
+            <button className="lg:p-4 p-2 mb-2 mr-2 font-primary text-[0.6rem]  font-bold  uppercase text-black  dark:text-white lg:w-auto lg:text-lg rounded-3xl underline ">
               Thesis Book View
             </button>
           </ModalRadix>
@@ -129,11 +129,11 @@ const Education = () => {
     });
   }, []);
   return (
-    <div className="common_background dark:bg-darkModeImage  h-auto lg:h-[100vh] flex flex-col gap-4 items-center border border-white">
+    <div className="common_background dark:bg-darkModeImage  h-auto lg:h-[100vh] flex flex-col gap-4 items-center">
       <div className="mt-[95px] flex flex-row items-center gap-4">
         <img src={educationImg} alt="" className="w-[4rem] h-[3rem]" />
         <h1
-          className=" text-[2rem] lg:text-[3rem] bg-gradient-to-r from-indigo-500  to-pink-500 bg-clip-text text-transparent  uppercase font-bold font-mono   "
+          className=" text-[2rem] lg:text-[3rem] bg-gradient-to-r from-indigo-500  to-pink-500 bg-clip-text text-transparent  uppercase font-bold font-primary   "
           data-aos="fade-right"
         >
           Education

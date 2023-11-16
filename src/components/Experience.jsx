@@ -27,7 +27,7 @@ const Experience = () => {
       <div className="mt-[95px] flex flex-row items-center gap-4">
         <img src={experienceImg} alt="" className="w-[4rem] h-[3rem]" />
         <h1
-          className=" text-[2rem] lg:text-[3rem] bg-gradient-to-r from-indigo-500  to-pink-500 bg-clip-text text-transparent  uppercase font-bold font-mono   "
+          className=" text-[2rem] lg:text-[3rem] bg-gradient-to-r from-indigo-500  to-pink-500 bg-clip-text text-transparent  uppercase font-bold font-primary   "
           data-aos="fade-right"
         >
           My Experience
@@ -42,8 +42,7 @@ const Experience = () => {
               contentStyle={{
                 background: background,
                 color: "#7F2F92",
-                // border: "1px solid #7F2F92",
-                boxShadow: "1px 1px 5px #9A5CD0 inset",
+                border: "1px solid #7F2F92",
               }}
               contentArrowStyle={{
                 borderRight: "7px solid  #7F2F92",
@@ -57,10 +56,10 @@ const Experience = () => {
               icon={<img src={work_icon} />}
             >
               <div className="">
-                <h3 className="vertical-timeline-element-title text-[1.2rem] uppercase text-tx_secondary font-bold font-mono">
+                <h3 className="vertical-timeline-element-title text-[1.2rem] uppercase text-tx_secondary font-bold font-primary">
                   {item.title}
                 </h3>
-                <h4 className="flex flex-row items-center gap-2 font-mono text-sm text-gray-800 dark:text-gray-200 vertical-timeline-element-subtitle">
+                <h4 className="flex flex-row items-center gap-2 text-sm text-gray-800 font-primary dark:text-gray-200 vertical-timeline-element-subtitle">
                   Company:- {item.subTitle}{" "}
                   {item.web_link !== null && (
                     <a rel="noreferrer" href={item.web_link} target="_blank">
@@ -74,7 +73,7 @@ const Experience = () => {
                     </a>
                   )}
                 </h4>
-                <p className=" text-gray-600 text-[0.7rem] lg:text-[0.9rem] font-mono dark:text-gray-400  ">
+                <p className=" text-gray-600 text-[0.7rem] lg:text-[0.9rem] font-primary dark:text-gray-400  ">
                   {item.des}
                 </p>
                 <div className="flex flex-row items-center justify-end gap-4 mt-2">
