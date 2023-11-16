@@ -59,7 +59,7 @@ const Cards = ({ item }) => {
       className="flex-[1] "
     >
       <div
-        className="flex flex-col items-center justify-between h-full p-4 bg-bg_primary dark:bg-gray-800   border border-[#7F2F92] rounded-lg shadow-xl g-3 "
+        className="flex flex-col items-center justify-between h-full p-4 rounded-lg shadow-inner shadow-purple-500 bg-bg_primary dark:bg-gray-800 g-3"
         data-aos="flip-left"
       >
         <div className="flex items-center w-1/2 h-[3rem] text-center justify-center p-2">
@@ -93,7 +93,7 @@ const Cards = ({ item }) => {
                 {item.experiencePeriod}:years
               </h3>
             </div>
-            <button className="p-2 font-mono text-white bg-bt_primary rounded-2xl ">
+            <button className="p-2 font-mono text-white bg-purple-600 shadow-inner rounded-2xl shadow-gray-300 dark:shadow-white">
               Detail
             </button>
           </div>

@@ -42,7 +42,7 @@ const ContactBox = () => {
       {contactData.map((item) => (
         <div
           key={item.id}
-          className="flex flex-col items-center gap-2 lg:gap-6  border border-br_primary rounded-lg  bg-[#dadfe4] dark:bg-gray-800 shadow-lg  lg:p-4 p-2"
+          className="flex flex-col items-center gap-2 lg:gap-6  shadow-inner shadow-purple-500 rounded-lg  bg-[#dadfe4] dark:bg-gray-800  lg:p-4 p-2"
           data-aos="fade-left"
         >
           <img src={item.contact_icon} alt="" className="w-[4rem] h-[3rem]" />
@@ -92,7 +92,7 @@ const ContactForm = () => {
   };
   return (
     <div
-      className="  rounded-md flex flex-col items-center w-full lg:w-[40rem] bg-[#dadfe4] border border-[#7F2F92] dark:bg-gray-800 h-full "
+      className="  rounded-md flex flex-col items-center w-full lg:w-[40rem] bg-[#dadfe4] shadow-inner shadow-purple-500 dark:bg-gray-800 h-full "
       data-aos="fade-right"
     >
       <div className="p-2 ">
@@ -159,7 +159,7 @@ const ContactForm = () => {
             type="submit"
             value="Send"
             disabled={isSended}
-            className={`w-[10rem]  p-2 mb-2 mr-2 text-lg font-bold bg-bt_primary rounded-2xl  text-white  font-mono ${
+            className={`lg:p-4 p-2 mb-2 mr-2 font-mono text-[1rem] bg-purple-600 font-bold  uppercase shadow-inner text-white  lg:text-lg rounded-3xl shadow-gray-400 dark:shadow-white w-[10rem]  ${
               isSended ? "cursor-not-allowed" : ""
             }`}
           >

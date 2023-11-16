@@ -3,6 +3,8 @@ import whatsAppImg from "../assets/whatsapp-64.png";
 import telegramImg from "../assets/telegram-64.png";
 import twitterImg from "../assets/twitter-64.png";
 
+import { face } from "@radix-ui/react-icons";
+
 export const socialMedia = [
   {
     name: "Facebook",

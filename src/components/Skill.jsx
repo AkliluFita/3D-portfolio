@@ -21,15 +21,15 @@ const Skill = () => {
         </h1>
       </div>
       <div
-        className="flex gap-4 flex-[10] lg:flex-row flex-col p-2  "
+        className="flex gap-4 flex-[10] lg:flex-row flex-col lg:px-8  lg:w-[80%] w-[90%]"
         data-aos="fade-right"
       >
-        <div className="flex-[1]  lg:p-4 p-1 dark:bg-gray-800 bg-bg_secondary rounded-lg border border-br_primary">
-          <div className="flex flex-col w-full gap-4 lg:p-4">
+        <div className="flex-[1]  lg:p-4 p-1 dark:bg-gray-800 bg-bg_secondary rounded-lg shadow-inner shadow-purple-500">
+          <div className="flex flex-col w-full gap-4 p-1 lg:p-4">
             <h1 className="text-center text-[1.5rem] lg:text-[2rem] dark:text-white text-black font-mono font-bold ">
               My Skill Lists
             </h1>
-            <ul className=" flex-[11] flex gap-2 lg:gap-6 flex-col lg:p-6 text-black  w-full">
+            <ul className=" flex-[11] flex gap-2 lg:gap-4 flex-col lg:p-6 text-black  w-full">
               {skillTextData.map((item) => (
                 <li
                   key={item.id}
@@ -41,7 +41,7 @@ const Skill = () => {
                       alt=""
                       className="lg:w-[2rem] w-[1.5rem]"
                     />
-                    <h1 className="font-mono uppercase lg:text-[1.2rem] text-[0.8rem]">
+                    <h1 className="font-mono uppercase lg:text-[1.1rem] text-[0.8rem]">
                       {item.title}
                     </h1>
                   </div>
@@ -53,11 +53,11 @@ const Skill = () => {
             </ul>
           </div>
         </div>
-        <div className="flex   flex-wrap items-center justify-between  gap-2 p-4   flex-[1] border border-br_primary rounded-lg dark:bg-gray-800 bg-bg_secondary">
+        <div className="flex   flex-wrap items-center justify-between  gap-2 p-2   flex-[1]  rounded-lg dark:bg-gray-800 bg-bg_secondary shadow-inner shadow-purple-500">
           {skillIconData.map((item, index) => (
             <div
               key={index}
-              className="  rounded-lg    lg:p-4 p-0 lg:w-[10rem] w-[8rem]"
+              className="  rounded-lg    lg:p-2 p-0 lg:w-[10rem] w-[8rem] h-[8rem]"
             >
               <BallCanvas icon={item.icon} />
             </div>

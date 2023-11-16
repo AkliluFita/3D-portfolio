@@ -78,8 +78,8 @@ const Navbar = () => {
     <div
       className={` ${
         isSticky
-          ? "shadow-md h-12 lg:h-[5.5rem] dark:bg-gray-600/30 backdrop-blur-sm bg-gray-200 dark:backdrop-blur-sm"
-          : "h-14 lg:h-[6rem] dark:bg-gray-800  bg-gray-200  shadow-lg"
+          ? "shadow-lg  h-12 lg:h-[5.5rem] dark:bg-gray-800 bg-gray-200 "
+          : "h-14 lg:h-[6rem] dark:bg-darkModeImage  bg-gray-200  "
       } w-full  fixed top-0 left-0 p-1 text-white z-[22] duration-300 ease-in-out`}
     >
       <div className="flex flex-row items-center h-full gap-4 lg:justify-between">

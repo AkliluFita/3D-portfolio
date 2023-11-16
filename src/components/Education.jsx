@@ -18,7 +18,7 @@ const SingleEducation = ({ item, index }) => {
       initial="hidden"
       animate="show"
       variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-      className="flex-[1]  border border-br_primary flex flex-col gap-2 lg:gap-4 p-4 bg-bg_secondary dark:bg-gray-800 rounded-lg shadow-lg"
+      className="flex-[1] flex flex-col gap-2 lg:gap-4 p-4 bg-bg_secondary dark:bg-gray-800 rounded-lg shadow-inner shadow-purple-500"
     >
       <div className="flex flex-row flex-[2] justify-between">
         <div>
@@ -90,7 +90,7 @@ const SingleEducation = ({ item, index }) => {
               image: item.certificatePaper,
             }}
           >
-            <button className="p-1 border border-white  text-[0.8rem]  lg:text-base bg-[#7F2F92]">
+            <button className="lg:p-4 p-2 mb-2 mr-2 font-mono text-[0.6rem]  font-bold  uppercase text-black  dark:text-white lg:w-auto lg:text-lg rounded-3xl underline ">
               Certificate Paper
             </button>
           </ModalRadix>
@@ -101,7 +101,7 @@ const SingleEducation = ({ item, index }) => {
               image: item.thesisPaper1,
             }}
           >
-            <button className="p-1 border border-white  text-[0.8rem] lg:text-base bg-[#7F2F92]">
+            <button className="lg:p-4 p-2 mb-2 mr-2 font-mono text-[0.6rem]  font-bold  uppercase text-black  dark:text-white lg:w-auto lg:text-lg rounded-3xl underline ">
               Thesis Title
             </button>
           </ModalRadix>
@@ -112,7 +112,7 @@ const SingleEducation = ({ item, index }) => {
               image: item.thesisPaper2,
             }}
           >
-            <button className="p-1 border border-white text-[0.8rem] lg:text-base bg-[#7F2F92]">
+            <button className="lg:p-4 p-2 mb-2 mr-2 font-mono text-[0.6rem]  font-bold  uppercase text-black  dark:text-white lg:w-auto lg:text-lg rounded-3xl underline ">
               Thesis Book View
             </button>
           </ModalRadix>

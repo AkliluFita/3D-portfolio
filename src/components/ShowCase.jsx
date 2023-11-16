@@ -67,7 +67,7 @@ const ShowCase = () => {
             >
               <Button
                 text={"Download CV"}
-                className="text-white bg-bt_primary"
+                className="text-white bg-purple-600"
               />
             </a>
           </div>
@@ -77,7 +77,7 @@ const ShowCase = () => {
         className=" flex-[1] h-full  w-full flex flex-col justify-center z-[1] relative object-cover items-center"
         data-aos="fade-left"
       >
-        <img src={sampleImg} alt="ggs" className="w-[70%]" />
+        <img src={sampleImg} alt="ggs" className="w-[90%]" />
       </div>
       <SlideText sideType="right" />
     </div>

@@ -42,7 +42,8 @@ const Experience = () => {
               contentStyle={{
                 background: background,
                 color: "#7F2F92",
-                border: "1px solid #7F2F92",
+                // border: "1px solid #7F2F92",
+                boxShadow: "1px 1px 5px #9A5CD0 inset",
               }}
               contentArrowStyle={{
                 borderRight: "7px solid  #7F2F92",
@@ -55,7 +56,7 @@ const Experience = () => {
               }}
               icon={<img src={work_icon} />}
             >
-              <div className="dark:bg-gray-800">
+              <div className="">
                 <h3 className="vertical-timeline-element-title text-[1.2rem] uppercase text-tx_secondary font-bold font-mono">
                   {item.title}
                 </h3>

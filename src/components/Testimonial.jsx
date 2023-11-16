@@ -38,7 +38,7 @@ export default Testimonial;
 const Card = ({ item }) => {
   return (
     <div
-      className="flex flex-col items-center w-full h-full gap-4 lg:p-4 p-2 text-black border border-[#7F2F92] rounded-lg shadow-xl bg-bg_primary dark:bg-gray-800"
+      className="flex flex-col items-center w-full h-full gap-4 p-2 text-black rounded-lg shadow-inner lg:p-4 shadow-purple-500 bg-bg_primary dark:bg-gray-800"
       data-aos="zoom-in"
     >
       <div className="flex-[4]h-full w-full text-center flex items-center justify-center">
@@ -103,7 +103,7 @@ const Card = ({ item }) => {
               image: item.recommendationPaper,
             }}
           >
-            <button className="p-2 font-mono font-bold text-white lg:p-4 bg-bt_primary rounded-2xl">
+            <button className="lg:p-4 p-2 mb-2 mr-2 font-mono text-[0.6rem] bg-purple-600 font-bold  uppercase shadow-inner text-white lg:w-auto lg:text-lg rounded-3xl shadow-gray-400 dark:shadow-white">
               Recommendation Paper
             </button>
           </ModalRadix>
