@@ -13,7 +13,9 @@ const About = () => {
   }, []);
 
   return (
-    <div className="  lg:h-[100vh] common_background dark:bg-darkModeImage p-4 flex flex-col gap-4 items-center  overflow-y-scroll ">
+    <div className="  lg:h-[100vh] common_background dark:bg-darkModeImage p-4 flex flex-col gap-4 items-center  overflow-y-scroll relative ">
+      <div className=" absolute top-0 h-[5rem] w-full bg-purple-600 blur-[150px]"></div>
+
       <div className="mt-[95px] flex flex-row items-center gap-4">
         <img src={aboutMeImg} alt="" className="w-[4rem] h-[3rem]" />
         <h1
@@ -93,7 +95,7 @@ const Cards = ({ item }) => {
                 {item.experiencePeriod}:years
               </h3>
             </div>
-            <button className="p-2 text-white bg-purple-600 shadow-inner font-primary rounded-2xl shadow-gray-300 dark:shadow-white">
+            <button className="p-2 text-white bg-purple-600 font-primary rounded-2xl ">
               Detail
             </button>
           </div>

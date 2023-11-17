@@ -10,6 +10,7 @@ import Skill from "./components/Skill";
 import MyLogoLoading from "./components/MyLogoLoadng";
 import Footer from "./components/Footer";
 import Testimonial from "./components/Testimonial";
+import GoTopButton from "./components/elements/GoUpButton";
 
 export default function App() {
   const [isLoadingPage, setIsLoadingPage] = useState(true);
@@ -27,43 +28,34 @@ export default function App() {
         <Navbar />
         <ShowCase />
       </section>
-      {/* <BorderLine /> */}
       <div>
         <section id="About">
           <About />
         </section>
-        {/* <BorderLine /> */}
         <section id="Experience">
           <Experience />
         </section>
-        {/* <BorderLine /> */}
         <section id="Education">
           <Education />
         </section>
-
-        {/* <BorderLine /> */}
         <section id="Skill">
           <Skill />
         </section>
-        {/* <BorderLine /> */}
         <section id="Testimonial">
           <Testimonial />
         </section>
       </div>
-      {/* <BorderLine /> */}
       <section id="Contact">
         <Contact />
       </section>
       <section>
         <Footer />
       </section>
+      <GoTopButton />
     </div>
   );
 }
 
-const BorderLine = () => {
-  return <hr className="h-[5px] bg-[#7F2F92]" />;
-};
 
 // #2B2C39
 // #201E26

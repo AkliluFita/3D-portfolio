@@ -13,7 +13,8 @@ const Testimonial = () => {
     });
   }, []);
   return (
-    <div className="lg:h-[100vh] common_background dark:bg-darkModeImage p-2 lg:p-4 flex flex-col gap-4 items-center  overflow-y-scroll">
+    <div className="lg:h-[100vh] common_background dark:bg-darkModeImage p-2 lg:p-4 flex flex-col gap-4 items-center  overflow-y-scroll relative">
+      <div className=" absolute top-0 h-[5rem] w-full bg-purple-600 blur-[150px]"></div>
       <div className="mt-[95px] flex flex-row items-center gap-4">
         <img src={aboutMeImg} alt="" className="w-[4rem] h-[3rem]" />
         <h1

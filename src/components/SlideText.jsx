@@ -33,7 +33,7 @@ const SlideText = ({ sideType }) => {
     <>
       {sideType === "left" ? (
         <motion.div
-          className="absolute top-[-25%] dark:text-gray-700  text-gray-500  text-[40rem] font-bold opacity-20 whitespace-nowrap uppercase hidden lg:block w-1/2 font-primary"
+          className="absolute top-[-20%] dark:text-gray-700  text-gray-500  text-[40rem] font-bold opacity-20 whitespace-nowrap uppercase hidden lg:block w-1/2 font-primary"
           variants={leftSlideText}
           initial="initial"
           animate="animate"

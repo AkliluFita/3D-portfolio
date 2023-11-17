@@ -32,6 +32,7 @@ const ShowCase = () => {
   return (
     <div className="flex lg:flex-row items-center w-full h-auto lg:h-screen gap-4 p-4 bg-lightModeImage dark:bg-darkModeImage  flex-col relative z-[1] mt-[50px] lg:mt-[95px] bg-cover  bg-center">
       <SlideText sideType="left" />
+      <div className=" absolute top-0 h-[5rem] w-full bg-purple-600 blur-[200px]"></div>
       <motion.div
         className=" flex-[1] h-full  flex flex-col items-center justify-center p-2 z-[1] "
         data-aos="fade-right"
@@ -57,7 +58,7 @@ const ShowCase = () => {
             {showCaseData.description}
           </p>
           <SocialIcons />
-          <div className="flex flex-row justify-center gap-4 p-2 mt-4">
+          <div className="flex flex-row justify-center gap-4 p-2 mt-4 ">
             <Button text={"Hire Me"} className="text-black common_background" />
             <a
               rel="noreferrer"

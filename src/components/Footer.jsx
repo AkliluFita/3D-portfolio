@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <div
       className=" h-auto lg:h-[30rem] w-full p-4 bg-[#dadfe4] text-black dark:bg-gray-800 "
-      data-aos="fade-up"
+      // data-aos="fade-up"
     >
       <div className="flex flex-col h-full gap-4 p-4">
         <div className="flex-[1] border-b-4 border-br_primary flex flex-row gap-4 items-center p-2">

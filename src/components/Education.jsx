@@ -129,7 +129,8 @@ const Education = () => {
     });
   }, []);
   return (
-    <div className="common_background dark:bg-darkModeImage  h-auto lg:h-[100vh] flex flex-col gap-4 items-center">
+    <div className="common_background dark:bg-darkModeImage  h-auto lg:h-[100vh] flex flex-col gap-4 items-center relative">
+      <div className=" absolute top-0 h-[5rem] w-full bg-purple-600 blur-[150px]"></div>
       <div className="mt-[95px] flex flex-row items-center gap-4">
         <img src={educationImg} alt="" className="w-[4rem] h-[3rem]" />
         <h1
