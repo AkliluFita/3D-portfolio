@@ -17,7 +17,7 @@ export default function App() {
 
   setTimeout(() => {
     setIsLoadingPage(false);
-  }, 5000);
+  }, 4000);
 
   if (isLoadingPage) {
     return <MyLogoLoading />;

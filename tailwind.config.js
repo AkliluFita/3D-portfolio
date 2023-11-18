@@ -5,15 +5,10 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        // showcaseBack: "url('assets/showCase/showCaseImg5.jpg')",
         lightModeImage:
           "radial-gradient(237px at 0% 2.1%, rgb(78, 157, 184) 0.3%,  rgb(220, 220, 220) 100%)",
         darkModeImage:
           "radial-gradient(237px at 0% 2.1%, rgb(17, 24, 28) 0.3%,  rgb(17, 24, 28) 100%)",
-        skillBack: "url('./src/assets/skillIcon/skillImg.jpg')",
-        aboutBack: "url('/assets/showCaseImg5.jpg)",
-        "back-portfolio": "url('/assets/showCaseImg5.jpg",
-        "contact-glob": "url('./src/assets/contact/earth.png')",
       },
       fontFamily: {
         primary: ["Fenix", "ans-serif"],

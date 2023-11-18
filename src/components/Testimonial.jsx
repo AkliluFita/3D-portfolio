@@ -6,6 +6,7 @@ import TooltipRadix from "./elements/Tooltip";
 import { useEffect } from "react";
 import AOS from "aos";
 import { LinkedInLogoIcon } from "@radix-ui/react-icons";
+import Link from "./elements/Link";
 const Testimonial = () => {
   useEffect(() => {
     AOS.init({
@@ -61,17 +62,12 @@ const Card = ({ item }) => {
           </h1>
           <div className="flex items-center gap-4 ">
             {item.linkedin_link && (
-              <a
-                rel="noreferrer"
-                href={item.linkedin_link}
-                target="_blank"
-                className="px-2 rounded-lg "
-              >
+              <Link url="item.linkedin_link">
                 <TooltipRadix text={item.linkedin_link}>
                   {" "}
                   <LinkedInLogoIcon className="lg:w-[2rem] lg:h-[2rem] dark:text-white text-black" />
                 </TooltipRadix>
-              </a>
+              </Link>
             )}
 
             <div>

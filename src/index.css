@@ -8,20 +8,10 @@
     scroll-behavior: smooth;
 }
 
-.glob{
-   transform-style: preserve-3d;
-   transform: rotateX(20deg);
-   animation: rotate 15s linear infinite;
-}
-
-@keyframes rotate {
-    0%{
-        background-position: 0 0;
-    }
-
-    100%{
-        background-position: 530px 0;
-    }
+@layer components {
+  .btn-primary {
+    @apply p-2 lg:p-4 mb-2 mr-2 font-bold  lg:w-auto text-[0.8rem] lg:text-lg rounded-3xl font-primary dark:shadow-white;
+  }
 }
 
 .my_logo_pending{

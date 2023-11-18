@@ -15,6 +15,7 @@ import {
   GitHubLogoIcon,
 } from "@radix-ui/react-icons";
 import Logo from "./elements/Logo";
+import Link from "./elements/Link";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -106,26 +107,17 @@ const Navbar = () => {
             )}
           </TooltipRadix>
 
-          <a
-            rel="noreferrer"
-            href="https://github.com/AkliluFita"
-            target="_blank"
-            className="px-2 rounded-lg "
-          >
+          <Link url="https://github.com/AkliluFita">
             <TooltipRadix text="Github">
               <GitHubLogoIcon className="w-[1.3rem] h-[1.3rem] lg:w-[1.5rem] lg:h-[1.5rem] cursor-pointer dark:text-white text-black" />
             </TooltipRadix>
-          </a>
-          <a
-            rel="noreferrer"
-            href="https://www.linkedin.com/in/aklilu-fita-493679204/"
-            target="_blank"
-            className="px-2 rounded-lg "
-          >
+          </Link>
+
+          <Link url="https://www.linkedin.com/in/aklilu-fita-493679204/">
             <TooltipRadix text="Linkedin">
               <LinkedInLogoIcon className="w-[1.3rem] h-[1.3rem]  lg:w-[1.5rem] lg:h-[1.5rem] cursor-pointer dark:text-white text-black" />
             </TooltipRadix>
-          </a>
+          </Link>
         </div>
         <motion.div
           initial={false}

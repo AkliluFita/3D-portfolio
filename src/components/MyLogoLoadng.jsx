@@ -1,9 +1,9 @@
-import logoImg from "../assets/navbar/my_new_logo.png";
+import logoImg from "../assets/navbar/My_New_Log.png";
 
 const MyLogoLoading = () => {
   return (
     <div className="h-[100vh] flex justify-center items-center bg-bg_primary">
-      <img src={logoImg} alt="" className="w-40 h-40 my_logo_pending" />
+      <img src={logoImg} alt="" className="w-[7rem] h-[7rem] my_logo_pending" />
     </div>
   );
 };

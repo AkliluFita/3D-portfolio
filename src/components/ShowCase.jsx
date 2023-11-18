@@ -10,6 +10,7 @@ import SocialIcons from "./elements/SocialIcons";
 import TooltipRadix from "./elements/Tooltip";
 
 import { ThickArrowLeftIcon } from "@radix-ui/react-icons";
+import Link from "./elements/Link";
 
 const textVariants = {
   initial: {
@@ -68,18 +69,13 @@ const ShowCase = () => {
           </p>
           <SocialIcons />
           <div className="flex flex-row justify-center gap-4 p-2 mt-4 ">
-            <Button text={"Hire Me"} className="text-black common_background" />
-            <a
-              rel="noreferrer"
-              href="https://flowcv.com/resume/b400qk1wvq"
-              target="_blank"
-              className="px-2 rounded-lg "
-            >
+            {/* <Button text={"Hire Me"} className="text-black common_background" /> */}
+            <Link url="https://flowcv.com/resume/b400qk1wvq">
               <Button
                 text={"Download CV"}
                 className="text-white bg-purple-600"
               />
-            </a>
+            </Link>
           </div>
         </motion.div>
       </motion.div>
