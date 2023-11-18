@@ -2,7 +2,7 @@ export const experienceData = [
   {
     id: 1,
     date: "07/2022 – 08/2023",
-    title: " As FullStack Developer",
+    title: " As a FullStack Developer",
     subTitle: "Mereb technology",
     des: `I was responsible for developing and maintaining the front-end and back-end components of web applications.
      I participated building inventory and real estate digital platform projects with my teams`,
@@ -14,7 +14,7 @@ export const experienceData = [
   {
     id: 2,
     date: "08/2023 - present",
-    title: " As Frontend developer ",
+    title: " As a Frontend developer ",
     subTitle: " Contract Team remote job",
     des: `I made significant contributions to the frontend development of an inventory management system for one of largest garages found in our country. 
     This comprehensive platform enables efficient management of storekeeper, cashier operations, accounting, administration, and the handling of damaged materials. 
@@ -26,7 +26,7 @@ export const experienceData = [
   {
     id: 3,
     date: "03/2022 – 06/2022",
-    title: "As Web Developer & IT-manager",
+    title: "As a Web Developer & IT-manager",
     subTitle: "Starlight Import P.L.C",
     des: `Developed a local eCommerce platform for Starlight Import P.L.C as one of my first website launched on this site (https://starlightimport.com/) using React, 
     Material UI and Firebase.I was also responsible to maintain any technical issues related to the office's computer related materials`,

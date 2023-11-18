@@ -1,4 +1,4 @@
-import logoImg from "../assets/navbar/my_new_logo.png";
+import logoImg from "../assets/navbar/My_New_Log.png";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import Sidebar from "./sidebar/Sidebar";
@@ -14,6 +14,7 @@ import {
   LinkedInLogoIcon,
   GitHubLogoIcon,
 } from "@radix-ui/react-icons";
+import Logo from "./elements/Logo";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -83,18 +84,7 @@ const Navbar = () => {
       } w-full  fixed top-0 left-0 p-1 text-white z-[22] duration-300 ease-in-out`}
     >
       <div className="flex flex-row items-center h-full gap-4 lg:justify-between">
-        <motion.div className=" flex-[1] h-full shrink-0 ml-2 flex flex-row items-center gap-2 justify-center">
-          <motion.img
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1 }}
-            src={logoImg}
-            className="flex flex-shrink-0 object-cover w-[2.5rem] lg:w-[4rem] cursor-pointer"
-          />{" "}
-          <h1 className="hidden font-bold lg:block dark:text-white lg:text-lg text-tx_primary">
-            Aklilu_Dev
-          </h1>
-        </motion.div>
+        <Logo className="justify-center" />
         <motion.div
           variants={variants}
           className="flex-row justify-around hidden lg:flex md:items-center lg:flex-[2] w-[20rem] gap-2"

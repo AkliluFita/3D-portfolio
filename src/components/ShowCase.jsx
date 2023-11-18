@@ -7,6 +7,9 @@ import SlideText from "./SlideText";
 import AOS from "aos";
 import { useEffect } from "react";
 import SocialIcons from "./elements/SocialIcons";
+import TooltipRadix from "./elements/Tooltip";
+
+import { ThickArrowLeftIcon } from "@radix-ui/react-icons";
 
 const textVariants = {
   initial: {
@@ -33,6 +36,12 @@ const ShowCase = () => {
     <div className="flex lg:flex-row items-center w-full h-auto lg:h-screen gap-4 p-4 bg-lightModeImage dark:bg-darkModeImage  flex-col relative z-[1] mt-[50px] lg:mt-[95px] bg-cover  bg-center">
       <SlideText sideType="left" />
       <div className=" absolute top-0 h-[5rem] w-full bg-purple-600 blur-[200px]"></div>
+      <div className=" absolute top-[30rem] right-[20rem]">
+        <TooltipRadix text="Github Source Code">
+          <ThickArrowLeftIcon className="lg:w-[1.5rem] lg:h-[1.5rem] dark:text-white text-black" />
+        </TooltipRadix>
+      </div>
+
       <motion.div
         className=" flex-[1] h-full  flex flex-col items-center justify-center p-2 z-[1] "
         data-aos="fade-right"

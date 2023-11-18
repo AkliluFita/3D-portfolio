@@ -13,7 +13,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="  lg:h-[100vh] common_background dark:bg-darkModeImage p-4 flex flex-col gap-4 items-center  overflow-y-scroll relative ">
+    <div className="  lg:h-[100vh] w-full common_background dark:bg-darkModeImage p-4 flex flex-col gap-4 items-center   relative ">
       <div className=" absolute top-0 h-[5rem] w-full bg-purple-600 blur-[150px]"></div>
 
       <div className="mt-[95px] flex flex-row items-center gap-4">

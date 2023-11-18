@@ -13,7 +13,7 @@ const Testimonial = () => {
     });
   }, []);
   return (
-    <div className="lg:h-[100vh] common_background dark:bg-darkModeImage p-2 lg:p-4 flex flex-col gap-4 items-center  overflow-y-scroll relative">
+    <div className="lg:h-[100vh] common_background dark:bg-darkModeImage p-2 lg:p-4 flex flex-col gap-4 items-center relative">
       <div className=" absolute top-0 h-[5rem] w-full bg-purple-600 blur-[150px]"></div>
       <div className="mt-[95px] flex flex-row items-center gap-4">
         <img src={aboutMeImg} alt="" className="w-[4rem] h-[3rem]" />
@@ -41,14 +41,14 @@ const Card = ({ item }) => {
       className="flex flex-col items-center w-full h-full gap-4 p-2 text-black border border-purple-500 rounded-lg lg:p-4 bg-bg_primary dark:bg-gray-800"
       data-aos="zoom-in"
     >
-      <div className="flex-[4]h-full w-full text-center flex items-center justify-center">
+      <div className="flex-[4] h-full w-full text-center flex items-center justify-center">
         <div className="flex items-center h-full gap-4 ">
           <span className="w-10 h-2 bg-black dark:bg-white"></span>
           <Tilt>
             <img
               src={item.personImg}
               alt=""
-              className="w-[9rem] h-[9rem] lg:w-[12rem] lg:h-[12rem] border-4 border-[#7F2F92] rounded-[50%] object-cover transform hover:scale-150 ease-out hover:ease-in duration-500 hover:shadow-purple-900 shadow-2xl"
+              className="w-[9rem] h-[9rem] lg:w-[12rem] lg:h-[12rem] border-4 border-[#7F2F92] rounded-[50%] object-cover transform hover:scale-[1.1] ease-out hover:ease-in duration-500 hover:shadow-purple-900 shadow-2xl"
             />
           </Tilt>
           <span className="w-10 h-2 bg-black dark:bg-white"></span>

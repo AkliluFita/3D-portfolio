@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import SocialIcons from "./elements/SocialIcons";
 import logoImg from "../assets/navbar/my_new_logo.png";
 import AOS from "aos";
+import Logo from "./elements/Logo";
 
 const Footer = () => {
   useEffect(() => {
@@ -15,14 +16,8 @@ const Footer = () => {
       // data-aos="fade-up"
     >
       <div className="flex flex-col h-full gap-4 p-4">
-        <div className="flex-[1] border-b-4 border-br_primary flex flex-row gap-4 items-center p-2">
-          <img
-            src={logoImg}
-            className="flex flex-shrink-0 object-cover w-[2.5rem] lg:w-[4rem] cursor-pointer"
-          />{" "}
-          <h1 className="text-sm font-bold lg:text-lg text-tx_primary">
-            Aklilu_Dev
-          </h1>
+        <div className="flex-[1] border-b-2 border-br_primary p-2">
+          <Logo className="justify-start" />
         </div>
         <div className="flex-[4] flex lg:flex-row gap-8  flex-col">
           <div className="flex flex-col  gap-8   flex-[1]">
