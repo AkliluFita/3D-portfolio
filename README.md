@@ -83,3 +83,10 @@ https://tailwindcomponents.com/gradient-generator/
 
 <!-- for image zoom library -->
 https://www.npmjs.com/package/react-medium-image-zoom
+
+
+<!-- best pratice to use tailwing with react -->
+https://evilmartians.com/chronicles/5-best-practices-for-preventing-chaos-in-tailwind-css
+
+<!-- window screen record -->
+https://www.veed.io/view/7807d48e-78a4-494b-a74b-642dbb480fdc?panel=download

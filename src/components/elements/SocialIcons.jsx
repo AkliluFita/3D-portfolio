@@ -8,7 +8,7 @@ const SocialIcons = () => {
     <>
       <div className="flex flex-row flex-[1] h-4 sm:h-8  gap-1 justify-around lg:justify-end  px-2   border-gray-800 shadow-gray-800 shadow-sm rounded-lg">
         {socialMedia.map((item) => (
-          <Link key={item.name}>
+          <Link key={item.name} url={item.socialLink}>
             <TooltipRadix text={item.name}>
               <motion.img
                 src={item.socialImg}

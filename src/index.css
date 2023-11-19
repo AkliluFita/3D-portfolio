@@ -37,6 +37,22 @@
     }
   }
 
+.DropdownMenuContent {
+  transform-origin: var(--radix-dropdown-menu-content-transform-origin);
+  animation: scaleIn 0.3s ease-out;
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 .showcase_background{
   /* background: linear-gradient(63deg, rgb(242, 168, 168) 2.9%, rgb(94, 46, 165) 102.1%); */
   background: radial-gradient(237px at 50% 2.1%, rgb(78, 157, 184) 0.3%,  rgb(171, 181, 187) 100%);

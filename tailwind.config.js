@@ -12,7 +12,7 @@ export default {
       },
       fontFamily: {
         primary: ["Fenix", "ans-serif"],
-        secondary: ["Roboto", "ans-serif"],
+        secondary: ["Libre Baskerville", "ans-serif"],
       },
       colors: {
         // background

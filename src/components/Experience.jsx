@@ -7,7 +7,6 @@ import work_icon from "../assets/work-icon.png";
 import { experienceData } from "../data/experienceData";
 import AOS from "aos";
 import { useEffect } from "react";
-import linkImg from "../assets/experienceIcon/link_animate_icon.gif";
 import experienceImg from "../assets/experienceIcon/experience.png";
 import { useRecoilState } from "recoil";
 import { darkModeAtom } from "../recoil/darkMode";
@@ -19,6 +18,8 @@ import {
 } from "@radix-ui/react-icons";
 import TooltipRadix from "./elements/Tooltip";
 import Link from "./elements/Link";
+import DropdownMenuRadix from "./elements/DropdownMenu";
+import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
 
 const Experience = () => {
   const [darkMode] = useRecoilState(darkModeAtom);
@@ -91,11 +92,24 @@ const Experience = () => {
                   </TooltipRadix>
 
                   {item.github_link !== null && (
-                    <Link url={item.github_link}>
-                      <TooltipRadix text="Github Source Code">
-                        <GitHubLogoIcon className="lg:w-[1.5rem] lg:h-[1.5rem] dark:text-white text-black" />
-                      </TooltipRadix>
-                    </Link>
+                    <TooltipRadix text="Github Source Code">
+                      <DropdownMenuRadix
+                        trigger={
+                          <GitHubLogoIcon className="lg:w-[1.5rem] lg:h-[1.5rem] dark:text-white text-black" />
+                        }
+                        itemLists={
+                          <DropdownMenu.Group className="text-black h-[5rem] flex flex-col gap-2 py-3 bg-gray-200 dark:bg-gray-700 rounded-md ">
+                            {item.github_link.map((i) => (
+                              <Link key={i.link} url={i.link}>
+                                <DropdownMenu.Item className="text-gray-600 cursor-pointer hover:text-gray-500 dark:hover:text-gray-500 dark:text-gray-400">
+                                  {i.title}
+                                </DropdownMenu.Item>
+                              </Link>
+                            ))}
+                          </DropdownMenu.Group>
+                        }
+                      />
+                    </TooltipRadix>
                   )}
                 </div>
               </div>

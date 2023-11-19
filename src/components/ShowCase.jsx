@@ -52,19 +52,19 @@ const ShowCase = () => {
           variants={textVariants}
         >
           <motion.h1
-            className=" text-[1.5rem] md:text-[3rem] lg:text-[2.8rem] font-bold text-gray-800 dark:text-white font-primary"
+            className=" text-[1.3rem] md:text-[3rem] lg:text-[2.8rem] font-bold text-gray-800 dark:text-white font-secondary"
             variants={textVariants}
           >
             {showCaseData.title}
           </motion.h1>
-          <motion.h2 className="text-[1.8rem] font-bold bg-gradient-to-r from-indigo-500  to-pink-500 bg-clip-text text-transparent uppercase md:text-[3.8rem] font-primary  flex flex-col">
+          <motion.h2 className="text-[1.8rem] font-bold bg-gradient-to-r from-indigo-500  to-pink-500 bg-clip-text text-transparent  md:text-[3.8rem] font-secondary  flex flex-col">
             {" "}
             {showCaseData.name}{" "}
             <span className=" text-[0.7rem] lg:text-[1.2rem]">
               {showCaseData.position}
             </span>
           </motion.h2>
-          <p className="text-lg font-bold text-center text-gray-800 font-primary dark:text-white md:text-3xl">
+          <p className="text-lg font-bold text-center text-gray-800 font-secondary dark:text-white md:text-3xl">
             {showCaseData.description}
           </p>
           <SocialIcons />
