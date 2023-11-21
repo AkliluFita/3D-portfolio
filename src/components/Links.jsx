@@ -33,7 +33,7 @@ const Links = ({ className }) => {
           key={item.id}
           className={`cursor-pointer  w-full text-center font-bold   uppercase  ${className} `}
         >
-          <h1 className="text-gray-800 font-primary dark:text-gray-200 ">
+          <h1 className="font-bold text-gray-800 font-secondary dark:text-gray-200 ">
             {item.text}
           </h1>
         </motion.a>

@@ -42,23 +42,23 @@ const Footer = () => {
           </div>
           <div className="flex flex-col justify-between gap-6 flex-[1]">
             <h1 className="text-[1.1rem] font-bold lg:text-3xl text-tx_secondary font-primary">
-              Phone Numbers
+              Here is I am
             </h1>
             <div className="text-[0.8rem] lg:text-lg text-tx_additional font-primary dark:text-gray-400 ">
-              <h1 className=" font-primary">+251962713194</h1>
-              <h1 className=" font-primary">+25191572143y</h1>
-              <h1 className=" font-primary">+251915734358</h1>
+              <h1 className=" font-primary">Frontend Developer</h1>
+              <h1 className=" font-primary">Backend Developer</h1>
+              <h1 className=" font-primary">Machine Learning Practitioner</h1>
             </div>
-            <div className="flex flex-col items-center gap-2 flex-[1] text-tx_additional">
+            <div className="flex flex-col  gap-2 flex-[1] text-tx_additional">
               <h1 className="lg:text-2xl text-[1.1rem] font-bold text-start text-tx_secondary font-primary ">
-                Email
+                Website Owner
               </h1>
               <h2 className="text-[0.8rem] lg:text-lg font-primary dark:text-gray-400 ">
-                peace123selam456@gmail.com
+                Aklilu Jemal Fita
               </h2>
             </div>
           </div>
-          <div className="flex flex-col gap-4  flex-[1]">
+          <div className="flex flex-col justify-between gap-6 flex-[1]">
             <h1 className="text-[1.1rem]  font-bold lg:text-3xl text-tx_secondary font-primary">
               Main Menu
             </h1>

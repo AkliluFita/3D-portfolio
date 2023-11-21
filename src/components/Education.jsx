@@ -29,7 +29,7 @@ const SingleEducation = ({ item, index }) => {
             <h5 className="text-[0.7rem] lg:text-[1rem] text-tx_additional font-primary">
               {item.subTitle}
             </h5>
-            <h3 className=" p-1 lg:p-2 common_background max-w-[15rem] text-center text-tx_secondary font-primary">
+            <h3 className=" p-1 lg:p-2 common_background max-w-[15rem] text-center lg:text-base text-[0.8rem] text-tx_secondary font-primary">
               {item.educationPeriod}
             </h3>
           </div>
@@ -43,7 +43,7 @@ const SingleEducation = ({ item, index }) => {
         </div>
       </div>
       <div className=" flex flex-row flex-[2] items-center gap-4">
-        <img src={wellDoneImg} alt="" className="w-[3rem]" />
+        <img src={wellDoneImg} alt="" className="lg:w-[3rem] w-[2rem]" />
         <h2 className=" text-black text-[0.8rem] lg:text-[1.2rem] font-primary dark:text-gray-400 ">
           {item.subTitleTwo}
         </h2>
@@ -58,7 +58,7 @@ const SingleEducation = ({ item, index }) => {
         </motion.p> */}
       </div>
       <hr className="h-[2px] w-full bg-br_primary border border-br_primary" />
-      <div className="flex flex-col flex-[8] items-center lg:gap-4 gap-4 ">
+      <div className="flex flex-col flex-[8] items-center lg:gap-4 gap-2 ">
         <h1 className="text-[1rem] lg:text-[1.5rem] flex-[1] text-tx_secondary font-bold font-primary">
           Some of relevant courses that I took
         </h1>
@@ -82,7 +82,7 @@ const SingleEducation = ({ item, index }) => {
         </motion.ul>
       </div>
       {item.id === 2 && (
-        <h2 className="flex items-center justify-between gap-2 p-2 font-bold font-primary lg:p-4">
+        <h2 className="flex items-center justify-between gap-2 p-0 font-bold border border-white font-primary lg:p-4">
           <ModalRadix
             content={{
               title: "Certificate Paper",

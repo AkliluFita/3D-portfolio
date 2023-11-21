@@ -30,7 +30,7 @@ const Experience = () => {
     });
   }, []);
   return (
-    <div className="flex flex-col items-center  common_background dark:bg-darkModeImage  gap-4 lg:h-[180vh]  relative">
+    <div className="relative flex flex-col items-center gap-4 common_background dark:bg-darkModeImage lg:h-auto">
       <div className=" absolute top-0 h-[5rem] w-full bg-purple-600 blur-[150px]"></div>
 
       <div className="mt-[95px] flex flex-row items-center gap-4">
@@ -60,7 +60,7 @@ const Experience = () => {
               iconStyle={{
                 background: "#7F2F92",
                 fontWeight: "bold",
-                color: "#7F2F92",
+                color: "white",
               }}
               icon={<img src={work_icon} />}
             >
@@ -91,17 +91,17 @@ const Experience = () => {
                     <IdCardIcon className="lg:w-[2rem] lg:h-[2rem] dark:text-white text-black  cursor-pointer hover:shadow-inner hover:text-gray-500" />
                   </TooltipRadix>
 
-                  {item.github_link !== null && (
+                  {item.github_link && (
                     <TooltipRadix text="Github Source Code">
                       <DropdownMenuRadix
                         trigger={
                           <GitHubLogoIcon className="lg:w-[1.5rem] lg:h-[1.5rem] dark:text-white text-black" />
                         }
                         itemLists={
-                          <DropdownMenu.Group className="text-black h-[5rem] flex flex-col gap-2 py-3 bg-gray-200 dark:bg-gray-700 rounded-md ">
+                          <DropdownMenu.Group className="text-black lg:h-[5rem] h-[4rem] flex flex-col gap-2 py-3 bg-gray-200 dark:bg-gray-700 rounded-md ">
                             {item.github_link.map((i) => (
                               <Link key={i.link} url={i.link}>
-                                <DropdownMenu.Item className="text-gray-600 cursor-pointer hover:text-gray-500 dark:hover:text-gray-500 dark:text-gray-400">
+                                <DropdownMenu.Item className="text-gray-600 cursor-pointer hover:text-gray-500 dark:hover:text-gray-500 dark:text-gray-400 font-primary lg:text-base text-[0.8rem]">
                                   {i.title}
                                 </DropdownMenu.Item>
                               </Link>

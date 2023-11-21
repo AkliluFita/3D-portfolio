@@ -9,15 +9,15 @@ export const experienceData = [
     web_link: "https://merebtechnology.com/",
     github_link: [
       {
-        title: "backend source code",
+        title: "Backend Source Code (Public Repo)",
         link: "https://github.com/AkliluFita/realEstate_backend",
       },
       {
-        title: "frontend source code",
+        title: "Frontend Source Code (Public Repo)",
         link: "https://github.com/AkliluFita/realEstate_frontend",
       },
     ],
-    demo_link: "",
+    demo_link: null,
   },
 
   {
@@ -31,12 +31,12 @@ export const experienceData = [
     web_link: "https://mulatautoelectric.com/",
     github_link: [
       {
-        title: "backend source code",
-        link: "https://github.com/AkliluFita/realEstate_backend",
+        title: "Backend Source Code (Private Repo)",
+        link: "https://github.com/AkliluFita/inventory_MS_backend",
       },
       {
-        title: "frontend source code",
-        link: "https://github.com/AkliluFita/realEstate_frontend",
+        title: "Frontend Source Code (Private Repo)",
+        link: "https://github.com/AkliluFita/inventory_MS_frontend",
       },
     ],
     demo_link: "https://mulatautoelectric.com/",
@@ -51,12 +51,8 @@ export const experienceData = [
     web_link: "https://starlightimport.com/",
     github_link: [
       {
-        title: "backend source code",
-        link: "https://github.com/AkliluFita/realEstate_backend",
-      },
-      {
-        title: "frontend source code",
-        link: "https://github.com/AkliluFita/realEstate_frontend",
+        title: "Full-Stack Source Code (Public Repo)",
+        link: "https://github.com/AkliluFita/Starlight",
       },
     ],
     demo_link: "https://starlightimport.com/",

@@ -14,9 +14,9 @@ const Testimonial = () => {
     });
   }, []);
   return (
-    <div className="lg:h-[100vh] common_background dark:bg-darkModeImage p-2 lg:p-4 flex flex-col gap-4 items-center relative">
+    <div className="relative flex flex-col items-center h-auto gap-4 p-2 common_background dark:bg-darkModeImage lg:p-4">
       <div className=" absolute top-0 h-[5rem] w-full bg-purple-600 blur-[150px]"></div>
-      <div className="mt-[95px] flex flex-row items-center gap-4">
+      <div className="mt-[95px] flex flex-row items-center gap-4 flex-[1]">
         <img src={aboutMeImg} alt="" className="w-[4rem] h-[3rem]" />
         <h1
           className=" text-[2rem] lg:text-[3rem] bg-gradient-to-r from-indigo-500  to-pink-500 bg-clip-text text-transparent  uppercase font-bold font-primary   "
@@ -25,7 +25,7 @@ const Testimonial = () => {
           Testimonial
         </h1>
       </div>
-      <div className=" flex-[2] w-full p-2 lg:p-4 flex lg:flex-row gap-8 flex-col">
+      <div className=" flex-[3] w-full h-full p-2 lg:p-4 flex lg:flex-row gap-8 flex-col">
         {testimonialData.map((item) => (
           <Card key={item.id} item={item} />
         ))}
@@ -39,7 +39,7 @@ export default Testimonial;
 const Card = ({ item }) => {
   return (
     <div
-      className="flex flex-col items-center w-full h-full gap-4 p-2 text-black border border-purple-500 rounded-lg lg:p-4 bg-bg_primary dark:bg-gray-800"
+      className="flex flex-col items-center w-full h-[full] gap-4 p-2 text-black border border-purple-500 rounded-lg lg:p-4 bg-bg_primary dark:bg-gray-800"
       data-aos="zoom-in"
     >
       <div className="flex-[4] h-full w-full text-center flex items-center justify-center">

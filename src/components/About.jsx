@@ -13,7 +13,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="  lg:h-[100vh] w-full common_background dark:bg-darkModeImage p-4 flex flex-col gap-4 items-center   relative ">
+    <div className="relative flex flex-col items-center w-full h-auto gap-[3.3rem] p-4 common_background dark:bg-darkModeImage">
       <div className=" absolute top-0 h-[5rem] w-full bg-purple-600 blur-[150px]"></div>
 
       <div className="mt-[95px] flex flex-row items-center gap-4">
@@ -61,20 +61,24 @@ const Cards = ({ item }) => {
       className="flex-[1] "
     >
       <div
-        className="flex flex-col items-center justify-between h-full p-4 border border-purple-500 rounded-lg bg-bg_primary dark:bg-gray-800 g-3"
+        className="flex flex-col items-center justify-between h-full p-4 border border-purple-500 rounded-lg lg:max-w-full bg-bg_primary dark:bg-gray-800 g-3"
         data-aos="flip-left"
       >
         <div className="flex items-center w-1/2 h-[3rem] text-center justify-center p-2">
-          <img src={item.icon} alt="icon" className="h-[5rem] w-[5rem] " />
+          <img
+            src={item.icon}
+            alt="icon"
+            className="lg:h-[5rem] lg:w-[5rem] h-[4rem] w-[4rem]"
+          />
         </div>
         <h1 className="p-2 text-lg font-bold rounded-lg font-primary text-tx_secondary lg:text-2xl">
           {item.title}
         </h1>
-        <p className="text-tx_additional text-[0.7rem] lg:text-base text-center font-primary dark:text-gray-400 ">
+        <p className="text-tx_additional text-[0.8rem] lg:text-[0.9rem] text-center font-primary dark:text-gray-400 ">
           {item.desc}
         </p>
-        <div className=" flex flex-row items-center justify-center text-[1.5rem] text-[]  w-full p-1 gap-2">
-          <div className="flex flex-row text-sm  flex-[3]">
+        <div className=" flex flex-row items-center justify-between text-[1.5rem]   w-full p-1 gap-4">
+          <div className="flex flex-row text-sm   lg:w-[14rem] max-w-[13rem]">
             <ul className="flex flex-row flex-wrap items-center gap-2 ">
               {item.tool.map((i) => (
                 <li
@@ -86,18 +90,18 @@ const Cards = ({ item }) => {
               ))}
             </ul>
           </div>
-          <div className="flex-[1] text-sm h-full flex flex-col justify-around gap-2 ">
+          <div className="flex flex-col justify-around h-full gap-2 text-sm ">
             <div>
               <h1 className="font-bold font-primary text-tx_secondary">
                 Experience
               </h1>
               <h3 className="font-bold text-black font-primary dark:text-white">
-                {item.experiencePeriod}:years
+                {item.experiencePeriod}:-years
               </h3>
             </div>
-            <button className="p-2 text-white bg-purple-600 font-primary rounded-2xl ">
+            {/* <button className="p-2 text-white bg-purple-600 font-primary rounded-2xl ">
               Detail
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

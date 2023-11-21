@@ -11,8 +11,8 @@ export const testimonialData = [
     name: "Prof. Dr. Erbug CELEBI",
     personImg: erbugImg,
     person_info:
-      "this was my supervise recommendation paper as cyprus international university",
-    title: `Director of the Artificial Intelligence Application and Research Center at Cyprus International University`,
+      "this was my supervise recommendation paper at cyprus international university",
+    title: `Director of the Artificial Intelligence Application and Research Center at CIU`,
     desc: `I have known him as a thesis supervisor for around 9 month while he was student
     at department of Computer Engineering(Msc). During his period he showed that he is a successful, hardworking and talented student `,
     email: "ecelebi@ciu.edu.tr",
