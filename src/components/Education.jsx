@@ -82,7 +82,7 @@ const SingleEducation = ({ item, index }) => {
         </motion.ul>
       </div>
       {item.id === 2 && (
-        <h2 className="flex items-center justify-between gap-2 p-0 font-bold border border-white font-primary lg:p-4">
+        <h2 className="flex items-center justify-between gap-2 p-0 font-bold font-primary lg:p-4">
           <ModalRadix
             content={{
               title: "Certificate Paper",
@@ -134,7 +134,7 @@ const Education = () => {
       <div className="mt-[95px] flex flex-row items-center gap-4">
         <img src={educationImg} alt="" className="w-[4rem] h-[3rem]" />
         <h1
-          className=" text-[2rem] lg:text-[3rem] bg-gradient-to-r from-indigo-500  to-pink-500 bg-clip-text text-transparent  uppercase font-bold font-primary   "
+          className=" text-[2rem] tracking-widest lg:text-[3rem] bg-gradient-to-r from-indigo-500  to-pink-500 bg-clip-text text-transparent  uppercase font-bold font-primary   "
           data-aos="fade-right"
         >
           Education

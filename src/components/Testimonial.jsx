@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import { LinkedInLogoIcon } from "@radix-ui/react-icons";
 import Link from "./elements/Link";
+import Button from "./elements/Button";
 const Testimonial = () => {
   useEffect(() => {
     AOS.init({
@@ -19,7 +20,7 @@ const Testimonial = () => {
       <div className="mt-[95px] flex flex-row items-center gap-4 flex-[1]">
         <img src={aboutMeImg} alt="" className="w-[4rem] h-[3rem]" />
         <h1
-          className=" text-[2rem] lg:text-[3rem] bg-gradient-to-r from-indigo-500  to-pink-500 bg-clip-text text-transparent  uppercase font-bold font-primary   "
+          className=" tracking-widest text-[2rem] lg:text-[3rem] bg-gradient-to-r from-indigo-500  to-pink-500 bg-clip-text text-transparent  uppercase font-bold font-primary   "
           data-aos="fade-right"
         >
           Testimonial
@@ -95,9 +96,7 @@ const Card = ({ item }) => {
               image: item.recommendationPaper,
             }}
           >
-            <button className="lg:p-4 p-2 mb-2 mr-2 font-primary text-[0.6rem] bg-purple-600 font-bold  uppercase hover:shadow-inner text-white lg:w-auto lg:text-lg rounded-3xl hover:shadow-gray-400 dark:shadow-white">
-              Recommendation Paper
-            </button>
+            <button className="btn-primary">Recommendation Paper</button>
           </ModalRadix>
         </div>
       </div>

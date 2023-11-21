@@ -19,7 +19,7 @@ const Contact = () => {
       <div className="mt-[95px] flex flex-row items-center gap-4">
         <img src={contactImg} alt="" className="w-[4rem] h-[3rem]" />
         <h1
-          className=" text-[2rem] lg:text-[3rem] bg-gradient-to-r from-indigo-500  to-pink-500 bg-clip-text text-transparent  uppercase font-bold font-primary   "
+          className=" text-[2rem] lg:text-[3rem] bg-gradient-to-r from-indigo-500 tracking-widest  to-pink-500 bg-clip-text text-transparent  uppercase font-bold font-primary   "
           data-aos="fade-right"
         >
           contact
@@ -160,7 +160,7 @@ const ContactForm = () => {
             type="submit"
             value="Send"
             disabled={isSended}
-            className={`lg:p-4 p-2 mb-2 mr-2 font-primary text-[1rem] bg-purple-600 font-bold  uppercase shadow-inner text-white  lg:text-lg rounded-3xl hover:shadow-gray-400 hover:dark:shadow-white w-[10rem]  ${
+            className={` btn-primary w-[10rem]  ${
               isSended ? "cursor-not-allowed" : ""
             }`}
           >

@@ -48,23 +48,23 @@ const ShowCase = () => {
         data-aos="fade-right"
       >
         <motion.div
-          className="flex flex-col lg:w-[75%] gap-4  md:p-4 rounded-lg p-2 items-center "
+          className="flex flex-col lg:w-[75%] gap-4  md:p-4 rounded-lg p-2 md:items-start items-center "
           variants={textVariants}
         >
           <motion.h1
-            className=" text-[1.3rem] md:text-[3rem] lg:text-[2.8rem] font-bold text-gray-800 dark:text-white font-secondary"
+            className=" text-[1.3rem] tracking-wider md:text-[3rem] lg:text-[2.5rem] font-bold text-gray-800 dark:text-white font-secondary"
             variants={textVariants}
           >
             {showCaseData.title}
           </motion.h1>
-          <motion.h2 className="text-[1.8rem] font-bold bg-gradient-to-r from-indigo-500  to-pink-500 bg-clip-text text-transparent  md:text-[3.8rem] font-secondary  flex flex-col">
+          <motion.h2 className="text-[1.8rem] tracking-wider font-bold bg-gradient-to-r from-indigo-500  to-pink-500 bg-clip-text text-transparent  md:text-[3rem]   lg:text-[5rem] font-secondary  flex flex-col">
             {" "}
             {showCaseData.name}{" "}
-            <span className=" text-[0.7rem] lg:text-[1.2rem]">
+            <span className=" text-[0.7rem] lg:text-[1.2rem] font-secondary font-bold">
               {showCaseData.position}
             </span>
           </motion.h2>
-          <p className="text-lg font-bold text-center text-gray-800 font-secondary dark:text-white md:text-3xl">
+          <p className="text-lg font-bold tracking-wider text-center text-gray-800 font-secondary dark:text-white md:text-3xl">
             {showCaseData.description}
           </p>
           <SocialIcons />

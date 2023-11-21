@@ -4,8 +4,8 @@ const Button = ({ text, className }) => {
     <>
       <motion.button
         type="button"
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.95 }}
+        // whileHover={{ scale: 1.1 }}
+        // whileTap={{ scale: 0.95 }}
         className={`btn-primary ${className}`}
       >
         {text}

@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import { useEffect } from "react";
+import AOS from "aos";
 
 const Links = ({ className }) => {
   const menuItems = [
@@ -22,6 +24,12 @@ const Links = ({ className }) => {
     },
   };
 
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+    });
+  }, []);
+
   return (
     <>
       {menuItems.map((item) => (
@@ -33,7 +41,10 @@ const Links = ({ className }) => {
           key={item.id}
           className={`cursor-pointer  w-full text-center font-bold   uppercase  ${className} `}
         >
-          <h1 className="font-bold text-gray-800 font-secondary dark:text-gray-200 ">
+          <h1
+            className="font-bold tracking-widest text-gray-800 font-secondary dark:text-gray-200 "
+            data-aos="fade-left"
+          >
             {item.text}
           </h1>
         </motion.a>

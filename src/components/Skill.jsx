@@ -17,7 +17,7 @@ const Skill = () => {
       <div className=" absolute top-0 h-[5rem] w-full bg-purple-600 blur-[150px]"></div>
       <div className="mt-[95px] flex flex-row items-center gap-4">
         <img src={skillImg} alt="" className="w-[4rem] h-[3rem]" />
-        <h1 className=" text-[2rem] lg:text-[3rem] bg-gradient-to-r from-indigo-500  to-pink-500 bg-clip-text text-transparent  uppercase font-bold font-primary   ">
+        <h1 className=" text-[2rem] tracking-widest lg:text-[3rem] bg-gradient-to-r from-indigo-500  to-pink-500 bg-clip-text text-transparent  uppercase font-bold font-primary   ">
           My Skills
         </h1>
       </div>
@@ -27,7 +27,7 @@ const Skill = () => {
       >
         <div className="flex-[1]  lg:p-4 p-1 dark:bg-gray-800 bg-bg_secondary rounded-lg border border-purple-500">
           <div className="flex flex-col w-full gap-4 p-1 lg:p-4">
-            <h1 className="text-center text-[1.5rem] lg:text-[2rem] dark:text-white text-black font-primary font-bold ">
+            <h1 className="text-center text-[1.5rem] tracking-wider lg:text-[2rem] dark:text-white text-black font-primary font-bold ">
               My Skill Lists
             </h1>
             <ul className=" flex-[11] flex gap-2 lg:gap-4 flex-col lg:p-6 text-black  w-full">

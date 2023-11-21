@@ -10,7 +10,7 @@
 
 @layer components {
   .btn-primary {
-    @apply p-2 lg:p-4 mb-2 mr-2 font-bold  lg:w-auto text-[0.8rem] lg:text-lg rounded-3xl font-primary dark:shadow-white;
+    @apply lg:p-4 p-2 mb-2 mr-2 font-primary text-[0.6rem] bg-purple-600 hover:bg-purple-900 font-bold tracking-wider  text-white lg:w-auto lg:text-lg rounded-3xl ;
   }
 }
 

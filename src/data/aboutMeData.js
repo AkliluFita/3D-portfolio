@@ -3,8 +3,9 @@ import backend from "../assets/backend-100.png";
 import fullstack from "../assets/full-stack-100.png";
 import machineLearning from "../assets/machine-learning-100.png";
 
-export const aboutMeProfileData = ` As a Master Computer Engineer, I have accumulate a wealth of knowledge and experience in various computer-related courses. 
-I am particularly passionate about working as a web designer and developer, and have become proficient in a variety of technologies that support my goals of becoming a skilled and professional web developer.
+export const aboutMeProfileData = ` As a Master Computer Engineer, I have gained extensive knowledge and experience in various computer-related courses. 
+With a strong passion for web design and development, I have acquired proficiency in diverse technologies, enabling me to pursue my goal of becoming a skilled and well experienced web developer. 
+I have successfully developed various web applications, including blogs, e-commerce sites, inventory management systems, and real estate digital platforms.
  `;
 
 export const aboutMeCardData = [

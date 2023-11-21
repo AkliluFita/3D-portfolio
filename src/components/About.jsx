@@ -19,7 +19,7 @@ const About = () => {
       <div className="mt-[95px] flex flex-row items-center gap-4">
         <img src={aboutMeImg} alt="" className="w-[4rem] h-[3rem]" />
         <h1
-          className=" text-[2rem] lg:text-[3rem] bg-gradient-to-r from-indigo-500  to-pink-500 bg-clip-text text-transparent  uppercase font-bold font-primary   "
+          className=" text-[2rem] lg:text-[3rem] bg-gradient-to-r from-indigo-500  to-pink-500 bg-clip-text text-transparent  uppercase font-bold font-primary tracking-widest  "
           data-aos="fade-right"
         >
           About me
@@ -29,8 +29,8 @@ const About = () => {
         className="flex-[2]  text-tx_secondary flex flex-col gap-4 items-center  "
         data-aos="fade-right"
       >
-        <h3 className="text-[1.2rem] lg:text-[2rem] uppercase font-bold font-primary">
-          Full-Stack Web Developer
+        <h3 className="text-[1.2rem] text-gray-800 dark:text-gray-300 lg:text-[2rem] uppercase font-bold font-primary tracking-wider">
+          This is I am
         </h3>
         <p className=" lg:text-[1.2rem] text-[.8rem] lg:w-1/2  w-full text-tx_additional dark:text-gray-400 text-center font-primary">
           {aboutMeProfileData}
