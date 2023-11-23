@@ -1,6 +1,7 @@
 import cyprusImg from "../assets/education/cyprusLogo.png";
 import haramayaLogo from "../assets/education/haramayaLogo.png";
-import certificate from "../assets/education/Diploma1.jpg";
+import masterCertificate from "../assets/education/Diploma1.jpg";
+import degreeCertificate from "../assets/education/Tempo_degre.jpeg";
 import thesis1 from "../assets/education/Thesis_paper1.jpg";
 import thesis2 from "../assets/education/Thesis_paper2.jpg";
 
@@ -18,7 +19,7 @@ export const educationData = [
       "Programming languages (C++, Java)",
     ],
     educationPeriod: "09/2014 - 07/2017",
-    certificatePaper: null,
+    certificatePaper: degreeCertificate,
     certificateDesc: null,
     thesisTitle: null,
     thesisPaper1: null,
@@ -40,7 +41,7 @@ export const educationData = [
       "Machine Learning and Deep Learning",
     ],
     educationPeriod: "10/2019 - 10/2021",
-    certificatePaper: certificate,
+    certificatePaper: masterCertificate,
     certificateDesc: "This is my Msc Certificate Paper",
     thesisTitle:
       "Text Classification for binary sentiment using Machine Learning and Deep Learning Algorithms",

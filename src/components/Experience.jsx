@@ -20,7 +20,6 @@ import TooltipRadix from "./elements/Tooltip";
 import Link from "./elements/Link";
 import DropdownMenuRadix from "./elements/DropdownMenu";
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
-import { expe } from "react-icons/fa";
 
 const Experience = () => {
   const [darkMode] = useRecoilState(darkModeAtom);
@@ -84,19 +83,19 @@ const Experience = () => {
                   {item.demo_link !== null && (
                     <Link url={item.demo_link}>
                       <TooltipRadix text="Demo Link">
-                        <Link1Icon className="lg:w-[2rem] lg:h-[2rem] dark:text-white text-black" />
+                        <Link1Icon className="w-[1.5rem] h-[1.5rem] lg:w-[2rem] lg:h-[2rem dark:text-white text-black lg:text-base" />
                       </TooltipRadix>
                     </Link>
                   )}
                   <TooltipRadix text="Detail Info">
-                    <IdCardIcon className="lg:w-[2rem] lg:h-[2rem] dark:text-white text-black  cursor-pointer hover:shadow-inner hover:text-gray-500" />
+                    <IdCardIcon className="w-[1.5rem] h-[1.5rem] lg:w-[2rem] lg:h-[2rem dark:text-white text-black  cursor-pointer hover:shadow-inner hover:text-gray-500" />
                   </TooltipRadix>
 
                   {item.github_link && (
                     <TooltipRadix text="Github Source Code">
                       <DropdownMenuRadix
                         trigger={
-                          <GitHubLogoIcon className="lg:w-[1.5rem] lg:h-[1.5rem] dark:text-white text-black" />
+                          <GitHubLogoIcon className="w-[1.5rem] h-[1.5rem] lg:w-[2rem] lg:h-[2rem] dark:text-white text-black" />
                         }
                         itemLists={
                           <DropdownMenu.Group className="text-black lg:h-[5rem] h-[4rem] flex flex-col gap-2 py-3 bg-gray-200 dark:bg-gray-700 rounded-md ">

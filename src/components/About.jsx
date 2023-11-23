@@ -66,10 +66,10 @@ const Cards = ({ item }) => {
       className="flex-[1] "
     >
       <div
-        className="flex flex-col items-center justify-between h-full p-4 border border-purple-500 rounded-lg lg:max-w-full bg-bg_primary dark:bg-gray-800 g-3"
+        className="flex flex-col items-center h-full gap-2 p-4 border border-purple-500 rounded-lg lg:max-w-full bg-bg_primary dark:bg-gray-800 g-3"
         data-aos="flip-left"
       >
-        <div className="flex items-center w-1/2 h-[3rem] text-center justify-center p-2">
+        <div className="flex items-center justify-center w-1/2 p-2 text-center">
           <img
             src={item.icon}
             alt="icon"
@@ -82,7 +82,7 @@ const Cards = ({ item }) => {
         <p className="text-tx_additional text-[0.8rem] lg:text-[0.9rem] text-center font-primary dark:text-gray-400 ">
           {item.desc}
         </p>
-        <div className=" flex flex-row items-center justify-between text-[1.5rem]   w-full p-1 gap-4">
+        <div className=" flex flex-row items-center justify-between text-[1.5rem] flex-[4]  w-full p-1 gap-4 ">
           <div className="flex flex-row text-sm   lg:w-[14rem] max-w-[13rem]">
             <ul className="flex flex-row flex-wrap items-center gap-2 ">
               {item.tool.map((i) => (
@@ -101,7 +101,8 @@ const Cards = ({ item }) => {
                 Experience
               </h1>
               <h3 className="font-bold text-black font-primary dark:text-white">
-                {item.experiencePeriod}:-years
+                {item.experiencePeriod}{" "}
+                {item.experiencePeriod === 1 ? "Year" : "Years"}
               </h3>
             </div>
             {/* <button className="p-2 text-white bg-purple-600 font-primary rounded-2xl ">

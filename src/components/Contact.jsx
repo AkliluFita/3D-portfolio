@@ -96,7 +96,7 @@ const ContactForm = () => {
       className="  rounded-md flex flex-col items-center w-full lg:w-[40rem] bg-[#dadfe4] border border-purple-500 dark:bg-gray-800 h-full "
       data-aos="fade-right"
     >
-      <div className="p-2 ">
+      <div className="w-full px-4 py-2">
         <h1 className="text-2xl font-bold uppercase font-primary lg:text-3xl text-tx_secondary">
           get touch me
         </h1>

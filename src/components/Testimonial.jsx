@@ -84,7 +84,7 @@ const Card = ({ item }) => {
           {item.title}
         </h1>
       </div>
-      <div className="flex-[6]  w-full">
+      <div className="flex-[6]  w-full  flex flex-col justify-between">
         <p className="font-primary lg:text-[1.2rem] text-[0.8rem] text-tx_additional text-center p-4 dark:text-gray-400">
           {item.desc}
         </p>

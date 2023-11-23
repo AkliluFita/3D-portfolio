@@ -14,6 +14,7 @@ import {
   SiMui,
   SiMysql,
   SiMongodb,
+  SiPostman,
 } from "react-icons/si";
 import {
   BiLogoPostgresql,
@@ -90,6 +91,10 @@ export const skillIconData = [
   {
     name: "Django",
     icon: BiLogoDjango,
+  },
+  {
+    name: "Postman",
+    icon: SiPostman,
   },
 ];
 

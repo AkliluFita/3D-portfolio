@@ -11,6 +11,7 @@ import { useEffect } from "react";
 import wellDoneImg from "../assets/education/well_done.png";
 import educationImg from "../assets/education/education.png";
 import ModalRadix from "./elements/Modal";
+import { PiGlobeStandFill } from "react-icons/pi";
 
 const SingleEducation = ({ item, index }) => {
   return (
@@ -18,9 +19,9 @@ const SingleEducation = ({ item, index }) => {
       initial="hidden"
       animate="show"
       variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-      className="flex-[1] flex flex-col gap-2 lg:gap-4 p-4 bg-bg_secondary dark:bg-gray-800 rounded-lg border border-purple-500"
+      className="flex-[1] flex flex-col gap-2  lg:gap-4 p-4 bg-bg_secondary dark:bg-gray-800 rounded-lg border border-purple-500"
     >
-      <div className="flex flex-row flex-[2] justify-between">
+      <div className="flex flex-row justify-between">
         <div>
           <h1 className="text-[1.2rem] lg:text-[2rem] text-[#7F2F92] font-bold font-primary">
             {item.title}
@@ -42,8 +43,8 @@ const SingleEducation = ({ item, index }) => {
           />
         </div>
       </div>
-      <div className=" flex flex-row flex-[2] items-center gap-4">
-        <img src={wellDoneImg} alt="" className="lg:w-[3rem] w-[2rem]" />
+      <div className="flex flex-row items-center gap-4 ">
+        <PiGlobeStandFill className="text-[1.5rem] lg:text-[2rem] dark:text-white text-black" />
         <h2 className=" text-black text-[0.8rem] lg:text-[1.2rem] font-primary dark:text-gray-400 ">
           {item.subTitleTwo}
         </h2>
@@ -58,7 +59,7 @@ const SingleEducation = ({ item, index }) => {
         </motion.p> */}
       </div>
       <hr className="h-[2px] w-full bg-br_primary border border-br_primary" />
-      <div className="flex flex-col flex-[8] items-center lg:gap-4 gap-2 ">
+      <div className="flex flex-col items-center gap-2  lg:gap-4 flex-[4]">
         <h1 className="text-[1rem] lg:text-[1.5rem] flex-[1] text-tx_secondary font-bold font-primary">
           Some of relevant courses that I took
         </h1>
@@ -81,7 +82,7 @@ const SingleEducation = ({ item, index }) => {
           ))}
         </motion.ul>
       </div>
-      {item.id === 2 && (
+      <div className="">
         <h2 className="flex items-center justify-between gap-2 p-0 font-bold font-primary lg:p-4">
           <ModalRadix
             content={{
@@ -101,9 +102,11 @@ const SingleEducation = ({ item, index }) => {
               image: item.thesisPaper1,
             }}
           >
-            <button className="lg:p-4 p-2 mb-2 mr-2 font-primary text-[0.6rem]  font-bold  uppercase text-black  dark:text-white lg:w-auto lg:text-lg rounded-3xl underline ">
-              Thesis Title
-            </button>
+            {item.thesisTitle && (
+              <button className="lg:p-4 p-2 mb-2 mr-2 font-primary text-[0.6rem]  font-bold  uppercase text-black  dark:text-white lg:w-auto lg:text-lg rounded-3xl underline ">
+                Thesis Title
+              </button>
+            )}
           </ModalRadix>
           <ModalRadix
             content={{
@@ -112,12 +115,14 @@ const SingleEducation = ({ item, index }) => {
               image: item.thesisPaper2,
             }}
           >
-            <button className="lg:p-4 p-2 mb-2 mr-2 font-primary text-[0.6rem]  font-bold  uppercase text-black  dark:text-white lg:w-auto lg:text-lg rounded-3xl underline ">
-              Thesis Book View
-            </button>
+            {item.thesisPaper1 && (
+              <button className="lg:p-4 p-2 mb-2 mr-2 font-primary text-[0.6rem]  font-bold  uppercase text-black  dark:text-white lg:w-auto lg:text-lg rounded-3xl underline ">
+                Thesis Book View
+              </button>
+            )}
           </ModalRadix>
         </h2>
-      )}
+      </div>
     </motion.div>
   );
 };

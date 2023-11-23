@@ -42,7 +42,7 @@ const Links = ({ className }) => {
           className={`cursor-pointer  w-full text-center font-bold   uppercase  ${className} `}
         >
           <h1
-            className="font-bold tracking-widest text-gray-800 font-secondary dark:text-gray-200 "
+            className="font-bold tracking-widest text-gray-800 font-primary dark:text-gray-200 "
             data-aos="fade-left"
           >
             {item.text}
