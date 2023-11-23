@@ -20,6 +20,7 @@ import TooltipRadix from "./elements/Tooltip";
 import Link from "./elements/Link";
 import DropdownMenuRadix from "./elements/DropdownMenu";
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
+import { expe } from "react-icons/fa";
 
 const Experience = () => {
   const [darkMode] = useRecoilState(darkModeAtom);

@@ -123,7 +123,7 @@ const ContactForm = () => {
             required
             placeholder="put your name here"
             name="user_name"
-            className="w-full p-2 text-black border rounded-md lg:p-4 common_background dark:bg-gray-800 border-br_primary"
+            className="w-full p-2 text-black border rounded-md dark:text-white lg:p-4 dark:bg-gray-900 border-br_primary"
           />
         </div>
         <div className="flex flex-col w-full gap-2 p-2 ">
@@ -138,7 +138,7 @@ const ContactForm = () => {
             required
             placeholder="put your email here"
             name="user_email"
-            className="w-full p-2 text-black border rounded-md lg:p-4 common_background dark:bg-gray-800 border-br_primary"
+            className="w-full p-2 text-black border rounded-md dark:text-white lg:p-4 dark:bg-gray-900 border-br_primary"
           />
         </div>
         <div className="flex flex-col w-full gap-2 p-2 ">
@@ -152,7 +152,7 @@ const ContactForm = () => {
             rows={8}
             placeholder="put your message here"
             name="message"
-            className="w-full p-2 text-black border rounded-md lg:p-4 common_background border-br_primary"
+            className="w-full p-2 text-black border rounded-md dark:text-white lg:p-4 dark:bg-gray-900 border-br_primary "
           />
         </div>
         <div>

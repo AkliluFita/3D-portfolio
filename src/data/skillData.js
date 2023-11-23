@@ -1,74 +1,95 @@
-import html from "../assets/skillIcon/html.png";
-import css from "../assets/skillIcon/css.png";
-import javascript from "../assets/skillIcon/javascript.png";
-import typescript from "../assets/skillIcon/typescript.png";
-import reactjs from "../assets/skillIcon/reactjs.png";
-import redux from "../assets/skillIcon/redux.png";
-import tailwind from "../assets/skillIcon/tailwind.png";
-import nodejs from "../assets/skillIcon/nodejs.png";
-import graphql from "../assets/skillIcon/graphql.png";
-import rubyrails from "../assets/skillIcon/rubyrails.png";
-import postgresql from "../assets/skillIcon/postgresql.png";
-import git from "../assets/skillIcon/git.png";
-import docker from "../assets/skillIcon/docker.png";
-import figma from "../assets/skillIcon/figma.png";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaReact,
+  FaNode,
+  FaGithub,
+  FaDocker,
+} from "react-icons/fa";
+import { RiJavascriptFill } from "react-icons/ri";
+import {
+  SiTypescript,
+  SiRedux,
+  SiTailwindcss,
+  SiMui,
+  SiMysql,
+  SiMongodb,
+} from "react-icons/si";
+import {
+  BiLogoPostgresql,
+  BiLogoFigma,
+  BiLogoGoLang,
+  BiLogoDjango,
+} from "react-icons/bi";
 
 export const skillIconData = [
   {
     name: "HTML 5",
-    icon: html,
+    icon: FaHtml5,
   },
   {
     name: "CSS 3",
-    icon: css,
+    icon: FaCss3Alt,
   },
   {
     name: "JavaScript",
-    icon: javascript,
+    icon: RiJavascriptFill,
   },
   {
     name: "TypeScript",
-    icon: typescript,
+    icon: SiTypescript,
   },
   {
     name: "React JS",
-    icon: reactjs,
+    icon: FaReact,
   },
   {
     name: "Redux Toolkit",
-    icon: redux,
+    icon: SiRedux,
   },
   {
     name: "Tailwind CSS",
-    icon: tailwind,
+    icon: SiTailwindcss,
   },
   {
     name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "Rails",
-    icon: rubyrails,
-  },
-  {
-    name: "graphql",
-    icon: graphql,
+    icon: FaNode,
   },
   {
     name: "postgresql",
-    icon: postgresql,
+    icon: BiLogoPostgresql,
   },
   {
-    name: "git",
-    icon: git,
+    name: "Git Hub",
+    icon: FaGithub,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "Figma",
+    icon: BiLogoFigma,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "Docker",
+    icon: FaDocker,
+  },
+  {
+    name: "Mysql",
+    icon: SiMysql,
+  },
+  {
+    name: "Material UI",
+    icon: SiMui,
+  },
+  {
+    name: "Mongo",
+    icon: SiMongodb,
+  },
+  {
+    name: "Golang",
+    icon: BiLogoGoLang,
+  },
+  {
+    name: "Django",
+    icon: BiLogoDjango,
   },
 ];
 

@@ -4,6 +4,7 @@ import BallCanvas from "./canvas/ball/BallCanvas";
 import AOS from "aos";
 import skillImg from "../assets/skillIcon/skill.png";
 import listArrowImg from "../assets/skillIcon/list_arrow.png";
+import TooltipRadix from "../components/elements/Tooltip";
 
 const Skill = () => {
   useEffect(() => {
@@ -54,14 +55,11 @@ const Skill = () => {
             </ul>
           </div>
         </div>
-        <div className="flex   flex-wrap items-center justify-between  gap-2 p-2   flex-[1]  rounded-lg dark:bg-gray-800 bg-bg_secondary border border-purple-500">
-          {skillIconData.map((item, index) => (
-            <div
-              key={index}
-              className="  rounded-lg    lg:p-2 p-0 lg:w-[10rem] w-[8rem] h-[8rem]"
-            >
-              <BallCanvas icon={item.icon} />
-            </div>
+        <div className="flex   flex-wrap items-center justify-between  lg:gap-2 gap-4 p-2   flex-[1]  rounded-lg dark:bg-gray-800 bg-bg_secondary border border-purple-500">
+          {skillIconData.map((item) => (
+            <TooltipRadix text={item.name} key={item.name}>
+              <item.icon className="lg:text-[6rem] text-[4rem] text-[#808080] " />
+            </TooltipRadix>
           ))}
         </div>
       </div>

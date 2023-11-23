@@ -129,7 +129,7 @@ const Navbar = () => {
         </motion.div>
         {isOpen && (
           <div
-            className="absolute top-[3rem] right-[0.1rem] lg:hidden shadow-lg p-4 bg-gray-200 dark:bg-gray-800 rounded-lg z-10"
+            className="absolute top-[3rem] right-[0.1rem] lg:hidden shadow-lg p-4 bg-gray-200 dark:bg-gray-800  z-10"
             data-aos="fade-left"
           >
             <Sidebar />
