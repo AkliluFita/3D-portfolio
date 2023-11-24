@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import Sidebar from "./sidebar/Sidebar";
+import Sidebar from "./Sidebar";
 import Links from "./Links";
 import MenuToggle from "../components/elements/MenuToggle";
 import TooltipRadix from "./elements/Tooltip";

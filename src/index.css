@@ -9,6 +9,12 @@
 }
 
 @layer components {
+  .showcase-title-text {
+    @apply text-[1rem] tracking-wider md:text-[1.8rem] lg:text-[2rem] font-bold text-gray-800 dark:text-white font-secondary
+  }
+  .showcase-name-text {
+    @apply text-[1.8rem] tracking-wider font-bold bg-gradient-to-r from-indigo-500  to-pink-500 bg-clip-text text-transparent  md:text-[3rem]   lg:text-[4.5rem] font-secondary 
+  }
   .btn-primary {
     @apply lg:p-4 p-2 mb-2 mr-2 font-primary text-[0.6rem] bg-purple-600 hover:bg-purple-900 font-bold tracking-wider  text-white lg:w-auto lg:text-lg rounded-3xl ;
   }
