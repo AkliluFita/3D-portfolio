@@ -1,6 +1,6 @@
 import Button from "./elements/Button";
 import { showCaseData } from "../data/showCaseData";
-import sampleImg from "../assets/showCaseImg.svg";
+import sampleImg from "../assets/showCase/showCaseImg.svg";
 // import Box3D from "./canvas/box/Box3D";
 import { motion } from "framer-motion";
 import SlideText from "./SlideText";

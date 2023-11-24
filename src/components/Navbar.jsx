@@ -15,6 +15,7 @@ import Link from "./elements/Link";
 import useAOSInit from "../hooks/useAOSInit";
 import useStickyOnScroll from "../hooks/useStickyOnScroll";
 import useDarkMode from "../hooks/useDarkMode";
+import { links } from "../utils/constant";
 
 const Navbar = () => {
   const isSticky = useStickyOnScroll();
@@ -45,13 +46,13 @@ const Navbar = () => {
             )}
           </TooltipRadix>
 
-          <Link url="https://github.com/AkliluFita">
+          <Link url={links.GITHUB}>
             <TooltipRadix text="Github">
               <GitHubLogoIcon className="icon-primary" />
             </TooltipRadix>
           </Link>
 
-          <Link url="https://www.linkedin.com/in/aklilu-fita-493679204/">
+          <Link url={links.LINKEDIN}>
             <TooltipRadix text="Linkedin">
               <LinkedInLogoIcon className="icon-primary" />
             </TooltipRadix>

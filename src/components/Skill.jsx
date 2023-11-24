@@ -1,9 +1,8 @@
 import { useEffect } from "react";
 import { skillIconData, skillTextData } from "../data/skillData";
-import BallCanvas from "./canvas/ball/BallCanvas";
 import AOS from "aos";
-import skillImg from "../assets/skillIcon/skill.png";
-import listArrowImg from "../assets/skillIcon/list_arrow.png";
+// import skillImg from "../assets/skillIcon/skill.png";
+import listArrowImg from "../assets/skill/list_arrow.png";
 import TooltipRadix from "../components/elements/Tooltip";
 
 const Skill = () => {
@@ -17,7 +16,7 @@ const Skill = () => {
     <div className=" bg-cover bg-center bg-no-repeat common_background dark:bg-darkModeImage flex flex-col lg:p-8 p-2 lg:h-[100vh] items-center  gap-4 relative">
       <div className=" absolute top-0 h-[5rem] w-full bg-purple-600 blur-[150px]"></div>
       <div className="mt-[95px] flex flex-row items-center gap-4">
-        <img src={skillImg} alt="" className="w-[4rem] h-[3rem]" />
+        {/* <img src={skillImg} alt="" className="w-[4rem] h-[3rem]" /> */}
         <h1 className=" text-[2rem] tracking-widest lg:text-[3rem] bg-gradient-to-r from-indigo-500  to-pink-500 bg-clip-text text-transparent  uppercase font-bold font-primary   ">
           My Skills
         </h1>

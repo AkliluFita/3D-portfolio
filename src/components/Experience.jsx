@@ -3,11 +3,11 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import work_icon from "../assets/work-icon.png";
+import work_icon from "../assets/experience/work-icon.png";
 import { experienceData } from "../data/experienceData";
 import AOS from "aos";
 import { useEffect } from "react";
-import experienceImg from "../assets/experienceIcon/experience.png";
+import experienceImg from "../assets/experience/experience.png";
 import { useRecoilState } from "recoil";
 import { darkModeAtom } from "../recoil/darkMode";
 import {

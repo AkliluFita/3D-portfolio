@@ -1,7 +1,7 @@
-import frontend from "../assets/frontend-100.png";
-import backend from "../assets/backend-100.png";
-import fullstack from "../assets/full-stack-100.png";
-import machineLearning from "../assets/machine-learning-100.png";
+import frontend from "../assets/about/frontend-100.png";
+import backend from "../assets/about/backend-100.png";
+import fullstack from "../assets/about/full-stack-100.png";
+import machineLearning from "../assets/about/machine-learning-100.png";
 
 export const aboutMeProfileData = ` As a Master Computer Engineer, I have gained extensive knowledge and experience in various computer-related courses. 
 With a strong passion for web design and development, I have acquired proficiency in diverse technologies, enabling me to pursue my goal of becoming a skilled and well experienced web developer. 
