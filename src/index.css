@@ -12,6 +12,9 @@
   .btn-primary {
     @apply lg:p-4 p-2 mb-2 mr-2 font-primary text-[0.6rem] bg-purple-600 hover:bg-purple-900 font-bold tracking-wider  text-white lg:w-auto lg:text-lg rounded-3xl ;
   }
+  .icon-primary {
+    @apply w-[1.3rem] h-[1.3rem] lg:h-[1.3rem] cursor-pointer dark:text-white text-black
+  }
 }
 
 .my_logo_pending{

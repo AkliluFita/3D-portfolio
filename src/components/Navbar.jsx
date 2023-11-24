@@ -1,13 +1,9 @@
-import logoImg from "../assets/navbar/My_New_Log.png";
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Sidebar from "./sidebar/Sidebar";
 import Links from "./Links";
 import MenuToggle from "../components/elements/MenuToggle";
-import AOS from "aos";
 import TooltipRadix from "./elements/Tooltip";
-import { useRecoilState } from "recoil";
-import { darkModeAtom } from "../recoil/darkMode";
 import {
   MoonIcon,
   SunIcon,
@@ -16,65 +12,16 @@ import {
 } from "@radix-ui/react-icons";
 import Logo from "./elements/Logo";
 import Link from "./elements/Link";
+import useAOSInit from "../hooks/useAOSInit";
+import useStickyOnScroll from "../hooks/useStickyOnScroll";
+import useDarkMode from "../hooks/useDarkMode";
 
 const Navbar = () => {
+  const isSticky = useStickyOnScroll();
   const [isOpen, setIsOpen] = useState(false);
-  const [isSticky, setIsSticky] = useState(false);
-  const [darkMode, setDarkMode] = useRecoilState(darkModeAtom);
+  const [darkMode, toggleDarkMode] = useDarkMode();
 
-  // darkMode function
-  useEffect(() => {
-    const isDarkMode = localStorage.getItem("darkMode") === "true";
-    setDarkMode(isDarkMode);
-  }, []);
-
-  useEffect(() => {
-    document.documentElement.classList.toggle("dark", darkMode);
-    localStorage.setItem("darkMode", darkMode);
-  }, [darkMode]);
-
-  const toggleDarkMode = () => {
-    setDarkMode((prevMode) => !prevMode);
-  };
-
-  // scroll function
-  const handleScroll = () => {
-    if (window.scrollY > 100) {
-      setIsSticky(true);
-    } else {
-      setIsSticky(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  useEffect(() => {
-    AOS.init({
-      duration: 600,
-    });
-  }, []);
-
-  const variants = {
-    open: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        y: { stiffness: 1000, velocity: -100 },
-      },
-    },
-    closed: {
-      y: 50,
-      opacity: 0,
-      transition: {
-        y: { stiffness: 1000 },
-      },
-    },
-  };
+  useAOSInit();
 
   return (
     <div
@@ -86,36 +33,27 @@ const Navbar = () => {
     >
       <div className="flex flex-row items-center h-full gap-4 lg:justify-between">
         <Logo className="justify-center" />
-        <motion.div
-          variants={variants}
-          className="flex-row justify-around hidden lg:flex md:items-center lg:flex-[2] w-[20rem] gap-2"
-        >
+        <div className="flex-row justify-around hidden lg:flex md:items-center lg:flex-[2] w-[20rem] gap-2">
           <Links className=" text-[0.9rem]" />
-        </motion.div>
+        </div>
         <div className="flex flex-row items-center h-full flex-[1] justify-center gap-4 lg:gap-8">
           <TooltipRadix text={!darkMode ? "Dark Mode" : "Light Mode"}>
             {!darkMode ? (
-              <MoonIcon
-                className="w-[1.3rem] h-[1.3rem] lg:h-[1.3rem] cursor-pointer dark:text-white text-black"
-                onClick={toggleDarkMode}
-              />
+              <MoonIcon className="icon-primary" onClick={toggleDarkMode} />
             ) : (
-              <SunIcon
-                className="w-[1.3rem] h-[1.3rem] lg:h-[1.3rem] cursor-pointer dark:text-white text-black"
-                onClick={toggleDarkMode}
-              />
+              <SunIcon className="icon-primary" onClick={toggleDarkMode} />
             )}
           </TooltipRadix>
 
           <Link url="https://github.com/AkliluFita">
             <TooltipRadix text="Github">
-              <GitHubLogoIcon className="w-[1.3rem] h-[1.3rem] lg:w-[1.5rem] lg:h-[1.5rem] cursor-pointer dark:text-white text-black" />
+              <GitHubLogoIcon className="icon-primary" />
             </TooltipRadix>
           </Link>
 
           <Link url="https://www.linkedin.com/in/aklilu-fita-493679204/">
             <TooltipRadix text="Linkedin">
-              <LinkedInLogoIcon className="w-[1.3rem] h-[1.3rem]  lg:w-[1.5rem] lg:h-[1.5rem] cursor-pointer dark:text-white text-black" />
+              <LinkedInLogoIcon className="icon-primary" />
             </TooltipRadix>
           </Link>
         </div>

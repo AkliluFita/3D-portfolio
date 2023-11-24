@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import SocialIcons from "./elements/SocialIcons";
-import logoImg from "../assets/navbar/my_new_logo.png";
+import logoImg from "../assets/navbar/My_New_Log.png";
 import AOS from "aos";
 import Logo from "./elements/Logo";
 

@@ -47,7 +47,7 @@ const Skill = () => {
                       {item.title}
                     </h1>
                   </div>
-                  <span className="lg:text-[1.1rem] text-[0.8rem] text-tx_secondary font-primary font-bold text-end">
+                  <span className="lg:text-[1.1rem] text-[0.8rem] text-gray-500 font-primary font-bold text-end">
                     {item.subTitle}
                   </span>
                 </li>
