@@ -4,16 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    scroll-behavior: smooth;
-}
-
 @layer components {
   .showcase-title-text {
     @apply text-[1rem] tracking-wider md:text-[1.8rem] lg:text-[2rem] font-bold text-gray-800 dark:text-white font-secondary
   }
   .showcase-name-text {
     @apply text-[1.8rem] tracking-wider font-bold bg-gradient-to-r from-indigo-500  to-pink-500 bg-clip-text text-transparent  md:text-[3rem]   lg:text-[4.5rem] font-secondary 
+  }
+  .first-heading-text{
+    @apply text-[2rem] lg:text-[3rem] bg-gradient-to-r from-indigo-500  to-pink-500 bg-clip-text text-transparent  uppercase font-bold font-primary tracking-widest 
   }
   .btn-primary {
     @apply lg:p-4 p-2 mb-2 mr-2 font-primary text-[0.6rem] bg-purple-600 hover:bg-purple-900 font-bold tracking-wider  text-white lg:w-auto lg:text-lg rounded-3xl ;
@@ -22,6 +21,11 @@
     @apply w-[1.3rem] h-[1.3rem] lg:h-[1.3rem] cursor-pointer dark:text-white text-black
   }
 }
+
+*{
+  scroll-behavior: smooth;
+}
+
 
 .my_logo_pending{
     font-size: 24px;
@@ -63,7 +67,6 @@
 }
 
 .showcase_background{
-  /* background: linear-gradient(63deg, rgb(242, 168, 168) 2.9%, rgb(94, 46, 165) 102.1%); */
   background: radial-gradient(237px at 50% 2.1%, rgb(78, 157, 184) 0.3%,  rgb(171, 181, 187) 100%);
 }
 .footer_background{

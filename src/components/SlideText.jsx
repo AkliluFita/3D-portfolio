@@ -1,32 +1,5 @@
-import React from "react";
 import { motion } from "framer-motion";
-
-const leftSlideText = {
-  initial: {
-    x: 0,
-  },
-  animate: {
-    x: "-100%",
-    transition: {
-      repeat: Infinity,
-      repeatType: "mirror",
-      duration: 50,
-    },
-  },
-};
-const rightSlideText = {
-  initial: {
-    x: 0,
-  },
-  animate: {
-    x: "100%",
-    transition: {
-      repeat: Infinity,
-      repeatType: "mirror",
-      duration: 50,
-    },
-  },
-};
+import { slideText } from "../utils/animate_func";
 
 const SlideText = ({ sideType }) => {
   return (
@@ -34,7 +7,7 @@ const SlideText = ({ sideType }) => {
       {sideType === "left" ? (
         <motion.div
           className="absolute top-[-20%] dark:text-gray-700  text-gray-500  text-[40rem] font-bold opacity-20 whitespace-nowrap uppercase hidden lg:block w-1/2 font-primary"
-          variants={leftSlideText}
+          variants={slideText("-100%")}
           initial="initial"
           animate="animate"
         >
@@ -44,7 +17,7 @@ const SlideText = ({ sideType }) => {
       ) : (
         <motion.div
           className="absolute bottom-0 dark:text-gray-700  text-gray-500  text-[3rem] font-bold opacity-50 whitespace-nowrap uppercase  hidden lg:block  w-1/2 font-primary"
-          variants={rightSlideText}
+          variants={slideText("100%")}
           initial="initial"
           animate="animate"
         >

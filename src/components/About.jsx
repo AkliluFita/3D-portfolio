@@ -1,28 +1,20 @@
 import { Tilt } from "react-tilt";
-import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
 import { aboutMeCardData, aboutMeProfileData } from "../data/aboutMeData";
 import aboutMeImg from "../assets/about/about_me.png";
 import akliluImg from "../assets/showCase/aklilu_dev1.png";
+import useAOSInit from "../hooks/useAOSInit";
 
 const About = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 600,
-    });
-  }, []);
+  useAOSInit();
 
   return (
-    <div className="relative flex flex-col items-center w-full h-auto gap-[3.3rem] p-4 common_background dark:bg-darkModeImage">
+    <div className="relative flex flex-col items-center w-full h-auto gap-[3.3rem] p-4 bg-lightModeImage dark:bg-darkModeImage">
       <div className=" absolute top-0 h-[5rem] w-full bg-purple-600 blur-[150px]"></div>
 
       <div className="mt-[85px] flex flex-row items-center gap-4">
         <img src={aboutMeImg} alt="" className="w-[4rem] h-[3rem]" />
-        <h1
-          className=" text-[2rem] lg:text-[3rem] bg-gradient-to-r from-indigo-500  to-pink-500 bg-clip-text text-transparent  uppercase font-bold font-primary tracking-widest  "
-          data-aos="fade-right"
-        >
+        <h1 className="first-heading-text" data-aos="fade-right">
           About me
         </h1>
       </div>
@@ -53,18 +45,10 @@ const About = () => {
 export default About;
 
 const Cards = ({ item }) => {
-  // used for box animate with scroll
-  useEffect(() => {
-    AOS.init({
-      duration: 600,
-    });
-  }, []);
+  useAOSInit();
 
   return (
-    <Tilt
-      // options={{ scale: 1 }}
-      className="flex-[1] "
-    >
+    <Tilt className="flex-[1] ">
       <div
         className="flex flex-col items-center h-full gap-2 p-4 border border-purple-500 rounded-lg lg:max-w-full bg-bg_primary dark:bg-gray-800 g-3"
         data-aos="flip-left"
@@ -83,7 +67,7 @@ const Cards = ({ item }) => {
           {item.desc}
         </p>
         <div className=" flex flex-row items-center justify-between text-[1.5rem] flex-[4]  w-full p-1 gap-4 ">
-          <div className="flex flex-row text-sm   lg:w-[14rem] max-w-[13rem]">
+          <div className="flex flex-row text-sm lg:w-[14rem] max-w-[13rem]">
             <ul className="flex flex-row flex-wrap items-center gap-2 ">
               {item.tool.map((i) => (
                 <li
@@ -101,7 +85,7 @@ const Cards = ({ item }) => {
                 Experience
               </h1>
               <h3 className="font-bold text-black font-primary dark:text-white">
-                {item.experiencePeriod}{" "}
+                {item.experiencePeriod}
                 {item.experiencePeriod === 1 ? "Year" : "Years"}
               </h3>
             </div>

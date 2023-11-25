@@ -1,19 +1,39 @@
 import { educationData } from "../data/educationData";
 import { motion } from "framer-motion";
-import AOS from "aos";
-import {
-  fadeIn,
-  itemVariant,
-  listItemVariant,
-  textVariant,
-} from "../utils/animate_func";
-import { useEffect } from "react";
-import wellDoneImg from "../assets/education/well_done.png";
+import { fadeIn, itemVariant, listItemVariant } from "../utils/animate_func";
 import educationImg from "../assets/education/education.png";
 import ModalRadix from "./elements/Modal";
 import { PiGlobeStandFill } from "react-icons/pi";
+import useAOSInit from "../hooks/useAOSInit";
 
-const SingleEducation = ({ item, index }) => {
+const Education = () => {
+  useAOSInit();
+  return (
+    <div className="bg-lightModeImage dark:bg-darkModeImage  h-auto lg:h-[100vh] flex flex-col gap-4 items-center relative">
+      <div className=" absolute top-0 h-[5rem] w-full bg-purple-600 blur-[150px]"></div>
+      <div className="mt-[95px] flex flex-row items-center gap-4">
+        <img src={educationImg} alt="" className="w-[4rem] h-[3rem]" />
+        <h1 className="first-heading-text" data-aos="fade-right">
+          Education
+        </h1>
+      </div>
+      <div className="flex-[11] w-[90%]  md:w-[80%]  ">
+        <div
+          className="flex flex-col  gap-10 lg:flex-row  lg:h-[95%] "
+          data-aos="fade-right"
+        >
+          {educationData.map((item, index) => (
+            <Cards item={item} key={item.id} index={index} />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Education;
+
+const Cards = ({ item, index }) => {
   return (
     <motion.div
       initial="hidden"
@@ -48,15 +68,6 @@ const SingleEducation = ({ item, index }) => {
         <h2 className=" text-black text-[0.8rem] lg:text-[1.2rem] font-primary dark:text-gray-400 ">
           {item.subTitleTwo}
         </h2>
-
-        {/* <motion.p
-          initial={false}
-          animate="show"
-          variants={textVariant(0.5 * index)}
-          className="mt-6"
-        >
-          {item.desc}
-        </motion.p> */}
       </div>
       <hr className="h-[2px] w-full bg-br_primary border border-br_primary" />
       <div className="flex flex-col items-center gap-2  lg:gap-4 flex-[4]">
@@ -126,37 +137,3 @@ const SingleEducation = ({ item, index }) => {
     </motion.div>
   );
 };
-
-const Education = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 600,
-    });
-  }, []);
-  return (
-    <div className="common_background dark:bg-darkModeImage  h-auto lg:h-[100vh] flex flex-col gap-4 items-center relative">
-      <div className=" absolute top-0 h-[5rem] w-full bg-purple-600 blur-[150px]"></div>
-      <div className="mt-[95px] flex flex-row items-center gap-4">
-        <img src={educationImg} alt="" className="w-[4rem] h-[3rem]" />
-        <h1
-          className=" text-[2rem] tracking-widest lg:text-[3rem] bg-gradient-to-r from-indigo-500  to-pink-500 bg-clip-text text-transparent  uppercase font-bold font-primary   "
-          data-aos="fade-right"
-        >
-          Education
-        </h1>
-      </div>
-      <div className="flex-[11] w-[90%]  md:w-[80%]  ">
-        <div
-          className="flex flex-col  gap-10 lg:flex-row  lg:h-[95%] "
-          data-aos="fade-right"
-        >
-          {educationData.map((item, index) => (
-            <SingleEducation item={item} key={item.id} index={index} />
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default Education;

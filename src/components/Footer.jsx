@@ -1,20 +1,9 @@
-import React, { useEffect } from "react";
 import SocialIcons from "./elements/SocialIcons";
-import logoImg from "../assets/navbar/My_New_Log.png";
-import AOS from "aos";
 import Logo from "./elements/Logo";
 
 const Footer = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 600,
-    });
-  }, []);
   return (
-    <div
-      className=" h-auto lg:h-[30rem] w-full p-4 bg-[#dadfe4] text-black dark:bg-gray-800 "
-      // data-aos="fade-up"
-    >
+    <div className=" h-auto lg:h-[30rem] w-full p-4 bg-[#dadfe4] text-black dark:bg-gray-800 ">
       <div className="flex flex-col h-full gap-4 p-4">
         <div className="flex-[1] border-b-2 border-br_primary p-2">
           <Logo className="justify-start" />

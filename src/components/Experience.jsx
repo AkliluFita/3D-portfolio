@@ -5,8 +5,6 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import work_icon from "../assets/experience/work-icon.png";
 import { experienceData } from "../data/experienceData";
-import AOS from "aos";
-import { useEffect } from "react";
 import experienceImg from "../assets/experience/experience.png";
 import { useRecoilState } from "recoil";
 import { darkModeAtom } from "../recoil/darkMode";
@@ -20,25 +18,19 @@ import TooltipRadix from "./elements/Tooltip";
 import Link from "./elements/Link";
 import DropdownMenuRadix from "./elements/DropdownMenu";
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
+import useAOSInit from "../hooks/useAOSInit";
 
 const Experience = () => {
   const [darkMode] = useRecoilState(darkModeAtom);
   const background = darkMode ? "#1F2937" : "#dadfe4";
-  useEffect(() => {
-    AOS.init({
-      duration: 600,
-    });
-  }, []);
+  useAOSInit();
   return (
-    <div className="relative flex flex-col items-center gap-4 common_background dark:bg-darkModeImage lg:h-auto">
+    <div className="relative flex flex-col items-center gap-4 bg-lightModeImage dark:bg-darkModeImage lg:h-auto">
       <div className=" absolute top-0 h-[5rem] w-full bg-purple-600 blur-[150px]"></div>
 
       <div className="mt-[95px] flex flex-row items-center gap-4">
         <img src={experienceImg} alt="" className="w-[4rem] h-[3rem]" />
-        <h1
-          className=" text-[2rem] lg:text-[3rem] bg-gradient-to-r tracking-widest from-indigo-500  to-pink-500 bg-clip-text text-transparent  uppercase font-bold font-primary   "
-          data-aos="fade-right"
-        >
+        <h1 className="first-heading-text" data-aos="fade-right">
           My Experience
         </h1>
       </div>

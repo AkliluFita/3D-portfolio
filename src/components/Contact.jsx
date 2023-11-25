@@ -1,27 +1,19 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import AOS from "aos";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import aboutMeImg from "../assets/about/about_me.png";
 import contactImg from "../assets/contact/contact-icon.png";
 import { contactData } from "../data/contactData";
+import useAOSInit from "../hooks/useAOSInit";
 const Contact = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 600,
-    });
-  }, []);
+  useAOSInit();
 
   return (
-    <div className="common_background dark:bg-darkModeImage h-auto lg:h-[100vh] flex flex-col items-center w-full relative">
+    <div className="bg-lightModeImage dark:bg-darkModeImage h-auto lg:h-[100vh] flex flex-col items-center w-full relative">
       <div className=" absolute top-0 h-[5rem] w-full bg-purple-600 blur-[150px]"></div>
       <div className="mt-[95px] flex flex-row items-center gap-4">
         <img src={contactImg} alt="" className="w-[4rem] h-[3rem]" />
-        <h1
-          className=" text-[2rem] lg:text-[3rem] bg-gradient-to-r from-indigo-500 tracking-widest  to-pink-500 bg-clip-text text-transparent  uppercase font-bold font-primary   "
-          data-aos="fade-right"
-        >
+        <h1 className="first-heading-text" data-aos="fade-right">
           contact
         </h1>
       </div>

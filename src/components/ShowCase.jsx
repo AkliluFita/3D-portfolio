@@ -42,7 +42,7 @@ const ShowCase = () => {
         </div>
       </div>
       <div
-        className=" flex-[1] h-full  w-full flex flex-col justify-center z-[1] relative object-cover items-center"
+        className=" flex-[1] h-full w-full flex flex-col justify-center z-[1] relative object-cover items-center"
         data-aos="fade-left"
       >
         <img src={sampleImg} alt="sampleImg" className="w-[90%]" />

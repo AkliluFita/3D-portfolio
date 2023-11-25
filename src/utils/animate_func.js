@@ -70,3 +70,19 @@ export const fadeIn = (direction, type, delay, duration) => {
     },
   };
 };
+
+export const slideText = (percent) => {
+  return {
+    initial: {
+      x: 0,
+    },
+    animate: {
+      x: percent,
+      transition: {
+        repeat: Infinity,
+        repeatType: "mirror",
+        duration: 50,
+      },
+    },
+  };
+};
