@@ -50,7 +50,7 @@ const Cards = ({ item, index }) => {
             <h5 className="text-[0.7rem] lg:text-[1rem] text-tx_additional font-primary">
               {item.subTitle}
             </h5>
-            <h3 className=" p-1 lg:p-2 common_background max-w-[15rem] text-center lg:text-base text-[0.8rem] text-tx_secondary font-primary">
+            <h3 className=" p-1 lg:p-2 common_background dark:bg-bg_dark max-w-[15rem] text-center lg:text-base text-[0.8rem] text-tx_secondary font-primary">
               {item.educationPeriod}
             </h3>
           </div>

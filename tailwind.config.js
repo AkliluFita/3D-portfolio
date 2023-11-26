@@ -20,8 +20,8 @@ export default {
           "radial-gradient(237px at 50% 2.1%, rgb(78, 157, 184) 0.3%,  rgb(171, 181, 187) 100%)",
         bg_dark:
           "radial-gradient(237px at 50% 2.1%, rgb(78, 157, 184) 0.3%,  rgb(17, 24, 28) 100%)",
-        bg_primary: "#dadfe4",
-        bg_secondary: "#dadfe4", //
+        bg_primary: "rgb(229 231 235)",
+        bg_secondary: "rgb(229 231 235)", //
         bg_tertiary:
           "radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%)", // rgba(255,255,255,0.5);
         bg_additional: "#219653",

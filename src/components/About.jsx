@@ -72,7 +72,7 @@ const Cards = ({ item }) => {
               {item.tool.map((i) => (
                 <li
                   key={i}
-                  className="p-1 text-black text-[0.7rem] lg:text-[0.9rem] rounded-md common_background font-primary"
+                  className="p-1 text-gray-800 dark:text-gray-300 text-[0.7rem] lg:text-[0.9rem] rounded-md dark:bg-gray-600  bg-gray-300 font-primary"
                 >
                   {i}
                 </li>

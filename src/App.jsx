@@ -11,6 +11,7 @@ import MyLogoLoading from "./components/MyLogoLoadng";
 import Footer from "./components/Footer";
 import Testimonial from "./components/Testimonial";
 import GoTopButton from "./components/elements/GoUpButton";
+import Projects from "./components/Projects";
 
 export default function App() {
   const [isLoadingPage, setIsLoadingPage] = useState(true);
@@ -40,6 +41,9 @@ export default function App() {
         </section>
         <section id="Skill">
           <Skill />
+        </section>
+        <section id="Projects">
+          <Projects />
         </section>
         <section id="Testimonial">
           <Testimonial />

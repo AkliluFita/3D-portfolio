@@ -22,7 +22,7 @@ import useAOSInit from "../hooks/useAOSInit";
 
 const Experience = () => {
   const [darkMode] = useRecoilState(darkModeAtom);
-  const background = darkMode ? "#1F2937" : "#dadfe4";
+  const background = darkMode ? "#1F2937" : "rgb(229 231 235)";
   useAOSInit();
   return (
     <div className="relative flex flex-col items-center gap-4 bg-lightModeImage dark:bg-darkModeImage lg:h-auto">
