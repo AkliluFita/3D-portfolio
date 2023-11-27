@@ -39,7 +39,7 @@ const Cards = ({ item, index }) => {
       initial="hidden"
       animate="show"
       variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-      className="flex-[1] flex flex-col gap-2  lg:gap-4 p-4 bg-bg_secondary dark:bg-gray-800 rounded-lg border border-purple-500"
+      className="flex-[1] flex flex-col gap-2  lg:gap-4 p-4 bg-bg_secondary dark:bg-gray-900 rounded-lg border border-purple-800"
     >
       <div className="flex flex-row justify-between">
         <div>

@@ -80,7 +80,7 @@ const Experience = () => {
                     </Link>
                   )}
                   <TooltipRadix text="Detail Info">
-                    <IdCardIcon className="w-[1.5rem] h-[1.5rem] lg:w-[2rem] lg:h-[2rem dark:text-white text-black  cursor-pointer hover:shadow-inner hover:text-gray-500" />
+                    <IdCardIcon className="w-[1.5rem] h-[1.5rem] lg:w-[2rem] lg:h-[2rem] dark:text-white text-black  cursor-pointer hover:shadow-inner hover:text-gray-500" />
                   </TooltipRadix>
 
                   {item.github_link && (

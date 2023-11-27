@@ -20,7 +20,7 @@ const Skill = () => {
         className="flex gap-4 flex-[10] lg:flex-row flex-col lg:px-8  lg:w-[80%] w-[90%]"
         data-aos="fade-left"
       >
-        <div className="flex-[1]  lg:p-4 p-1 dark:bg-gray-800 bg-bg_secondary rounded-lg border border-purple-500">
+        <div className="flex-[1]  lg:p-4 p-1 dark:bg-gray-900 bg-bg_secondary rounded-lg border border-purple-800">
           <div className="flex flex-col w-full gap-4 p-1 lg:p-4">
             <h1 className="text-center text-[1.5rem] tracking-wider lg:text-[2rem] dark:text-white text-black font-primary font-bold ">
               My Skill Lists
@@ -49,7 +49,7 @@ const Skill = () => {
             </ul>
           </div>
         </div>
-        <div className="flex   flex-wrap items-center justify-between  lg:gap-2 gap-4 p-2   flex-[1]  rounded-lg dark:bg-gray-800 bg-bg_secondary border border-purple-500">
+        <div className="flex   flex-wrap items-center justify-between  lg:gap-2 gap-4 p-2   flex-[1]  rounded-lg dark:bg-gray-900 bg-bg_secondary border border-purple-800">
           {skillIconData.map((item) => (
             <TooltipRadix text={item.name} key={item.name}>
               <item.icon className="lg:text-[6rem] text-[4rem] text-[#808080] " />

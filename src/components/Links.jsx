@@ -7,8 +7,9 @@ const Links = ({ className }) => {
     { id: "2", text: "Experience" },
     { id: "3", text: "Education" },
     { id: "4", text: "Skill" },
-    { id: "5", text: "Testimonial" },
-    { id: "6", text: "Contact" },
+    { id: "5", text: "Projects" },
+    { id: "6", text: "Testimonial" },
+    { id: "7", text: "Contact" },
   ];
 
   useAOSInit();

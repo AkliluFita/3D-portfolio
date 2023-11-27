@@ -93,3 +93,7 @@ https://www.veed.io/view/7807d48e-78a4-494b-a74b-642dbb480fdc?panel=download
 
 <!-- best react icon library -->
 https://react-icons.github.io/react-icons/search/#q=facebook
+
+
+<!-- best image slider with framer motion -->
+https://www.freecodecamp.org/news/build-an-image-carousel-with-react-and-framer-motion/

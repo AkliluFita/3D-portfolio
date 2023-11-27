@@ -50,7 +50,7 @@ const Cards = ({ item }) => {
   return (
     <Tilt className="flex-[1] ">
       <div
-        className="flex flex-col items-center h-full gap-2 p-4 border border-purple-500 rounded-lg lg:max-w-full bg-bg_primary dark:bg-gray-800 g-3"
+        className="flex flex-col items-center h-full gap-2 p-4 border border-purple-800 rounded-lg lg:max-w-full bg-bg_primary dark:bg-gray-900 g-3"
         data-aos="flip-left"
       >
         <div className="flex items-center justify-center w-1/2 p-2 text-center">

@@ -32,7 +32,7 @@ export default Testimonial;
 const Card = ({ item }) => {
   return (
     <div
-      className="flex flex-col items-center w-full h-[full] gap-4 p-2 text-black border border-purple-500 rounded-lg lg:p-4 bg-bg_primary dark:bg-gray-800"
+      className="flex flex-col items-center w-full h-[full] gap-4 p-2 text-black border border-purple-800 rounded-lg lg:p-4 bg-bg_primary dark:bg-gray-900"
       data-aos="zoom-in"
     >
       <div className="flex-[4] h-full w-full text-center flex items-center justify-center">

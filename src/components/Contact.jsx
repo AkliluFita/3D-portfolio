@@ -35,7 +35,7 @@ const ContactBox = () => {
       {contactData.map((item) => (
         <div
           key={item.id}
-          className="flex flex-col items-center gap-2 lg:gap-6  border border-purple-500 rounded-lg  bg-[#dadfe4] dark:bg-gray-800  lg:p-4 p-2"
+          className="flex flex-col items-center gap-2 lg:gap-6  border border-purple-800 rounded-lg  bg-[#dadfe4] dark:bg-gray-900  lg:p-4 p-2"
           data-aos="fade-left"
         >
           <img src={item.contact_icon} alt="" className="w-[4rem] h-[3rem]" />
@@ -85,7 +85,7 @@ const ContactForm = () => {
   };
   return (
     <div
-      className="  rounded-md flex flex-col items-center w-full lg:w-[40rem] bg-[#dadfe4] border border-purple-500 dark:bg-gray-800 h-full "
+      className="  rounded-md flex flex-col items-center w-full lg:w-[40rem] bg-[#dadfe4] border border-purple-800 dark:bg-gray-900 h-full "
       data-aos="fade-right"
     >
       <div className="w-full px-4 py-2">
