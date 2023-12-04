@@ -34,7 +34,7 @@ const Navbar = () => {
     >
       <div className="flex flex-row items-center h-full gap-4 lg:justify-between">
         <Logo className="justify-center" />
-        <div className="flex-row justify-around hidden lg:flex md:items-center lg:flex-[2] w-[20rem] gap-2">
+        <div className="flex-row justify-around hidden lg:flex md:items-center lg:flex-[2]  gap-2">
           <Links className=" text-[0.9rem]" />
         </div>
         <div className="flex flex-row items-center h-full flex-[1] justify-center gap-4 lg:gap-8">

@@ -13,7 +13,7 @@ return (
   <div className="relative flex flex-col items-center h-auto gap-4 p-2 bg-lightModeImage dark:bg-darkModeImage lg:p-4">
     <div className=" absolute top-0 h-[5rem] w-full bg-purple-600 blur-[150px]"></div>
     <div className="mt-[95px] flex flex-row items-center gap-4 flex-[1]">
-      <img src={aboutMeImg} alt="" className="w-[4rem] h-[3rem]" />
+      <img src={aboutMeImg} alt="" className="" />
       <h1 className="first-heading-text" data-aos="fade-right">
         Testimonial
       </h1>

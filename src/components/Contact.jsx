@@ -12,7 +12,7 @@ const Contact = () => {
     <div className="bg-lightModeImage dark:bg-darkModeImage h-auto lg:h-[100vh] flex flex-col items-center w-full relative">
       <div className=" absolute top-0 h-[5rem] w-full bg-purple-600 blur-[150px]"></div>
       <div className="mt-[95px] flex flex-row items-center gap-4">
-        <img src={contactImg} alt="" className="w-[4rem] h-[3rem]" />
+        <img src={contactImg} alt="" className="" />
         <h1 className="first-heading-text" data-aos="fade-right">
           contact
         </h1>

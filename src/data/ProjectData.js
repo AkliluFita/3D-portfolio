@@ -1,13 +1,4 @@
-// export const projectImages = [
-//   "https://images.pexels.com/photos/169647/pexels-photo-169647.jpeg?auto=compress&cs=tinysrgb&w=600",
-//   "https://images.pexels.com/photos/313782/pexels-photo-313782.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-//   "https://images.pexels.com/photos/773471/pexels-photo-773471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-//   "https://images.pexels.com/photos/672532/pexels-photo-672532.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-//   "https://images.pexels.com/photos/632522/pexels-photo-632522.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-//   "https://images.pexels.com/photos/777059/pexels-photo-777059.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-// ];
-
-export const projectImages = [
+export const projectData = [
   {
     id: 1,
     title: "Blog App",
@@ -19,6 +10,7 @@ export const projectImages = [
     tools: ["react", "javascript", "mysql", "Node", "css", "html"],
     image:
       "https://images.pexels.com/photos/169647/pexels-photo-169647.jpeg?auto=compress&cs=tinysrgb&w=600",
+    videoEmbedLink: "fwnW4_XD0xY?si=rINAiOKY2UNFTQgD",
   },
   {
     id: 2,
@@ -31,6 +23,7 @@ export const projectImages = [
     tools: ["React", "Javascript", "Mysql", "Node", "Css", "Html"],
     image:
       "https://images.pexels.com/photos/313782/pexels-photo-313782.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    videoEmbedLink: null,
   },
   {
     id: 3,
@@ -43,6 +36,7 @@ export const projectImages = [
     tools: ["React", "Javascript", "Mysql", "Node", "Css", "Html"],
     image:
       "https://images.pexels.com/photos/773471/pexels-photo-773471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    videoEmbedLink: "fwnW4_XD0xY?si=rINAiOKY2UNFTQgD",
   },
   {
     id: 4,
@@ -55,5 +49,6 @@ export const projectImages = [
     tools: ["React", "Javascript", "Mysql", "Node", "Css", "Html"],
     image:
       "https://images.pexels.com/photos/672532/pexels-photo-672532.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    videoEmbedLink: null,
   },
 ];

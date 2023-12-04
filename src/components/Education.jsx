@@ -12,7 +12,7 @@ const Education = () => {
     <div className="bg-lightModeImage dark:bg-darkModeImage  h-auto lg:h-[100vh] flex flex-col gap-4 items-center relative">
       <div className=" absolute top-0 h-[5rem] w-full bg-purple-600 blur-[150px]"></div>
       <div className="mt-[95px] flex flex-row items-center gap-4">
-        <img src={educationImg} alt="" className="w-[4rem] h-[3rem]" />
+        <img src={educationImg} alt="" className="" />
         <h1 className="first-heading-text" data-aos="fade-right">
           Education
         </h1>

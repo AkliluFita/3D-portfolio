@@ -22,14 +22,14 @@ import useAOSInit from "../hooks/useAOSInit";
 
 const Experience = () => {
   const [darkMode] = useRecoilState(darkModeAtom);
-  const background = darkMode ? "#1F2937" : "rgb(229 231 235)";
+  const background = darkMode ? "#1a202c" : "rgb(229 231 235)";
   useAOSInit();
   return (
     <div className="relative flex flex-col items-center gap-4 bg-lightModeImage dark:bg-darkModeImage lg:h-auto">
       <div className=" absolute top-0 h-[5rem] w-full bg-purple-600 blur-[150px]"></div>
 
       <div className="mt-[95px] flex flex-row items-center gap-4">
-        <img src={experienceImg} alt="" className="w-[4rem] h-[3rem]" />
+        <img src={experienceImg} alt="" className="" />
         <h1 className="first-heading-text" data-aos="fade-right">
           My Experience
         </h1>

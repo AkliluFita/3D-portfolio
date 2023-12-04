@@ -9,12 +9,12 @@ const About = () => {
   useAOSInit();
 
   return (
-    <div className="relative flex flex-col items-center w-full h-auto gap-[3.3rem] p-4 bg-lightModeImage dark:bg-darkModeImage">
+    <div className="relative flex flex-col items-center w-full p-4 lg:h-screen bg-lightModeImage dark:bg-darkModeImage">
       <div className=" absolute top-0 h-[5rem] w-full bg-purple-600 blur-[150px]"></div>
 
-      <div className="mt-[85px] flex flex-row items-center gap-4">
-        <img src={aboutMeImg} alt="" className="w-[4rem] h-[3rem]" />
-        <h1 className="first-heading-text" data-aos="fade-right">
+      <div className="flex flex-row gap-4 flex-[2] items-center">
+        <img src={aboutMeImg} alt="" className="" />
+        <h1 className="mt-6 first-heading-text" data-aos="fade-right">
           About me
         </h1>
       </div>
@@ -48,7 +48,7 @@ const Cards = ({ item }) => {
   useAOSInit();
 
   return (
-    <Tilt className="flex-[1] ">
+    <Tilt className="flex-[1]">
       <div
         className="flex flex-col items-center h-full gap-2 p-4 border border-purple-800 rounded-lg lg:max-w-full bg-bg_primary dark:bg-gray-900 g-3"
         data-aos="flip-left"
@@ -86,7 +86,7 @@ const Cards = ({ item }) => {
               </h1>
               <h3 className="font-bold text-black font-primary dark:text-white">
                 {item.experiencePeriod}
-                {item.experiencePeriod === 1 ? "Year" : "Years"}
+                {item.experiencePeriod === 1 ? " Year" : " Years"}
               </h3>
             </div>
             {/* <button className="p-2 text-white bg-purple-600 font-primary rounded-2xl ">

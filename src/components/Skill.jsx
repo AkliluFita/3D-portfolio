@@ -10,8 +10,8 @@ const Skill = () => {
   return (
     <div className=" bg-cover bg-center bg-no-repeat bg-lightModeImage dark:bg-darkModeImage flex flex-col lg:p-8 p-2 lg:h-[100vh] items-center  gap-4 relative">
       <div className=" absolute top-0 h-[5rem] w-full bg-purple-600 blur-[150px]"></div>
-      <div className="mt-[95px] flex flex-row items-center gap-4">
-        <img src={skillImg} alt="" className="w-[4rem] h-[3rem]" />
+      <div className="flex-[2] flex flex-row gap-4 items-end">
+        <img src={skillImg} alt="" className="" />
         <h1 className="first-heading-text" data-aos="fade-right">
           My Skills
         </h1>

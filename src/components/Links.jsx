@@ -20,10 +20,10 @@ const Links = ({ className }) => {
         <a
           href={`#${item.text}`}
           key={item.id}
-          className={`cursor-pointer  w-full text-center font-bold   uppercase  ${className} `}
+          className={`cursor-pointer font-bold  uppercase  ${className} `}
         >
           <h1
-            className="font-bold tracking-widest text-gray-800 font-primary dark:text-gray-200 hover:text-gray-500 hover:dark:text-gray-400"
+            className="font-bold tracking-widest text-gray-800 dark:text-gray-200 hover:text-gray-500 hover:dark:text-gray-400"
             data-aos="fade-left"
           >
             {item.text}

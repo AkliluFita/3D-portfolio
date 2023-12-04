@@ -1,6 +1,6 @@
 import Button from "./elements/Button";
 import { showCaseData } from "../data/showCaseData";
-import sampleImg from "../assets/showCase/showCaseImg.svg";
+import sampleImg from "../assets/showCase/showcase9.png";
 import SlideText from "./SlideText";
 import SocialIcons from "./elements/SocialIcons";
 import Link from "./elements/Link";
@@ -11,7 +11,7 @@ const ShowCase = () => {
   useAOSInit();
 
   return (
-    <div className="flex lg:flex-row items-center w-full h-auto lg:h-screen gap-4 p-4 bg-lightModeImage dark:bg-darkModeImage  flex-col relative z-[1] mt-[50px] lg:mt-[95px] bg-cover  bg-center">
+    <div className="flex lg:flex-row items-center w-full h-auto lg:h-screen gap-4 p-4 bg-lightModeImage dark:bg-darkModeImage  flex-col relative z-[1]  bg-cover  bg-center">
       <SlideText sideType="left" />
       <div className=" absolute top-0 h-[5rem] w-full bg-purple-600 blur-[200px]"></div>
       <div
@@ -42,10 +42,10 @@ const ShowCase = () => {
         </div>
       </div>
       <div
-        className=" flex-[1] h-full w-full flex flex-col justify-center z-[1] relative object-cover items-center"
+        className=" flex-[1] w-full flex flex-col justify-center z-[1] relative object-cover items-center"
         data-aos="fade-left"
       >
-        <img src={sampleImg} alt="sampleImg" className="w-[90%]" />
+        <img src={sampleImg} alt="sampleImg" className="opacity-80" />
       </div>
       <SlideText sideType="right" />
     </div>
