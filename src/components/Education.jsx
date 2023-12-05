@@ -9,7 +9,7 @@ import useAOSInit from "../hooks/useAOSInit";
 const Education = () => {
   useAOSInit();
   return (
-    <div className="bg-lightModeImage dark:bg-darkModeImage  h-auto lg:h-[100vh] flex flex-col gap-4 items-center relative">
+    <div className="relative flex flex-col items-center h-auto gap-4 bg-lightModeImage dark:bg-darkModeImage">
       <div className=" absolute top-0 h-[5rem] w-full bg-purple-600 blur-[150px]"></div>
       <div className="mt-[95px] flex flex-row items-center gap-4">
         <img src={educationImg} alt="" className="" />
@@ -19,7 +19,7 @@ const Education = () => {
       </div>
       <div className="flex-[11] w-[90%]  md:w-[80%]  ">
         <div
-          className="flex flex-col  gap-10 lg:flex-row  lg:h-[95%] "
+          className="flex flex-col  gap-10 lg:flex-row  lg:h-[90%] lg:p-8 py-6 "
           data-aos="fade-right"
         >
           {educationData.map((item, index) => (
@@ -93,46 +93,44 @@ const Cards = ({ item, index }) => {
           ))}
         </motion.ul>
       </div>
-      <div className="">
-        <h2 className="flex items-center justify-between gap-2 p-0 font-bold font-primary lg:p-4">
-          <ModalRadix
-            content={{
-              title: "Certificate Paper",
-              desc: item.certificateDesc,
-              image: item.certificatePaper,
-            }}
-          >
+      <div className="flex items-center justify-between gap-2 p-0 font-bold font-primary ">
+        <ModalRadix
+          content={{
+            title: "Certificate Paper",
+            desc: item.certificateDesc,
+            image: item.certificatePaper,
+          }}
+        >
+          <button className="lg:p-4 p-2 mb-2 mr-2 font-primary text-[0.6rem]  font-bold  uppercase text-black  dark:text-white lg:w-auto lg:text-lg rounded-3xl underline ">
+            Certificate Paper
+          </button>
+        </ModalRadix>
+        <ModalRadix
+          content={{
+            title: "Thesis Title",
+            desc: item.thesisTitle,
+            image: item.thesisPaper1,
+          }}
+        >
+          {item.thesisTitle && (
             <button className="lg:p-4 p-2 mb-2 mr-2 font-primary text-[0.6rem]  font-bold  uppercase text-black  dark:text-white lg:w-auto lg:text-lg rounded-3xl underline ">
-              Certificate Paper
+              Thesis Title
             </button>
-          </ModalRadix>
-          <ModalRadix
-            content={{
-              title: "Thesis Title",
-              desc: item.thesisTitle,
-              image: item.thesisPaper1,
-            }}
-          >
-            {item.thesisTitle && (
-              <button className="lg:p-4 p-2 mb-2 mr-2 font-primary text-[0.6rem]  font-bold  uppercase text-black  dark:text-white lg:w-auto lg:text-lg rounded-3xl underline ">
-                Thesis Title
-              </button>
-            )}
-          </ModalRadix>
-          <ModalRadix
-            content={{
-              title: "Thesis Book View",
-              desc: "Thesis Approval Certificate with Jury members Signatures",
-              image: item.thesisPaper2,
-            }}
-          >
-            {item.thesisPaper1 && (
-              <button className="lg:p-4 p-2 mb-2 mr-2 font-primary text-[0.6rem]  font-bold  uppercase text-black  dark:text-white lg:w-auto lg:text-lg rounded-3xl underline ">
-                Thesis Book View
-              </button>
-            )}
-          </ModalRadix>
-        </h2>
+          )}
+        </ModalRadix>
+        <ModalRadix
+          content={{
+            title: "Thesis Book View",
+            desc: "Thesis Approval Certificate with Jury members Signatures",
+            image: item.thesisPaper2,
+          }}
+        >
+          {item.thesisPaper1 && (
+            <button className="lg:p-4 p-2 mb-2 mr-2 font-primary text-[0.6rem]  font-bold  uppercase text-black  dark:text-white lg:w-auto lg:text-lg rounded-3xl underline ">
+              Thesis Book View
+            </button>
+          )}
+        </ModalRadix>
       </div>
     </motion.div>
   );

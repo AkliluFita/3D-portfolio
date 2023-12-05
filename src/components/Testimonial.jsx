@@ -18,10 +18,12 @@ return (
         Testimonial
       </h1>
     </div>
-    <div className=" flex-[3] w-full h-full p-2 lg:p-4 flex lg:flex-row gap-8 flex-col">
-      {testimonialData.map((item) => (
-        <Card key={item.id} item={item} />
-      ))}
+    <div className=" flex-[3] w-full flex items-center justify-center">
+      <div className="lg:w-[80%] h-[80%] p-2 lg:p-4 flex lg:flex-row gap-8 flex-col">
+        {testimonialData.map((item) => (
+          <Card key={item.id} item={item} />
+        ))}
+      </div>
     </div>
   </div>
 );

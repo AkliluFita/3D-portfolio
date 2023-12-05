@@ -1,6 +1,6 @@
 import Button from "./elements/Button";
 import { showCaseData } from "../data/showCaseData";
-import sampleImg from "../assets/showCase/showcase9.png";
+import sampleImg from "../assets/showCase/showcase11.png";
 import SlideText from "./SlideText";
 import SocialIcons from "./elements/SocialIcons";
 import Link from "./elements/Link";
@@ -15,10 +15,10 @@ const ShowCase = () => {
       <SlideText sideType="left" />
       <div className=" absolute top-0 h-[5rem] w-full bg-purple-600 blur-[200px]"></div>
       <div
-        className=" flex-[1] h-full  flex flex-col items-center justify-center p-2 z-[1] "
+        className=" flex-[1]  flex justify-center h-full z-[1] relative object-cover items-center "
         data-aos="fade-right"
       >
-        <div className="flex flex-col lg:w-[75%] gap-4  md:p-4 rounded-lg p-2 md:items-start items-center ">
+        <div className="flex flex-col lg:w-[75%] gap-4  md:p-4 rounded-lg p-2 md:items-start items-center  mt-[3rem] lg:mt-0 ">
           <h1 className=" showcase-title-text">{showCaseData.title}</h1>
           <h2 className="flex flex-col showcase-name-text">
             {showCaseData.name}
@@ -42,10 +42,12 @@ const ShowCase = () => {
         </div>
       </div>
       <div
-        className=" flex-[1] w-full flex flex-col justify-center z-[1] relative object-cover items-center"
+        className=" flex-[1]  flex justify-center h-full z-[1] relative object-cover items-center "
         data-aos="fade-left"
       >
-        <img src={sampleImg} alt="sampleImg" className="opacity-80" />
+        <div className="flex justify-center w-[80%] gap-4  md:p-4 rounded-lg p-2 md:items-start items-center ">
+          <img src={sampleImg} alt="sampleImg" />
+        </div>
       </div>
       <SlideText sideType="right" />
     </div>

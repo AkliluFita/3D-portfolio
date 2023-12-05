@@ -45,7 +45,7 @@ const ContactBox = () => {
           {/* <p className="text-center text-tx_additional text-sm lg:text-[0.9rem] font-primary dark:text-gray-400">
             {item.desc}
           </p> */}
-          <h2 className="p-1 text-base font-bold text-black font-primary lg:text-lg common_background">
+          <h2 className="px-2 py-1 text-base font-bold text-black bg-gray-200 dark:text-white dark:bg-gray-800 font-primary lg:text-lg">
             {item.contact_info}
           </h2>
         </div>

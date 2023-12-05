@@ -9,12 +9,12 @@ const About = () => {
   useAOSInit();
 
   return (
-    <div className="relative flex flex-col items-center w-full p-4 lg:h-screen bg-lightModeImage dark:bg-darkModeImage">
+    <div className="relative flex flex-col items-center gap-4 bg-lightModeImage dark:bg-darkModeImage lg:h-auto">
       <div className=" absolute top-0 h-[5rem] w-full bg-purple-600 blur-[150px]"></div>
 
-      <div className="flex flex-row gap-4 flex-[2] items-center">
+      <div className="flex flex-row gap-4 flex-[2] mt-[95px] items-center">
         <img src={aboutMeImg} alt="" className="" />
-        <h1 className="mt-6 first-heading-text" data-aos="fade-right">
+        <h1 className="first-heading-text" data-aos="fade-right">
           About me
         </h1>
       </div>
@@ -33,10 +33,12 @@ const About = () => {
           />
         </div>
       </div>
-      <div className="flex flex-row flex-wrap gap-8 p-4 lg:p-8 flex-[3]  w-full">
-        {aboutMeCardData.map((item) => (
-          <Cards key={item.id} item={item} />
-        ))}
+      <div className="flex items-center justify-center flex-[3] p-2 md:p-8">
+        <div className="  lg:w-[80%] gap-8 grid lg:grid-cols-3 md:grid-cols-2 ">
+          {aboutMeCardData.map((item) => (
+            <Cards key={item.id} item={item} />
+          ))}
+        </div>
       </div>
     </div>
   );
@@ -48,7 +50,7 @@ const Cards = ({ item }) => {
   useAOSInit();
 
   return (
-    <Tilt className="flex-[1]">
+    <Tilt className="flex-[1]  w-auto">
       <div
         className="flex flex-col items-center h-full gap-2 p-4 border border-purple-800 rounded-lg lg:max-w-full bg-bg_primary dark:bg-gray-900 g-3"
         data-aos="flip-left"

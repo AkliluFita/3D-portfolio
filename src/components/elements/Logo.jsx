@@ -13,11 +13,8 @@ const Logo = ({ className }) => {
         src={logoImg}
         className="flex flex-shrink-0 object-cover w-[2.5rem] lg:w-[4rem] cursor-pointer"
       />{" "}
-      <h1 className="hidden font-bold lg:block dark:text-white lg:text-lg text-tx_primary">
-        AkliluDev
-      </h1>
     </motion.div>
   );
-};
+};  
 
 export default Logo;
