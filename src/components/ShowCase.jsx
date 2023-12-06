@@ -26,7 +26,7 @@ const ShowCase = () => {
               {showCaseData.position}
             </span>
           </h2>
-          <p className="text-lg font-bold tracking-wider text-center text-gray-800 font-secondary dark:text-white md:text-3xl">
+          <p className="text-lg font-bold tracking-wider text-center text-gray-800 font-secondary dark:text-white md:text-2xl">
             {showCaseData.description}
           </p>
           <SocialIcons />
@@ -45,7 +45,7 @@ const ShowCase = () => {
         className=" flex-[1]  flex justify-center h-full z-[1] relative object-cover items-center "
         data-aos="fade-left"
       >
-        <div className="flex justify-center w-[80%] gap-4  md:p-4 rounded-lg p-2 md:items-start items-center ">
+        <div className="flex justify-center md:w-[80%] gap-4  md:p-4 rounded-lg p-2 md:items-start items-center">
           <img src={sampleImg} alt="sampleImg" />
         </div>
       </div>

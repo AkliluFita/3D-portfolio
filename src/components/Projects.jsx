@@ -55,7 +55,7 @@ const Projects = () => {
         >
           <FaChevronLeft className="font-bold text-white text-[2rem] cursor-pointer" />
         </motion.div>
-        <div className="flex flex-col h-full gap-6 lg:flex-row ">
+        <div className="flex flex-col h-full gap-6 border lg:flex-row">
           <ProjectMedia setDirection={setCurrentBox} currentBox={currentBox} />
           <ProjectInfo currentBox={currentBox} />
         </div>
@@ -77,7 +77,9 @@ const Projects = () => {
               whileHover="hover"
               variants={dotsVariants()}
               className={` lg:text-[3rem] text-[1rem] ${
-                currentBox === index ? "text-red-600" : ""
+                currentBox === index
+                  ? "text-red-600"
+                  : "text-black dark:text-white"
               }`}
               onClick={() => handleDotClick(index)}
             />
@@ -94,7 +96,7 @@ const ProjectMedia = ({ setDirection, currentBox }) => {
   const [isPictureActive, setIsPictureActive] = useState(true);
   return (
     <div className="flex-[1]  rounded-lg flex flex-col">
-      <div className="flex-[1]  flex justify-around items-center border-t dark:bg-gray-800 bg-gray-300  dark:border-purple-600  rounded-lg">
+      <div className="flex-[1]  flex justify-around items-center border-t   dark:border-purple-600  rounded-lg">
         <h1
           className={` ${
             isPictureActive
@@ -143,7 +145,7 @@ const ProjectInfo = ({ currentBox }) => {
   return (
     <div className="flex-[1]   rounded-lg flex flex-col gap-6">
       <div
-        className={`flex-[2] flex justify-center items-center dark:bg-gray-800 bg-gray-300   rounded-lg ${border_secondary} `}
+        className={`flex-[2] flex justify-center items-center   rounded-lg ${border_secondary} `}
       >
         <h1 className="font-bold text-black dark:text-white   font-primary lg:text-[2rem] text-[1.3rem] tracking-wider">
           {projectData[currentBox].title}
@@ -151,7 +153,7 @@ const ProjectInfo = ({ currentBox }) => {
       </div>
       <div className=" flex-[10] flex gap-6">
         <div
-          className={` flex-[4] p-2 flex flex-col rounded-lg dark:bg-gray-800 bg-gray-300  ${border_secondary} `}
+          className={` flex-[4] p-2 flex flex-col rounded-lg ${border_secondary} `}
         >
           <h1 className="flex-[1] text-base tracking-wider lg:text-[1.5rem] dark:text-white text-black font-primary font-bold ">
             Used tools

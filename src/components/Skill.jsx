@@ -17,7 +17,7 @@ const Skill = () => {
         </h1>
       </div>
       <div
-        className="flex gap-4 flex-[10] lg:flex-row flex-col lg:px-8  lg:w-[80%] w-[90%]"
+        className="flex gap-6 flex-[10] lg:flex-row flex-col lg:p-12 lg:px-8  lg:w-[80%] w-[90%]"
         data-aos="fade-left"
       >
         <div className="flex-[1]  lg:p-4 p-1 dark:bg-gray-900 bg-bg_secondary rounded-lg border border-purple-800">

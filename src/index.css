@@ -9,7 +9,7 @@
     @apply text-[1rem] tracking-wider md:text-[1.8rem] lg:text-[2rem] font-bold text-gray-800 dark:text-white font-secondary
   }
   .showcase-name-text {
-    @apply text-[1.8rem] tracking-wider font-bold bg-gradient-to-r from-indigo-500  to-pink-500 bg-clip-text text-transparent  md:text-[3rem]   lg:text-[4rem] font-secondary 
+    @apply text-[1.8rem] tracking-wider font-bold bg-gradient-to-r from-indigo-500  to-pink-500 bg-clip-text text-transparent  md:text-[3rem]   lg:text-[3rem] font-secondary 
   }
   .first-heading-text{
     @apply text-[2rem] lg:text-[3rem] bg-gradient-to-r from-indigo-500  to-pink-500 bg-clip-text text-transparent  uppercase font-bold font-primary tracking-widest 
