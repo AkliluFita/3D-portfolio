@@ -1,6 +1,6 @@
 import Button from "./elements/Button";
 import { showCaseData } from "../data/showCaseData";
-import sampleImg from "../assets/showCase/showcase11.png";
+import sampleImg from "../assets/showCase/showcase_new (2).png";
 import SlideText from "./SlideText";
 import SocialIcons from "./elements/SocialIcons";
 import Link from "./elements/Link";

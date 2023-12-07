@@ -38,7 +38,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="relative flex flex-col items-center gap-4 bg-lightModeImage dark:bg-darkModeImage lg:h-auto">
+    <div className="relative flex flex-col items-center gap-4 bg-lightModeImage dark:bg-darkModeImage lg:h-screen">
       <div className=" absolute top-0 h-[5rem] w-full bg-purple-600 blur-[150px]"></div>{" "}
       <div className="mt-[95px] flex flex-row items-center gap-4">
         <img src={educationImg} alt="" className="" />
@@ -46,21 +46,21 @@ const Projects = () => {
           My Projects
         </h1>
       </div>
-      <div className="flex-[10] w-[90%]  mb-[4rem]  md:w-[80%]  relative dark:bg-gray-900 bg-bg_secondary rounded-lg">
+      <div className="flex-[10] w-[90%] px-4  mb-[4rem]  md:w-[80%] h-full relative dark:bg-gray-900 border border-purple-600 bg-bg_secondary rounded-lg">
         <motion.div
-          className="absolute top-[50%] left-0"
+          className="absolute top-[50%] left-0 bg-gray-600 p-2 rounded-[50%]"
           onClick={handlePrevious}
           variants={sliderVariants()}
           whileHover="hover"
         >
-          <FaChevronLeft className="font-bold text-white text-[2rem] cursor-pointer" />
+          <FaChevronLeft className="font-bold text-white  text-[2rem] cursor-pointer" />
         </motion.div>
-        <div className="flex flex-col h-full gap-6 border lg:flex-row">
+        <div className="flex flex-col h-full gap-6 lg:flex-row">
           <ProjectMedia setDirection={setCurrentBox} currentBox={currentBox} />
           <ProjectInfo currentBox={currentBox} />
         </div>
         <motion.div
-          className="absolute top-[50%] right-0"
+          className="absolute top-[50%] right-0 bg-gray-600 p-2 rounded-[50%]"
           bg-gray-800
           onClick={handleNext}
           variants={sliderVariants()}
@@ -96,7 +96,7 @@ const ProjectMedia = ({ setDirection, currentBox }) => {
   const [isPictureActive, setIsPictureActive] = useState(true);
   return (
     <div className="flex-[1]  rounded-lg flex flex-col">
-      <div className="flex-[1]  flex justify-around items-center border-t   dark:border-purple-600  rounded-lg">
+      <div className="flex-[1]  flex justify-around items-center rounded-lg">
         <h1
           className={` ${
             isPictureActive
@@ -118,7 +118,7 @@ const ProjectMedia = ({ setDirection, currentBox }) => {
           Video
         </h1>
       </div>
-      <div className="flex-[11]  h-full w-full">
+      <div className="flex-[11]  h-full w-full rounded-sm">
         {isPictureActive ? (
           <img
             src={projectData[currentBox].image}
@@ -130,7 +130,9 @@ const ProjectMedia = ({ setDirection, currentBox }) => {
             {projectData[currentBox].videoEmbedLink ? (
               <YoutubeEmbed embedId={projectData[currentBox].videoEmbedLink} />
             ) : (
-              <h2 className="text-lg font-primary">Video is not available</h2>
+              <h2 className="text-lg font-primary h-[10rem]">
+                Video is not available
+              </h2>
             )}
           </div>
         )}
@@ -145,22 +147,23 @@ const ProjectInfo = ({ currentBox }) => {
   return (
     <div className="flex-[1]   rounded-lg flex flex-col gap-6">
       <div
-        className={`flex-[2] flex justify-center items-center   rounded-lg ${border_secondary} `}
+        className={`flex-[2] flex justify-center items-center   rounded-lg `}
       >
-        <h1 className="font-bold text-black dark:text-white   font-primary lg:text-[2rem] text-[1.3rem] tracking-wider">
+        <h1 className="font-bold text-black dark:text-white border-b w-full text-center border-purple-600  font-primary lg:text-[2rem] text-[1.3rem] tracking-wider">
           {projectData[currentBox].title}
         </h1>
       </div>
       <div className=" flex-[10] flex gap-6">
-        <div
-          className={` flex-[4] p-2 flex flex-col rounded-lg ${border_secondary} `}
-        >
+        <div className={` flex-[4] p-2 flex flex-col rounded-lg `}>
           <h1 className="flex-[1] text-base tracking-wider lg:text-[1.5rem] dark:text-white text-black font-primary font-bold ">
             Used tools
           </h1>
           <ul className="flex-[11]">
             {projectData[currentBox].tools.map((item) => (
-              <li key={item} className="text-base lg:text-2xl font-primary">
+              <li
+                key={item}
+                className="text-base text-gray-600 lg:text-2xl font-primary dark:text-gray-400"
+              >
                 {item}
               </li>
             ))}
