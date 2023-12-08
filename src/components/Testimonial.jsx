@@ -1,4 +1,3 @@
-import aboutMeImg from "../assets/about/about_me.png";
 import { testimonialData } from "../data/testimonialData";
 import ModalRadix from "./elements/Modal";
 import { Tilt } from "react-tilt";
@@ -6,27 +5,28 @@ import TooltipRadix from "./elements/Tooltip";
 import { LinkedInLogoIcon } from "@radix-ui/react-icons";
 import Link from "./elements/Link";
 import useAOSInit from "../hooks/useAOSInit";
+import { MdRecommend } from "react-icons/md";
 
 const Testimonial = () => {
   useAOSInit();
-return (
-  <div className="relative flex flex-col items-center h-auto gap-4 p-2 bg-lightModeImage dark:bg-darkModeImage lg:p-4">
-    <div className=" absolute top-0 h-[5rem] w-full bg-purple-600 blur-[150px]"></div>
-    <div className="mt-[95px] flex flex-row items-center gap-4 flex-[1]">
-      <img src={aboutMeImg} alt="" className="" />
-      <h1 className="first-heading-text" data-aos="fade-right">
-        Testimonial
-      </h1>
-    </div>
-    <div className=" flex-[3] w-full flex items-center justify-center">
-      <div className="lg:w-[80%] h-[80%] p-2 lg:p-4 flex lg:flex-row gap-8 flex-col">
-        {testimonialData.map((item) => (
-          <Card key={item.id} item={item} />
-        ))}
+  return (
+    <div className="relative flex flex-col items-center h-auto gap-4 p-2 bg-lightModeImage dark:bg-darkModeImage lg:p-4">
+      <div className=" absolute top-0 h-[5rem] w-full bg-purple-600 blur-[150px]"></div>
+      <div className="mt-[95px] flex flex-row items-center gap-4 flex-[1]">
+        <MdRecommend className="text-purple-600 text-[3rem]" />{" "}
+        <h1 className="first-heading-text" data-aos="fade-right">
+          Testimonial
+        </h1>
+      </div>
+      <div className=" flex-[3] w-full flex items-center justify-center">
+        <div className="lg:w-[80%] h-[80%] p-2 lg:p-4 flex lg:flex-row gap-8 flex-col">
+          {testimonialData.map((item) => (
+            <Card key={item.id} item={item} />
+          ))}
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
 };
 
 export default Testimonial;

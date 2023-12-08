@@ -5,7 +5,6 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import work_icon from "../assets/experience/work-icon.png";
 import { experienceData } from "../data/experienceData";
-import experienceImg from "../assets/experience/experience.png";
 import { useRecoilState } from "recoil";
 import { darkModeAtom } from "../recoil/darkMode";
 import {
@@ -19,6 +18,7 @@ import Link from "./elements/Link";
 import DropdownMenuRadix from "./elements/DropdownMenu";
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
 import useAOSInit from "../hooks/useAOSInit";
+import { GrUserExpert } from "react-icons/gr";
 
 const Experience = () => {
   const [darkMode] = useRecoilState(darkModeAtom);
@@ -29,7 +29,7 @@ const Experience = () => {
       <div className=" absolute top-0 h-[5rem] w-full bg-purple-600 blur-[150px]"></div>
 
       <div className="mt-[95px] flex flex-row items-center gap-4">
-        <img src={experienceImg} alt="" className="" />
+        <GrUserExpert className="text-purple-600 text-[3rem]" />{" "}
         <h1 className="first-heading-text" data-aos="fade-right">
           My Experience
         </h1>

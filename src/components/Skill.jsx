@@ -1,8 +1,8 @@
 import { skillIconData, skillTextData } from "../data/skillData";
-import skillImg from "../assets/skill/skill.png";
 import listArrowImg from "../assets/skill/list_arrow.png";
 import TooltipRadix from "../components/elements/Tooltip";
 import useAOSInit from "../hooks/useAOSInit";
+import { GiSkills } from "react-icons/gi";
 
 const Skill = () => {
   useAOSInit();
@@ -11,9 +11,9 @@ const Skill = () => {
     <div className="relative flex flex-col items-center gap-4 bg-lightModeImage dark:bg-darkModeImage lg:h-auto">
       <div className=" absolute top-0 h-[5rem] w-full bg-purple-600 blur-[150px]"></div>
       <div className="mt-[95px] flex flex-row items-center gap-4">
-        <img src={skillImg} alt="" className="" />
+          <GiSkills className="text-purple-600 text-[3rem]" />{" "}
         <h1 className="first-heading-text" data-aos="fade-right">
-          My Projects
+          My Skills
         </h1>
       </div>
       <div

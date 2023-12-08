@@ -1,7 +1,7 @@
 import imageGallery from "../assets/project/project_imageGallary.png";
 import inventory from "../assets/project/project_inventory.png";
 import starImport from "../assets/project/project_starImport.png";
-import porfolio from "../assets/project/project_Portfolio.png";
+import porfolio from "../assets/project/project_myPortfolio.png";
 export const projectData = [
   {
     id: 1,
@@ -26,6 +26,7 @@ export const projectData = [
     ],
     image: imageGallery,
     videoEmbedLink: null,
+    githubLink: "",
   },
   {
     id: 2,
@@ -40,6 +41,7 @@ export const projectData = [
     tools: ["React", "Javascript", "Firebase", "MUI", "Anted", "Context API"],
     image: starImport,
     videoEmbedLink: null,
+    githubLink: "",
   },
   {
     id: 3,
@@ -66,6 +68,7 @@ export const projectData = [
     ],
     image: inventory,
     videoEmbedLink: null,
+    githubLink: "",
   },
   {
     id: 3,
@@ -89,5 +92,6 @@ export const projectData = [
     ],
     image: porfolio,
     videoEmbedLink: null,
+    githubLink: "",
   },
 ];

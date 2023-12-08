@@ -11,6 +11,7 @@ import { FaYoutube } from "react-icons/fa";
 import useAOSInit from "../hooks/useAOSInit";
 // import "animate.css";
 import YoutubeEmbed from "./elements/YoutubeEmbed";
+import { FaProjectDiagram } from "react-icons/fa";
 
 const Projects = () => {
   const [currentBox, setCurrentBox] = useState(0);
@@ -41,7 +42,7 @@ const Projects = () => {
     <div className="relative flex flex-col items-center gap-4 bg-lightModeImage dark:bg-darkModeImage lg:h-screen">
       <div className=" absolute top-0 h-[5rem] w-full bg-purple-600 blur-[150px]"></div>{" "}
       <div className="mt-[95px] flex flex-row items-center gap-4">
-        <img src={educationImg} alt="" className="" />
+          <FaProjectDiagram className="text-purple-600 text-[3rem]" />{" "}
         <h1 className="first-heading-text" data-aos="fade-right">
           My Projects
         </h1>
@@ -123,7 +124,7 @@ const ProjectMedia = ({ setDirection, currentBox }) => {
           <img
             src={projectData[currentBox].image}
             alt=""
-            className="w-full h-full object-fit"
+            className="object-fill w-full h-full"
           />
         ) : (
           <div className="flex items-center justify-center w-full h-full object-fit">

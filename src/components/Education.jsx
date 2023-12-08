@@ -1,10 +1,11 @@
 import { educationData } from "../data/educationData";
 import { motion } from "framer-motion";
 import { fadeIn, itemVariant, listItemVariant } from "../utils/animate_func";
-import educationImg from "../assets/education/education.png";
 import ModalRadix from "./elements/Modal";
 import { PiGlobeStandFill } from "react-icons/pi";
 import useAOSInit from "../hooks/useAOSInit";
+import { MdCastForEducation } from "react-icons/md";
+
 
 const Education = () => {
   useAOSInit();
@@ -12,7 +13,7 @@ const Education = () => {
     <div className="relative flex flex-col items-center h-auto gap-4 bg-lightModeImage dark:bg-darkModeImage">
       <div className=" absolute top-0 h-[5rem] w-full bg-purple-600 blur-[150px]"></div>
       <div className="mt-[95px] flex flex-row items-center gap-4">
-        <img src={educationImg} alt="" className="" />
+        <MdCastForEducation className="text-purple-600 text-[3rem]" />{" "}
         <h1 className="first-heading-text" data-aos="fade-right">
           Education
         </h1>
