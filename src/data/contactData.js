@@ -15,13 +15,13 @@ export const contactData = [
     title: "Location",
     desc: "lobresdf assdf ipwery fb;sdkuywe sdkfjwep hosdlwe",
     contact_info: "Addis Ababa, Ethiopia",
-    contact_icon: emailImg,
+    contact_icon: locationImg,
   },
   {
     id: 3,
     title: "Email",
     desc: "lobresdf assdf ipwery fb;sdkuywe sdkfjwep hosdlwe",
     contact_info: "aklilufita@gmail.com / weaba123abdu@gmail.com",
-    contact_icon: locationImg,
+    contact_icon: emailImg,
   },
 ];

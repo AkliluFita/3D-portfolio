@@ -90,7 +90,7 @@ const ContactForm = () => {
       data-aos="fade-right"
     >
       <div className="w-full px-4 py-2">
-        <h1 className="text-2xl font-bold uppercase font-primary lg:text-3xl text-tx_secondary">
+        <h1 className="text-2xl font-bold tracking-wider uppercase font-primary lg:text-3xl text-tx_secondary">
           get touch me
         </h1>
         <p className="mt-2 text-sm font-primary text-tx_additional lg:text-base dark:text-gray-400">
@@ -107,29 +107,29 @@ const ContactForm = () => {
         <div className="flex flex-col w-full gap-2 p-1 ">
           <label
             htmlFor=""
-            className=" text-base lg:text-[1.5rem]  font-bold text-tx_secondary font-primary"
+            className=" text-base lg:text-[1.5rem] tracking-wider font-bold text-tx_secondary font-primary"
           >
             Your Name
           </label>
           <input
             type="text"
             required
-            placeholder="put your name here"
+            placeholder="Put your name here"
             name="user_name"
-            className="w-full p-2 text-black border rounded-md dark:text-white lg:p-4 dark:bg-gray-900 border-br_primary"
+            className="w-full p-2 tracking-wide text-black border rounded-md dark:text-white lg:p-4 dark:bg-gray-900 border-br_primary"
           />
         </div>
         <div className="flex flex-col w-full gap-2 p-2 ">
           <label
             htmlFor=""
-            className=" text-base lg:text-[1.5rem]  font-bold text-tx_secondary font-primary"
+            className=" text-base lg:text-[1.5rem] tracking-wider font-bold text-tx_secondary font-primary"
           >
             Your Email
           </label>
           <input
             type="email"
             required
-            placeholder="put your email here"
+            placeholder="Put your email here"
             name="user_email"
             className="w-full p-2 text-black border rounded-md dark:text-white lg:p-4 dark:bg-gray-900 border-br_primary"
           />
@@ -137,13 +137,13 @@ const ContactForm = () => {
         <div className="flex flex-col w-full gap-2 p-2 ">
           <label
             htmlFor=""
-            className=" text-base lg:text-[1.5rem]  font-bold text-tx_secondary font-primary"
+            className=" text-base lg:text-[1.5rem] tracking-wider font-bold text-tx_secondary font-primary"
           >
             Your Message
           </label>
           <textarea
             rows={8}
-            placeholder="put your message here"
+            placeholder="Put your message here"
             name="message"
             className="w-full p-2 text-black border rounded-md dark:text-white lg:p-4 dark:bg-gray-900 border-br_primary "
           />

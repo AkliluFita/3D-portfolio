@@ -16,7 +16,7 @@ const SlideText = ({ sideType }) => {
         </motion.div>
       ) : (
         <motion.div
-          className="absolute bottom-[1%] flex flex-row gap-8 font-bold text-gray-500 uppercase opacity-20 dark:text-gray-700 font-primary"
+          className="absolute bottom-[1%] flex flex-row gap-8 font-bold text-gray-500 uppercase opacity-70 dark:text-gray-700 font-primary"
           // variants={slideText("100%")}
           // initial="initial"
           // animate="animate"
