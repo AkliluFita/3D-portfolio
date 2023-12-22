@@ -55,7 +55,7 @@ const Card = ({ item }) => {
           <h1 className="text-transparent text-tx_secondary  font-primary lg:text-[1.5rem] text-[1rem] font-bold  ">
             {item.name}
           </h1>
-          <div className="flex items-center gap-4 ">
+          <div className="flex items-center gap-4">
             {item.linkedin_link && (
               <Link url="item.linkedin_link">
                 <TooltipRadix text={item.linkedin_link}>
