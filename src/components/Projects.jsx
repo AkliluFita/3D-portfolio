@@ -42,32 +42,32 @@ const Projects = () => {
     <div className="relative flex flex-col items-center gap-4 bg-lightModeImage dark:bg-darkModeImage lg:h-screen">
       <div className=" absolute top-0 h-[5rem] w-full bg-purple-600 blur-[150px]"></div>{" "}
       <div className="mt-[95px] flex flex-row items-center gap-4">
-          <FaProjectDiagram className="text-purple-600 text-[3rem]" />{" "}
+        <FaProjectDiagram className="text-purple-600 text-[3rem]" />{" "}
         <h1 className="first-heading-text" data-aos="fade-right">
           My Projects
         </h1>
       </div>
       <div className="flex-[10] w-[90%] px-4  mb-[4rem]  md:w-[80%] h-full relative dark:bg-gray-900 border border-purple-600 bg-bg_secondary rounded-lg">
         <motion.div
-          className="absolute top-[50%] left-0 bg-gray-600 p-2 rounded-[50%]"
+          className="absolute top-[50%] left-0 bg-gray-600 p-2 rounded-[50%] opacity-50 hover:opacity-100"
           onClick={handlePrevious}
           variants={sliderVariants()}
           whileHover="hover"
         >
-          <FaChevronLeft className="font-bold text-white  text-[2rem] cursor-pointer" />
+          <FaChevronLeft className="font-bold text-white  text-[2rem] cursor-pointer opacity-50" />
         </motion.div>
         <div className="flex flex-col h-full gap-6 lg:flex-row">
           <ProjectMedia setDirection={setCurrentBox} currentBox={currentBox} />
           <ProjectInfo currentBox={currentBox} />
         </div>
         <motion.div
-          className="absolute top-[50%] right-0 bg-gray-600 p-2 rounded-[50%]"
+          className="absolute top-[50%] right-0 bg-gray-600 p-2 rounded-[50%] opacity-50 hover:opacity-100"
           bg-gray-800
           onClick={handleNext}
           variants={sliderVariants()}
           whileHover="hover"
         >
-          <FaChevronRight className="font-bold text-white  text-[2rem] cursor-pointer" />
+          <FaChevronRight className="font-bold text-white  text-[2rem] cursor-pointer " />
         </motion.div>
         <motion.div className="flex items-center justify-center gap-4 cursor-pointer lg:gap-6">
           {projectData.map((_, index) => (
@@ -143,8 +143,6 @@ const ProjectMedia = ({ setDirection, currentBox }) => {
 };
 
 const ProjectInfo = ({ currentBox }) => {
-  const border_secondary = "dark:border-purple-700 border border-purple-400";
-
   return (
     <div className="flex-[1]   rounded-lg flex flex-col gap-6">
       <div
