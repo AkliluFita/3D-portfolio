@@ -1,5 +1,7 @@
 import SocialIcons from "./elements/SocialIcons";
 import Logo from "./elements/Logo";
+import Link from "./elements/Link";
+import Links from "./Links";
 
 const Footer = () => {
   return (
@@ -52,12 +54,7 @@ const Footer = () => {
               Main Menu
             </h1>
             <div className="flex flex-col lg:gap-4 gap-2 text-tx_additional text-[0.8rem] lg:text-lg dark:text-gray-400 font-primary  ">
-              <span className=" font-primary">Home</span>
-              <span className=" font-primary">Contact</span>
-              <span className=" font-primary">About Me</span>
-              <span className=" font-primary">Education</span>
-              <span className=" font-primary">Skills</span>
-              <span className=" font-primary">Contact</span>
+              <Links className=" text-[0.8rem] lg:text-lg text-tx_additional font-primary dark:text-gray-400" />
             </div>
           </div>
           {/* <div className=" flex flex-col gap-4 flex-[1] ">
