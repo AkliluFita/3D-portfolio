@@ -2,8 +2,11 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { projectData } from "../data/ProjectData";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { GlobeIcon } from "@radix-ui/react-icons";
 // import "./projects.css";
 import educationImg from "../assets/education/education.png";
+import TooltipRadix from "./elements/Tooltip";
+
 import { RxDotFilled } from "react-icons/rx";
 import { dotsVariants, sliderVariants } from "../utils/animate_func";
 import { GitHubLogoIcon, IdCardIcon } from "@radix-ui/react-icons";
@@ -12,6 +15,7 @@ import useAOSInit from "../hooks/useAOSInit";
 // import "animate.css";
 import YoutubeEmbed from "./elements/YoutubeEmbed";
 import { FaProjectDiagram } from "react-icons/fa";
+import Link from "./elements/Link";
 
 const Projects = () => {
   const [currentBox, setCurrentBox] = useState(0);
@@ -176,9 +180,33 @@ const ProjectInfo = ({ currentBox }) => {
             {projectData[currentBox].description}
           </p>
           <div className="flex-[2] flex items-center justify-around">
-            <GitHubLogoIcon className="lg:w-[2rem] lg:h-[2rem] w-[1rem] h-[1rem]" />{" "}
-            <IdCardIcon className="lg:w-[2rem] lg:h-[2rem] w-[1rem] h-[1rem]" />
-            <FaYoutube className="lg:w-[2rem] lg:h-[2rem] w-[1rem] h-[1rem]" />
+            <Link url={projectData[currentBox].githubLink}>
+              <TooltipRadix
+                text={
+                  projectData[currentBox].githubLink
+                    ? "click github link"
+                    : "github not available"
+                }
+              >
+                <GitHubLogoIcon className="lg:w-[2rem] lg:h-[2rem] w-[1rem] h-[1rem]" />{" "}
+              </TooltipRadix>
+            </Link>
+            <Link url="link">
+              <TooltipRadix text={"Video not available yet"}>
+                <FaYoutube className="lg:w-[2rem] lg:h-[2rem] w-[1rem] h-[1rem]" />
+              </TooltipRadix>
+            </Link>
+            <Link url={projectData[currentBox].webHostLink}>
+              <TooltipRadix
+                text={
+                  projectData[currentBox].webHostLink
+                    ? "click web link"
+                    : "Web link not available"
+                }
+              >
+                <GlobeIcon className="lg:w-[2rem] lg:h-[2rem] w-[1rem] h-[1rem]" />
+              </TooltipRadix>
+            </Link>
           </div>
         </div>
       </div>

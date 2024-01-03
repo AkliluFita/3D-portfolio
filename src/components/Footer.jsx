@@ -49,12 +49,14 @@ const Footer = () => {
               </h2>
             </div>
           </div>
-          <div className="flex flex-col justify-between gap-6 flex-[1]">
+          <div className="flex flex-col  gap-6 flex-[1]">
             <h1 className="text-[1.1rem]  font-bold lg:text-3xl text-tx_secondary font-primary">
-              Main Menu
+              More skilled with
             </h1>
             <div className="flex flex-col lg:gap-4 gap-2 text-tx_additional text-[0.8rem] lg:text-lg dark:text-gray-400 font-primary  ">
-              <Links className=" text-[0.8rem] lg:text-lg text-tx_additional font-primary dark:text-gray-400" />
+              <h1 className=" font-primary">ReactJs</h1>
+              <h1 className=" font-primary">NodeJs</h1>
+              <h1 className=" font-primary">Django</h1>
             </div>
           </div>
           {/* <div className=" flex flex-col gap-4 flex-[1] ">

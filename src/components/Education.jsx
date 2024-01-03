@@ -115,7 +115,7 @@ const Cards = ({ item, index }) => {
         >
           {item.thesisTitle && (
             <button className="lg:p-4 p-2 mb-2 mr-2 font-primary text-[0.6rem]  font-bold  uppercase text-black  dark:text-white lg:w-auto lg:text-lg rounded-3xl underline ">
-              Thesis Title
+              Thesis Cover Page
             </button>
           )}
         </ModalRadix>
@@ -128,7 +128,7 @@ const Cards = ({ item, index }) => {
         >
           {item.thesisPaper1 && (
             <button className="lg:p-4 p-2 mb-2 mr-2 font-primary text-[0.6rem]  font-bold  uppercase text-black  dark:text-white lg:w-auto lg:text-lg rounded-3xl underline ">
-              Thesis Book View
+              Thesis Approval Certificate
             </button>
           )}
         </ModalRadix>

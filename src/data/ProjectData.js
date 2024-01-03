@@ -26,7 +26,8 @@ export const projectData = [
     ],
     image: imageGallery,
     videoEmbedLink: null,
-    githubLink: "",
+    githubLink: "https://github.com/AkliluFita/imagegallery",
+    webHostLink: "",
   },
   {
     id: 2,
@@ -41,7 +42,8 @@ export const projectData = [
     tools: ["React", "Javascript", "Firebase", "MUI", "Anted", "Context API"],
     image: starImport,
     videoEmbedLink: null,
-    githubLink: "",
+    githubLink: "https://github.com/AkliluFita/Starlight",
+    webHostLink: "https://starlightimport.com/",
   },
   {
     id: 3,
@@ -69,6 +71,7 @@ export const projectData = [
     image: inventory,
     videoEmbedLink: null,
     githubLink: "",
+    webHostLink: "https://mulatautoelectric.com/",
   },
   {
     id: 3,
@@ -92,6 +95,7 @@ export const projectData = [
     ],
     image: porfolio,
     videoEmbedLink: null,
-    githubLink: "",
+    githubLink: "https://github.com/AkliluFita/3D-portfolio",
+    webHostLink: "https://akliluportfolio.netlify.app/",
   },
 ];

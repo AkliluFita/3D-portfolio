@@ -2,8 +2,8 @@ import cyprusImg from "../assets/education/cyprusLogo.png";
 import haramayaLogo from "../assets/education/haramayaLogo.png";
 import masterCertificate from "../assets/education/Diploma1.jpg";
 import degreeCertificate from "../assets/education/Tempo_degre.jpeg";
-import thesis1 from "../assets/education/Thesis_paper1.jpg";
-import thesis2 from "../assets/education/Thesis_paper2.jpg";
+import thesis1 from "../assets/education/thesis_cover.jpg";
+import thesis2 from "../assets/education/thesis_signeture.jpg";
 
 export const educationData = [
   {

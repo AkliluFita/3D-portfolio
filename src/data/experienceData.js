@@ -9,11 +9,11 @@ export const experienceData = [
     web_link: "https://merebtechnology.com/",
     github_link: [
       {
-        title: "Backend Source Code (Public Repo)",
+        title: "Backend Source Code (Private Repo)",
         link: "https://github.com/AkliluFita/realEstate_backend",
       },
       {
-        title: "Frontend Source Code (Public Repo)",
+        title: "Frontend Source Code (Private Repo)",
         link: "https://github.com/AkliluFita/realEstate_frontend",
       },
     ],
