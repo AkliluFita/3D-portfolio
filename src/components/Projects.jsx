@@ -188,12 +188,12 @@ const ProjectInfo = ({ currentBox }) => {
                     : "github not available"
                 }
               >
-                <GitHubLogoIcon className="lg:w-[2rem] lg:h-[2rem] w-[1rem] h-[1rem]" />{" "}
+                <GitHubLogoIcon className="lg:w-[2rem] lg:h-[2rem] w-[1rem] h-[1rem] dark:text-white text-black  cursor-pointer" />{" "}
               </TooltipRadix>
             </Link>
             <Link url="link">
               <TooltipRadix text={"Video not available yet"}>
-                <FaYoutube className="lg:w-[2rem] lg:h-[2rem] w-[1rem] h-[1rem]" />
+                <FaYoutube className="lg:w-[2rem] lg:h-[2rem] w-[1rem] h-[1rem] dark:text-white text-black  cursor-pointer" />
               </TooltipRadix>
             </Link>
             <Link url={projectData[currentBox].webHostLink}>
@@ -204,7 +204,7 @@ const ProjectInfo = ({ currentBox }) => {
                     : "Web link not available"
                 }
               >
-                <GlobeIcon className="lg:w-[2rem] lg:h-[2rem] w-[1rem] h-[1rem]" />
+                <GlobeIcon className="lg:w-[2rem] lg:h-[2rem] w-[1rem] h-[1rem] dark:text-white text-black  cursor-pointer" />
               </TooltipRadix>
             </Link>
           </div>
