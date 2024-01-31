@@ -10,7 +10,7 @@ const About = () => {
 
   return (
     <div className="relative flex flex-col items-center gap-4 bg-lightModeImage dark:bg-darkModeImage lg:h-auto">
-      <div className=" absolute top-0 h-[5rem] w-full bg-purple-600 blur-[150px]"></div>
+      {/* <div className=" absolute top-0 h-[5rem] w-full bg-purple-600 blur-[150px]"></div> */}
 
       <div className="flex flex-row gap-4 flex-[2] mt-[95px] items-center">
         <RiProfileFill className="text-purple-600 text-[3rem]" />{" "}
@@ -25,11 +25,11 @@ const About = () => {
         <p className="  lg:text-[1.2rem]  text-[.8rem] lg:w-1/2  w-full text-tx_additional dark:text-gray-400 text-center font-primary p-4 lg:p-2">
           {aboutMeProfileData}
         </p>
-        <div className="">
+        <div className="rounded-lg border-gradient-primary">
           <img
             src={akliluImg}
             alt=""
-            className="object-cover border border-purple-500 bg-bg_primary rounded-lg dark:bg-gray-800  h-[10rem] w-[10rem]  "
+            className="object-cover  bg-bg_primary rounded-lg dark:bg-gray-800  h-[10rem] w-[10rem]  "
           />
         </div>
       </div>
@@ -50,11 +50,11 @@ const Cards = ({ item }) => {
   useAOSInit();
 
   return (
-    <Tilt className="flex-[1]  w-auto">
-      <div
-        className="flex flex-col items-center h-full gap-2 p-4 border border-purple-800 rounded-lg lg:max-w-full bg-bg_primary dark:bg-gray-900 g-3"
-        data-aos="flip-left"
-      >
+    <div
+      className="flex-[1]  w-auto border-gradient-primary rounded-lg"
+      data-aos="fade-down"
+    >
+      <div className="flex flex-col items-center h-full gap-2 p-4 rounded-lg lg:max-w-full bg-bg_primary dark:bg-gray-900 g-3">
         <div className="flex items-center justify-center w-1/2 p-2 text-center">
           <img
             src={item.icon}
@@ -97,6 +97,6 @@ const Cards = ({ item }) => {
           </div>
         </div>
       </div>
-    </Tilt>
+    </div>
   );
 };

@@ -28,7 +28,7 @@ export const testimonialData = [
       "My teacher and adviser recommendation paper @ Haramaya University",
     title: "Electrical and Computer Engineering Department",
     desc: ` I have known him for more than 3 years as a student of Electrical and Computer Engineering. 
-    I found him to be an intelligent.mature and technically sound with analytical bent fo mind`,
+    I found him to be an intelligent mature and technically sound with analytical bent fo mind`,
     email: "sukhbir_2008@redffimail.com",
     linkedin_link: null,
     recommendationPaper: AvatarRecommon,

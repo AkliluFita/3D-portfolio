@@ -26,7 +26,7 @@ const Experience = () => {
   useAOSInit();
   return (
     <div className="relative flex flex-col items-center gap-4 bg-lightModeImage dark:bg-darkModeImage lg:h-auto">
-      <div className=" absolute top-0 h-[5rem] w-full bg-purple-600 blur-[150px]"></div>
+      {/* <div className=" absolute top-0 h-[5rem] w-full bg-purple-600 blur-[150px]"></div> */}
 
       <div className="mt-[95px] flex flex-row items-center gap-4">
         <GrUserExpert className="text-purple-600 text-[3rem]" />{" "}

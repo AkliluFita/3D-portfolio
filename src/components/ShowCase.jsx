@@ -12,8 +12,8 @@ const ShowCase = () => {
 
   return (
     <div className="flex lg:flex-row items-center w-full h-auto lg:h-screen gap-4 p-4 bg-lightModeImage dark:bg-darkModeImage  flex-col relative z-[1]  bg-cover  bg-center">
-      <SlideText sideType="left" />
-      <div className=" absolute top-0 h-[5rem] w-full bg-purple-600 blur-[200px]"></div>
+      {/* <SlideText sideType="left" /> */}
+      <div className=" absolute top-[15rem] left-[0rem] h-[5rem] w-full bg-blue-800 blur-[100px]"></div>
       <div
         className=" flex-[1]  flex justify-center h-full z-[1] relative object-cover items-center "
         data-aos="fade-right"

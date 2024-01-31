@@ -44,7 +44,7 @@ const Projects = () => {
 
   return (
     <div className="relative flex flex-col items-center gap-4 bg-lightModeImage dark:bg-darkModeImage lg:h-screen">
-      <div className=" absolute top-0 h-[5rem] w-full bg-purple-600 blur-[150px]"></div>{" "}
+      {/* <div className=" absolute top-0 h-[5rem] w-full bg-purple-600 blur-[150px]"></div>{" "} */}
       <div className="mt-[95px] flex flex-row items-center gap-4">
         <FaProjectDiagram className="text-purple-600 text-[3rem]" />{" "}
         <h1 className="first-heading-text" data-aos="fade-right">
