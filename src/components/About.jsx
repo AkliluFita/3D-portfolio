@@ -88,7 +88,7 @@ const Cards = ({ item }) => {
               </h1>
               <h3 className="font-bold text-black font-primary dark:text-white">
                 {item.experiencePeriod}
-                {item.experiencePeriod === 1 ? " Year" : " Years"}
+                {item.experiencePeriod === 1 ? "+ Year" : "+ Years"}
               </h3>
             </div>
             {/* <button className="p-2 text-white bg-purple-600 font-primary rounded-2xl ">

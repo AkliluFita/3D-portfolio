@@ -40,7 +40,7 @@ const Card = ({ item }) => {
       <div className="flex flex-col items-center gap-4 p-2 text-black rounded-lg lg:p-4 bg-bg_primary dark:bg-gray-900">
         <div className="flex-[4] h-full w-full text-center flex items-center justify-center">
           <div className="flex items-center h-full gap-4 ">
-            <span className="w-10 h-2 bg-black dark:bg-white"></span>
+            <span className="w-10 h-2 bg-blue-800"></span>
             <Tilt>
               <img
                 src={item.personImg}
@@ -48,7 +48,7 @@ const Card = ({ item }) => {
                 className="w-[9rem] h-[9rem] lg:w-[12rem] lg:h-[12rem] border-4 border-[#7F2F92] rounded-[50%] object-cover transform hover:scale-[1.1] ease-out hover:ease-in duration-500 hover:shadow-purple-900 shadow-2xl"
               />
             </Tilt>
-            <span className="w-10 h-2 bg-black dark:bg-white"></span>
+            <span className="w-10 h-2 bg-blue-800"></span>
           </div>
         </div>
         <div className="flex-[2]   w-full p-2">
@@ -75,12 +75,12 @@ const Card = ({ item }) => {
               </div>
             </div>
           </div>
-          <h1 className="font-primary lg:text-base text-[0.7rem] text-tx_additional dark:text-gray-400 border-b-2 border-[#7F2F92] mt-2">
+          <h1 className="font-primary lg:text-[0.8rem] text-[0.7rem] text-tx_additional dark:text-gray-400 border-b-2 border-[#7F2F92] mt-2">
             {item.title}
           </h1>
         </div>
         <div className="flex-[6]  w-full  flex flex-col justify-between">
-          <p className="font-primary lg:text-[1.2rem] text-[0.8rem] text-tx_additional text-center p-4 dark:text-gray-400">
+          <p className="font-primary lg:text-[1.1rem] text-[0.8rem] text-tx_additional text-center p-4 dark:text-gray-400">
             {item.desc}
           </p>
           <div className="mt-8 text-center">

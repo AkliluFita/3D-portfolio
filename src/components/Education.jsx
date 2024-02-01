@@ -18,7 +18,7 @@ const Education = () => {
           Education
         </h1>
       </div>
-      <div className="flex-[11] w-[90%]  md:w-[80%] flex gap-4">
+      <div className="flex-[11] w-[90%] flex-col lg:flex-row md:w-[80%] flex gap-4">
         {educationData.map((item, index) => (
           <Cards item={item} key={item.id} index={index} />
         ))}
@@ -32,7 +32,7 @@ export default Education;
 const Cards = ({ item, index }) => {
   return (
     <div
-      className="flex flex-col flex-[1] h-full gap-10 lg:flex-row rounded-lg  border-gradient-primary"
+      className="flex flex-col flex-[1] h-[40rem] gap-10 lg:flex-row rounded-lg border-gradient-primary"
       data-aos="fade-right"
     >
       <motion.div

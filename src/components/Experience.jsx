@@ -43,7 +43,7 @@ const Experience = () => {
               contentStyle={{
                 background: background,
                 color: "#7F2F92",
-                border: "1px solid #7F2F92",
+                border: "1px solid blue",
               }}
               contentArrowStyle={{
                 borderRight: "7px solid  #7F2F92",
@@ -57,7 +57,7 @@ const Experience = () => {
               icon={<img src={work_icon} />}
             >
               <div className="">
-                <h3 className="vertical-timeline-element-title text-[1.2rem] uppercase text-tx_secondary font-bold font-primary">
+                <h3 className="vertical-timeline-element-title text-[1rem] lg:text-[1.1rem] uppercase text-tx_secondary font-bold font-primary">
                   {item.title}
                 </h3>
                 <h4 className="flex flex-row items-center gap-2 text-sm text-gray-800 font-primary dark:text-gray-200 vertical-timeline-element-subtitle">

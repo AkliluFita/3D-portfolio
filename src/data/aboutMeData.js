@@ -17,7 +17,7 @@ export const aboutMeCardData = [
     tool: ["Html", "Css", "Javascript", "Typescript", "react.js", "next.js"],
     desc: `I excel as a frontend developer, combining my artistic eye with technical expertise to create visually stunning and user-friendly interfaces.
      I craft seamless experiences that captivate users and optimize their interaction with web applications.`,
-    experiencePeriod: 3,
+    experiencePeriod: 2,
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ export const aboutMeCardData = [
     tool: ["Node.js", "Express", "MySQL", "Postgres", "Python", "Django"],
     desc: `I am well enough in backend development, leveraging my expertise in languages such as Python, Javascript, or Node.js to build robust and scalable server-side solutions.
      With a strong foundation in databases, APIs, and server architecture.`,
-    experiencePeriod: 2,
+    experiencePeriod: 1,
   },
   {
     id: 3,
@@ -45,7 +45,7 @@ export const aboutMeCardData = [
     ],
     desc: `As a fullstack developer, I combine frontend and backend expertise to create seamless and integrated web applications. 
      I deliver visually appealing and technologically sound solutions that meet modern user needs.`,
-    experiencePeriod: 2,
+    experiencePeriod: 1,
   },
   {
     id: 4,

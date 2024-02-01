@@ -51,7 +51,7 @@ const Projects = () => {
           My Projects
         </h1>
       </div>
-      <div className="flex-[10] w-[90%] px-4  mb-[4rem]  md:w-[80%] h-full relative dark:bg-gray-900 border border-purple-600 bg-bg_secondary rounded-lg">
+      <div className="flex-[10] w-[90%] px-4  mb-[4rem]  md:w-[80%] h-full relative dark:bg-gray-900 border border-blue-600 bg-bg_secondary rounded-lg">
         <motion.div
           className="absolute top-[50%] left-0 bg-gray-600 p-2 rounded-[50%] opacity-50 hover:opacity-100"
           onClick={handlePrevious}
@@ -123,12 +123,12 @@ const ProjectMedia = ({ setDirection, currentBox }) => {
           Video
         </h1>
       </div>
-      <div className="flex-[11]  h-full w-full rounded-sm">
+      <div className="flex-[11]  h-full w-full rounded-sm lg:p-8 p-4">
         {isPictureActive ? (
           <img
             src={projectData[currentBox].image}
             alt=""
-            className="object-fill w-full h-full"
+            className="object-fill w-full h-full rounded-lg"
           />
         ) : (
           <div className="flex items-center justify-center w-full h-full object-fit">
