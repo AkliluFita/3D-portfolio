@@ -30,8 +30,8 @@
 }
 
 
-.my_logo_pending{
-    font-size: 24px;
+.icon_pending{
+    /* font-size: 24px; */
     animation: heartbeat 2s infinite;
 }
 

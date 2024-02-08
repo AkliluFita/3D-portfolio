@@ -29,7 +29,7 @@ const About = () => {
           <img
             src={akliluImg}
             alt=""
-            className="object-cover  bg-bg_primary rounded-lg dark:bg-gray-800  h-[10rem] w-[10rem]  "
+            className="object-cover  bg-bg_primary rounded-lg dark:bg-gray-800  h-[10rem] w-[10rem]"
           />
         </div>
       </div>
