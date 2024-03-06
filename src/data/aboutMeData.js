@@ -17,7 +17,7 @@ export const aboutMeCardData = [
     tool: ["Html", "Css", "Javascript", "Typescript", "react.js", "next.js"],
     desc: `I excel as a frontend developer, combining my artistic eye with technical expertise to create visually stunning and user-friendly interfaces.
      I craft seamless experiences that captivate users and optimize their interaction with web applications.`,
-    experiencePeriod: 2,
+    experiencePeriod: 3,
   },
   {
     id: 2,

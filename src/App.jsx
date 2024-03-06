@@ -59,7 +59,3 @@ export default function App() {
     </div>
   );
 }
-
-
-// #2B2C39
-// #201E26

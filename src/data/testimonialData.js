@@ -41,7 +41,7 @@ export const testimonialData = [
       "My project manager and CEO recommendation paper @ Mereb technology company",
     title: "Project Manager in Mere Technology Software Company(CEO)",
     desc: `He Worked as a full-stack developer at Mereb Tehnology from 17, 2022 until August 02, 2023. During this time. 
-    I am thoroughly impressed with his skill and dedication`,
+    I am thoroughly impressed with his skill and dedication. I Wholeheartedly Aklilu Jemal for any fullstack position.`,
     email: "yared@mereb.tech",
     linkedin_link:
       "https://www.linkedin.com/in/yared-taddese-720ba0142/?originalSubdomain=et",
