@@ -40,7 +40,7 @@ const ShowCase = () => {
           <SocialIcons />
           <div className="flex flex-row justify-center gap-4 p-2 mt-4 ">
             {/* <Button text={"Hire Me"} className="text-black common_background" /> */}
-            <Link url={links.RESUME}>
+            <Link url={showCaseData.resumeLink}>
               <Button
                 text={"Download CV"}
                 className="text-white bg-purple-600"

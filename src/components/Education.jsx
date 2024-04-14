@@ -18,7 +18,7 @@ const Education = () => {
           Education
         </h1>
       </div>
-      <div className="flex-[11] w-[90%] flex-col lg:flex-row md:w-[80%] flex gap-4 border border-red-300">
+      <div className="flex-[11] w-[90%] flex-col lg:flex-row md:w-[80%] flex gap-4">
         {educationData.map((item, index) => (
           <Cards item={item} key={item.id} index={index} />
         ))}
